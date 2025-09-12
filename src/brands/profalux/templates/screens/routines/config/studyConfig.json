@@ -1,0 +1,14 @@
+{
+    "Venetian_Shutter_Ezsp":{
+        "actions": [
+            {"name": "OPEN"},
+            {"name": "CLOSE"},
+            {"name": "STOP"},
+            {"name": "FAV_CALL_1"},
+            {"name": "FAV_SET_1"},
+            {"name": "LEVEL","mArgs": [{"name": "level","type": "INT","min": 0,"max": 100}]},
+            {"name": "TILT","mArgs": [{"name": "angle","type": "INT","min": 0,"max": 90}]},
+            {"name": "POSITION","mArgs": [{"name": "angle","type": "INT","min": 0,"max": 90},{"name": "level","type": "INT","min": 0,"max": 100}]}
+        ]
+    }
+}

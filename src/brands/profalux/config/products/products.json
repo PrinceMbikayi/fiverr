@@ -1,0 +1,82 @@
+{
+    "comment":" Widget object config file: show/(not show) widget level2 screen",
+    "comment":" show/(not show) widget level1 settings icon and lead to setting screen", 
+
+    "WEATHER": {
+      "noLevel2" : false
+    },
+    
+    "GATE": {
+      "showConfig" : true,
+      "noLevel2" : true
+    },    
+    "GATE-TO-CONNECT" : {
+      "noLevel2" : false,
+      "noshowConfig" : true
+     
+    },
+    "EZSP-WIREPILOT" : {
+     
+    },
+    "Rolling_Shutter_Ezsp":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "Venetian_Shutter_Ezsp":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "SwitchEzsp":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "LightEzsp":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "AtHomeProbe":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "EzspProbe":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "Garage_Door_Ezsp":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "Gate_Toggle_Ezsp":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "NetatmoStation":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "NetatmoIndoorProbe":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "NetatmoOutdoorProbe":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "NetatmoRainGauge":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+    "NetatmoWindGauge":{
+      "noLevel2": false,
+      "showConfig": false
+    },
+
+    "Associations":{
+      "noLevel2": true,
+      "showConfig": false
+    },
+    "SesameGate":{
+      "noLevel2": false,
+      "showConfig": false
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "products" : {
+        "NoSwitchEzsp" : {
+           "mapTo" : "AtHomePlugIn",
+           "mapTo_test_programmation" : "AtHomeHeater"
+        },
+        "Nope_EzspBoiler" : {
+            "mapTo" : "AtHomeBoiler"
+        },
+        "EzspHeater" : {
+            "mapTo" : "AtHomeHeater"
+        },
+        "Nope_EzspWirePilot" : {
+            "mapTo" : "AtHomeWirePilot"
+        },
+        "EnOceanLight" : {
+            "mapTo" : "AtHomePlugIn"
+        },
+        "EnOceanSwitch" : {
+            "mapTo" : "AtHomePlugIn"
+        },
+        "NoRolling_Shutter_Ezsp" : {
+            "mapTo" : "AtHomeModuleShutter"
+        }
+       
+    }
+}

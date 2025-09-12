@@ -1,0 +1,21 @@
+{
+     "resource": {
+          "pictures": {
+               "iconSets": {                   
+                    "AtHomeHeater_status" : {
+                         "on":"AtHomeHeater_on.svg"
+                    },
+                    "AtHomePlugIn_status" : {
+                         "on":"AtHomePlug_on.svg"
+                    },
+                    "AtHomePlugOut_status" : {
+                         "on":"AtHomePlug_on.svg"
+                    },
+                    "AtHomeLight_status" : {
+                         "on":"light_on.svg"
+                         
+                    }
+               }
+          }
+     }
+}

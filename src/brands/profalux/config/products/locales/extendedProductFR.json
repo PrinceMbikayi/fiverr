@@ -1,0 +1,24 @@
+{
+    "QR-BASIC_NAME" : "Qair",
+    "QR-BASIC_SHORT_DESCRIPTION" : "Visiophone avec QR code",
+    "CAT_HEATER_NAME" : "Chauffage",
+    "CAT_HEATER_SHORT_DESCRIPTION" : "Qué calor",
+    "CAT_HEATER_ADD_PRODUCT_TITLE" :"Quel chauffage voulez-vous ajouter ?",
+    "CAT_MOTOR_NAME" : "Motorisation",
+    "CAT_MOTOR_SHORT_DESCRIPTION" : "Portail magique",
+    "CAT_MOTOR_ADD_PRODUCT_TITLE" :"Quel type de Motorisation voulez-vous ajouter ?",
+    "CAT_SECURITY_NAME": "Alarme sécurité",
+    "CAT_SECURITY_SHORT_DESCRIPTION" : "Attention à la marche en descendant du train",
+    "CAT_SECURITY_ADD_PRODUCT_TITLE" :"Quel élément de sécurité voulez-vous ajouter ?",
+    "MOTOR_1_NAME" : "Nom de la motorisation 1",
+    "MOTOR_1_SHORT_DESCRIPTION" : "Motorisation pour portail coulissant",
+    "CAT_VDP_NAME" : "Portiers",
+    "CAT_VDP_SHORT_DESCRIPTION" : "Sésame ouvre toi",
+    "CAT_VDP_ADD_PRODUCT_TITLE" :"Quel type de portier ?",
+    "CAT_LIGHT_NAME" : "Eclairage",
+    "CAT_LIGHT_SHORT_DESCRIPTION" : "L'univers n'éteint jamais ses lumières.",
+    "CAT_LIGHT_ADD_PRODUCT_TITLE" :"Quel type de d'éclairage ?",
+    "EZSP-WIREPILOT_NAME" : "Nom du Produit (Fil Pilote) ",
+    "EZSP-WIREPILOT_SHORT_DESCRIPTION" : "fil pilote"
+    
+}

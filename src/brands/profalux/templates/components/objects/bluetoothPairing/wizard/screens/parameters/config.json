@@ -1,0 +1,48 @@
+{
+    "datas" : [
+        {
+            "question" : "WEIGHT_QUESTION",
+            "illustration" : "gauge",           
+             "answers" : [
+                {"label" : "WEIGHT_ANSWER_1","value":"resp_1","description":"WEIGHT_ANSWER_1_DESCRIPTION" },
+                {"label" : "WEIGHT_ANSWER_2","value":"resp_2","description":"WEIGHT_ANSWER_2_DESCRIPTION" },
+                {"label" : "WEIGHT_ANSWER_3","value":"resp_3","description":"WEIGHT_ANSWER_3_DESCRIPTION" },
+                {"label" : "WEIGHT_ANSWER_4","value":"resp_4" }
+             ]             
+        },
+        {
+            "question" : "TYPE_QUESTION",
+            "illustration" : "house",           
+             "answers" : [
+                {"label" : "TYPE_ANSWER_1","value":"resp_1" },
+                {"label" : "TYPE_ANSWER_2","value":"resp_2"},
+                {"label" : "TYPE_ANSWER_3","value":"resp_3" }
+             ]
+
+             
+        },
+        {
+            "question" : "WIND_QUESTION",
+            "illustration" : "windy",           
+             "answers" : [
+                {"label" : "WIND_ANSWER_1","value":"resp_1" },
+                {"label" : "WIND_ANSWER_2","value":"resp_2"},
+                {"label" : "WIND_ANSWER_3","value":"resp_3" }
+             ]
+
+             
+        },
+
+        {
+            "question" : "AUTO_QUESTION",
+            "illustration" : "auto",           
+             "answers" : [
+                {"label" : "AUTO_ANSWER_1","value":"resp_1","description":"AUTO_ANSWER_1_DESCRIPTION" },
+                {"label" : "AUTO_ANSWER_2","value":"resp_2","description":"AUTO_ANSWER_2_DESCRIPTION" }
+               
+             ]
+
+             
+        }
+    ]
+}

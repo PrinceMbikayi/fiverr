@@ -1,0 +1,6 @@
+Android 7 
+
+I am also having the same problem. This is only related to Android 7.0, for other Android versions, it works well.
+Problem is that Axios https post request is not even reaching to the server. It got failed with Network Error only because of SSL Handshake got failed.
+It works well with all iOS versions as well as all Android versions except Android 7.0.
+Looks like Android 7.0 has some serious problem in okhttp.

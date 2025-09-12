@@ -1,0 +1,18 @@
+{
+   "comfort"   : "Confort",
+   "comfort-1"   : "Confort -1",
+   "comfort-2"   : "Confort -2",
+   "eco"       : "Eco",
+   "off"       : "Eteint",
+   "on"        : "Allumé",
+   "frost-free": "Hors-gel",
+   "frost_free": "Hors-gel",
+   "night":"Nuit",
+   "absence":"Absence",
+   "humidity" : "humidité",
+   "temperature" : "température",
+   "program" : "Programme",
+   "watts" : "conso.",
+   "watts_hp" :"conso. h.p.",
+   "wattscost_hp":"coût h.p."
+}

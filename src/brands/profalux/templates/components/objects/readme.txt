@@ -1,0 +1,1 @@
+See brands/umii/config/readme.txt for informations about rroducts Config, categories of products and dynamic rendering

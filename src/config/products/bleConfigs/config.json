@@ -1,0 +1,1262 @@
+{
+  "EXT-761003": {
+    "BOARD_MODEL": {
+      "UUID": "b000",
+      "description": "Board model",
+      "default": "error"
+    },
+    "BOARD_ID": {
+      "UUID": "b001",
+      "description": "Board Id"
+    },
+    "BOARD_STATUS": {
+      "UUID": "b002",
+      "mqtt_name": "board_status",
+      "description": "BOARD STATUS description"
+    },
+    "BOARD_FIRMWARE": {
+      "UUID": "b003",
+      "mqtt_name": "board_firmware",
+      "description": "Firmware version"
+    },
+    "BOARD_BATTERY_LEVEL": {
+      "UUID": "b005",
+      "mqtt_name": "board_battery_level",
+      "description": "Battery level"
+    },
+    "UPDATE_BOARD_FIRMWARE": {
+      "UUID": "b007",
+      "mqtt_name": "ufw",
+      "description": "Update board firmware"
+    },
+    "BOARD_MAC": {
+      "UUID": "b008",
+      "description": "board mac",
+      "response": true
+    },
+    "BOARD_ERROR": {
+      "UUID": "b009",
+      "mqtt_name": "board_error",
+      "description": "Board Error",
+      "default": 0
+    },
+    "GATE_STATUS": {
+      "UUID": "b010",
+      "mqtt_name": "status",
+      "description": "Gate status"
+    },
+    "GATE_TYPE": {
+      "UUID": "b011",
+      "mqtt_name": "gate_type",
+      "description": "Gate type ( 0 :2 swings, 1: one Swing, 2: sliding)"
+    },
+    "GATE_MODE": {
+      "UUID": "b012",
+      "mqtt_name": "gate_mode",
+      "description": "Fermeture automatique (0 : halfauto, 1 : auto, 2 : collective)",
+      "values": [
+        0,
+        1,
+        2
+      ]
+    },
+    "AUTO_LEARNING": {
+      "UUID": "b013",
+      "description": "auto learn",
+      "response": true
+    },
+    "GATE_AUTO_CLOSE_DELAY": {
+      "UUID": "b014",
+      "mqtt_name": "gate_autoclose_delay",
+      "description": "Gate autoclose delay",
+      "values": [
+        15000,
+        30000,
+        45000,
+        60000,
+        75000,
+        90000
+      ]
+    },
+    "GATE_CYCLES": {
+      "UUID": "b015",
+      "mqtt_name": "gate_cycles",
+      "description": "Gate cycles"
+    },
+    "STOP": {
+      "UUID": "b016",
+      "description": "Stop",
+      "response": true
+    },
+    "GATE_LOCK_TIME": {
+      "UUID": "b01d",
+      "mqtt_name": "gate_lock_time",
+      "description": "Gate Lock Time",
+      "values": [
+        3,
+        5,
+        7,
+        10
+      ]
+    },
+    "HALFOPEN_PERCENT": {
+      "UUID": "b01e",
+      "mqtt_name": "halfopen_percent",
+      "description": "Half open percent [10-e0]%"
+    },
+    "STOPS_TOLERANCE": {
+      "UUID": "b01f",
+      "mqtt_name": "stops_tolerance",
+      "description": "Stops Tolerance",
+      "values": [
+        3,
+        5,
+        7,
+        9
+      ]
+    },
+    "MOTOR_STRENGTH": {
+      "UUID": "b020",
+      "mqtt_name": "motor_strength",
+      "description": "Motor strength",
+      "values": [
+        750,
+        1000,
+        1500,
+        2000
+      ]
+    },
+    "MOTOR_SPEED_MAX": {
+      "UUID": "b021",
+      "mqtt_name": "motor_speed_max",
+      "description": "Motor speed max",
+      "values": [
+        60,
+        70,
+        80,
+        90
+      ]
+    },
+    "MOTOR_SPEED_MIN": {
+      "UUID": "b022",
+      "mqtt_name": "motor_speed_min",
+      "description": "Motor speed min",
+      "values": [
+        20,
+        40
+      ]
+    },
+    "DECELERATION": {
+      "UUID": "b023",
+      "mqtt_name": "motor_slowdown_distance",
+      "description": "slowdown distance",
+      "values": [
+        30,
+        40,
+        50,
+        60
+      ]
+    },
+    "ACCELERATION": {
+      "UUID": "b024",
+      "mqtt_name": "motor_speedup_distance",
+      "description": "accelération 024",
+      "values": [
+        25,
+        20,
+        15,
+        10
+      ]
+    },
+    "MOTOR_DELAY2": {
+      "UUID": "b025",
+      "mqtt_name": "motor_delay2",
+      "description": "Motor delay second motor",
+      "values": [
+        2500,
+        3000,
+        3500,
+        4000,
+        4500
+      ]
+    },
+    "MOTOR_1_FLIP": {
+      "UUID": "b026",
+      "mqtt_name": "motor1_flip",
+      "description": "Motor 1 flip",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "MOTOR_2_FLIP": {
+      "UUID": "b027",
+      "mqtt_name": "motor2_flip",
+      "description": "Motor 2 flip",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "MOTORS_SWAP": {
+      "UUID": "b028",
+      "mqtt_name": "motors_swap",
+      "description": "Motors swap"
+    },
+    "MOTOR1_POSITION_MAX": {
+      "UUID": "0000",
+      "mqtt_name": "motor1_position_max",
+      "description": "Motor 1 position max"
+    },
+    "MOTOR2_POSITION_MAX": {
+      "UUID": "0000",
+      "mqtt_name": "motor2_position_max",
+      "description": "Motor 2 position max"
+    },
+    "MOTOR_1_DRIVE": {
+      "UUID": "b02a",
+      "mqtt_name": "NULL",
+      "description": "Motor 1 drive ",
+      "values": [
+        "open",
+        "close",
+        "stop"
+      ]
+    },
+    "MOTOR_2_DRIVE": {
+      "UUID": "b02b",
+      "mqtt_name": "NULL",
+      "description": "Motor 2 drive ",
+      "values": [
+        "open",
+        "close",
+        "stop"
+      ]
+    },
+    "MOTOR_LOST_POWER": {
+      "UUID": "b02c",
+      "mqtt_name": "motor_lost_power",
+      "description": "motor_lost_power ",
+      "default": 500,
+      "values": [
+        0,
+        500,
+        1000,
+        2000,
+        3000,
+        4000,
+        5000,
+        10000
+      ]
+    },
+    "MOTOR_BLOCKED_INTENSITY": {
+      "UUID": "b02d",
+      "mqtt_name": "motor_blocked_intensity",
+      "description": "motor_lost_power ",
+      "default": 3000,
+      "values": [
+        500,
+        1000,
+        1500,
+        2000,
+        2500,
+        3000,
+        3500,
+        4000
+      ]
+    },
+    "MOTOR1_RESISTANCE": {
+      "UUID": "b02e",
+      "mqtt_name": "motor1_resistance",
+      "description": "Motor 1 internal resistance in mOhms [-100000-100000] (-1 to autodetect)",
+      "default": -1,
+      "values": []
+    },
+    "MOTOR2_RESISTANCE": {
+      "UUID": "b02f",
+      "mqtt_name": "motor2_resistance",
+      "description": "Motor 2 internal resistance in mOhms [-100000-100000] (-1 to autodetect)",
+      "default": -1,
+      "values": []
+    },
+    "WIFI_STATUS": {
+      "UUID": "b030",
+      "description": "WiFi Status"
+    },
+    "WIFI_ssid": {
+      "UUID": "b031",
+      "description": "SSID du WiFi"
+    },
+    "WIFI_password": {
+      "UUID": "b032",
+      "description": "password du WiFi",
+      "response": true
+    },
+    "WIFI_CONNECT": {
+      "UUID": "b033",
+      "description": "activer wifi",
+      "response": true
+    },
+    "WIFI_SIGNAL": {
+      "UUID": "b034",
+      "mqtt_name": "wifi_signal",
+      "description": "signal wifi"
+    },
+    "WIFI_SCAN": {
+      "UUID": "b035",
+      "mqtt_name": "wifi_scan",
+      "description": "scan wifi"
+    },
+    "WIFI_NETWORKS": {
+      "UUID": "b036",
+      "mqtt_name": "wifi_networks",
+      "description": "wifi networks"
+    },
+    "MQTT_STATUS": {
+      "UUID": "b040",
+      "mqtt_name": "mqtt_status",
+      "description": "mqtt Status"
+    },
+    "BLUETOOTH_STATUS": {
+      "UUID": "b050",
+      "mqtt_name": "bluetooth_status",
+      "description": "bluetooth status"
+    },
+    "BLUETOOTH_MAC": {
+      "UUID": "b051",
+      "description": "bluetooth mac "
+    },
+    "BLUETOOTH_ENABLE": {
+      "UUID": "b052",
+      "mqtt_name": "bluetooth_enable",
+      "description": "Enable/disable bluetooth"
+    },
+    "REMOTE_LIST": {
+      "UUID": "b060",
+      "mqtt_name": "remote_list",
+      "description": "List of remotes"
+    },
+    "REMOTE_ADD": {
+      "UUID": "b062",
+      "mqtt_name": "remote_add",
+      "description": "Learn a new remote controller"
+    },
+    "REMOTE_REMOVE": {
+      "UUID": "b063",
+      "mqtt_name": "remote_remove",
+      "description": "Remove a remote controller"
+    },
+    "HISTORY_COMMANDS": {
+      "UUID": "b070",
+      "mqtt_name": "history_commands",
+      "description": "History of commands"
+    },
+    "HISTORY_ERRORS": {
+      "UUID": "b071",
+      "mqtt_name": "history_errors",
+      "description": "History of errors"
+    },
+    "REPORT": {
+      "UUID": "b072",
+      "mqtt_name": "report",
+      "description": "Report command ",
+      "values": [
+        "states",
+        "report1",
+        "factory"
+      ]
+    },
+    "REPORT_DATA": {
+      "UUID": "b073",
+      "mqtt_name": "report_data",
+      "description": "Report data"
+    },
+    "ERROR_LAST": {
+      "UUID": "b075",
+      "mqtt_name": "error_last",
+      "description": "Last error"
+    },
+    "PHOTOCELL_OPEN_CHECK": {
+      "UUID": "b081",
+      "mqtt_name": "photocell_open_check",
+      "description": "photocell_open_check",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "WARNING_PREBLINK_TIME": {
+      "UUID": "b085",
+      "mqtt_name": "warning_preblink_time",
+      "description": "warning_preblink_time",
+      "values": [
+        1000,
+        3000
+      ]
+    },
+    "MOTOR_SLOWDOWN_OPENING_DISTANCEMOTOR": {
+      "UUID": "b090",
+      "mqtt_name": "motor_slowdown_opening_distanceMotor",
+      "description": "Motor slowdown opening distance [0-200]ds (0 for same as motor slowdown distance)",
+      "values": []
+    },
+    "OPEN": {
+      "UUID": "0000",
+      "mqtt_name": "open",
+      "description": "Open",
+      "response": true
+    },
+    "HALF-OPEN": {
+      "UUID": "0000",
+      "mqtt_name": "half-open",
+      "description": "Half open",
+      "response": true
+    },
+    "CLOSE": {
+      "UUID": "0000",
+      "mqtt_name": "close",
+      "description": "Close",
+      "response": true
+    }
+  },
+  "EXT-761004": {
+    "BOARD_MODEL": {
+      "UUID": "b000",
+      "description": "Board model",
+      "default": "error"
+    },
+    "BOARD_ID": {
+      "UUID": "b001",
+      "description": "Board Id"
+    },
+    "BOARD_STATUS": {
+      "UUID": "b002",
+      "mqtt_name": "board_status",
+      "description": "BOARD STATUS description"
+    },
+    "BOARD_FIRMWARE": {
+      "UUID": "b003",
+      "mqtt_name": "board_firmware",
+      "description": "Firmware version"
+    },
+    "BOARD_BATTERY_LEVEL": {
+      "UUID": "b005",
+      "mqtt_name": "board_battery_level",
+      "description": "Battery level"
+    },
+    "UPDATE_BOARD_FIRMWARE": {
+      "UUID": "b007",
+      "mqtt_name": "ufw",
+      "description": "Update board firmware"
+    },
+    "BOARD_MAC": {
+      "UUID": "b008",
+      "description": "board mac",
+      "response": true
+    },
+    "BOARD_ERROR": {
+      "UUID": "b009",
+      "mqtt_name": "board_error",
+      "description": "Board Error",
+      "default": 0
+    },
+    "GATE_STATUS": {
+      "UUID": "b010",
+      "mqtt_name": "status",
+      "description": "Gate status"
+    },
+    "GATE_TYPE": {
+      "UUID": "b011",
+      "mqtt_name": "gate_type",
+      "description": "Gate type ( 0 :2 swings, 1: one Swing, 2: sliding)"
+    },
+    "GATE_MODE": {
+      "UUID": "b012",
+      "mqtt_name": "gate_mode",
+      "description": "Fermeture automatique (0 : halfauto, 1 : auto, 2 : collective)",
+      "values": [
+        0,
+        1,
+        2
+      ]
+    },
+    "AUTO_LEARNING": {
+      "UUID": "b013",
+      "description": "auto learn",
+      "response": true
+    },
+    "GATE_AUTO_CLOSE_DELAY": {
+      "UUID": "b014",
+      "mqtt_name": "gate_autoclose_delay",
+      "description": "Gate autoclose delay",
+      "values": [
+        15000,
+        30000,
+        45000,
+        60000,
+        75000,
+        90000
+      ]
+    },
+    "GATE_CYCLES": {
+      "UUID": "b015",
+      "mqtt_name": "gate_cycles",
+      "description": "Gate cycles"
+    },
+    "STOP": {
+      "UUID": "b016",
+      "description": "Stop",
+      "response": true
+    },
+    "GATE_LOCK_TIME": {
+      "UUID": "b01d",
+      "mqtt_name": "gate_lock_time",
+      "description": "Gate Lock Time",
+      "values": [
+        3,
+        5,
+        7,
+        10
+      ]
+    },
+    "HALFOPEN_PERCENT": {
+      "UUID": "b01e",
+      "mqtt_name": "halfopen_percent",
+      "description": "Half open percent [10-e0]%"
+    },
+    "STOPS_TOLERANCE": {
+      "UUID": "b01f",
+      "mqtt_name": "stops_tolerance",
+      "description": "Stops Tolerance",
+      "values": [
+        3,
+        5,
+        7,
+        9
+      ]
+    },
+    "MOTOR_STRENGTH": {
+      "UUID": "b020",
+      "mqtt_name": "motor_strength",
+      "description": "Motor strength",
+      "values": [
+        750,
+        1000,
+        1500,
+        2000
+      ]
+    },
+    "MOTOR_SPEED_MAX": {
+      "UUID": "b021",
+      "mqtt_name": "motor_speed_max",
+      "description": "Motor speed max",
+      "values": [
+        60,
+        70,
+        80,
+        90
+      ]
+    },
+    "MOTOR_SPEED_MIN": {
+      "UUID": "b022",
+      "mqtt_name": "motor_speed_min",
+      "description": "Motor speed min",
+      "values": [
+        20,
+        40
+      ]
+    },
+    "DECELERATION": {
+      "UUID": "b023",
+      "mqtt_name": "motor_slowdown_distance",
+      "description": "slowdown distance",
+      "values": [
+        30,
+        40,
+        50,
+        60
+      ]
+    },
+    "ACCELERATION": {
+      "UUID": "b024",
+      "mqtt_name": "motor_speedup_distance",
+      "description": "accelération 024",
+      "values": [
+        25,
+        20,
+        15,
+        10
+      ]
+    },
+    "MOTOR_DELAY2": {
+      "UUID": "b025",
+      "mqtt_name": "motor_delay2",
+      "description": "Motor delay second motor",
+      "values": [
+        2500,
+        3000,
+        3500,
+        4000,
+        4500
+      ]
+    },
+    "MOTOR_1_FLIP": {
+      "UUID": "b026",
+      "mqtt_name": "motor1_flip",
+      "description": "Motor 1 flip",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "MOTOR_2_FLIP": {
+      "UUID": "b027",
+      "mqtt_name": "motor2_flip",
+      "description": "Motor 2 flip",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "MOTORS_SWAP": {
+      "UUID": "b028",
+      "mqtt_name": "motors_swap",
+      "description": "Motors swap"
+    },
+    "MOTOR1_POSITION_MAX": {
+      "UUID": "0000",
+      "mqtt_name": "motor1_position_max",
+      "description": "Motor 1 position max"
+    },
+    "MOTOR2_POSITION_MAX": {
+      "UUID": "0000",
+      "mqtt_name": "motor2_position_max",
+      "description": "Motor 2 position max"
+    },
+    "MOTOR_1_DRIVE": {
+      "UUID": "b02a",
+      "mqtt_name": "NULL",
+      "description": "Motor 1 drive ",
+      "values": [
+        "open",
+        "close",
+        "stop"
+      ]
+    },
+    "MOTOR_2_DRIVE": {
+      "UUID": "b02b",
+      "mqtt_name": "NULL",
+      "description": "Motor 2 drive ",
+      "values": [
+        "open",
+        "close",
+        "stop"
+      ]
+    },
+    "MOTOR_LOST_POWER": {
+      "UUID": "b02c",
+      "mqtt_name": "motor_lost_power",
+      "description": "motor_lost_power ",
+      "default": 500,
+      "values": [
+        0,
+        500,
+        1000,
+        2000,
+        3000,
+        4000,
+        5000,
+        10000
+      ]
+    },
+    "MOTOR_BLOCKED_INTENSITY": {
+      "UUID": "b02d",
+      "mqtt_name": "motor_blocked_intensity",
+      "description": "motor_lost_power ",
+      "default": 3000,
+      "values": [
+        500,
+        1000,
+        1500,
+        2000,
+        2500,
+        3000,
+        3500,
+        4000
+      ]
+    },
+    "MOTOR1_RESISTANCE": {
+      "UUID": "b02e",
+      "mqtt_name": "motor1_resistance",
+      "description": "Motor 1 internal resistance in mOhms [-100000-100000] (-1 to autodetect)",
+      "default": -1,
+      "values": []
+    },
+    "MOTOR2_RESISTANCE": {
+      "UUID": "b02f",
+      "mqtt_name": "motor2_resistance",
+      "description": "Motor 2 internal resistance in mOhms [-100000-100000] (-1 to autodetect)",
+      "default": -1,
+      "values": []
+    },
+    "WIFI_STATUS": {
+      "UUID": "b030",
+      "description": "WiFi Status"
+    },
+    "WIFI_ssid": {
+      "UUID": "b031",
+      "description": "SSID du WiFi"
+    },
+    "WIFI_password": {
+      "UUID": "b032",
+      "description": "password du WiFi",
+      "response": true
+    },
+    "WIFI_CONNECT": {
+      "UUID": "b033",
+      "description": "activer wifi",
+      "response": true
+    },
+    "WIFI_SIGNAL": {
+      "UUID": "b034",
+      "mqtt_name": "wifi_signal",
+      "description": "signal wifi"
+    },
+    "WIFI_SCAN": {
+      "UUID": "b035",
+      "mqtt_name": "wifi_scan",
+      "description": "scan wifi"
+    },
+    "WIFI_NETWORKS": {
+      "UUID": "b036",
+      "mqtt_name": "wifi_networks",
+      "description": "wifi networks"
+    },
+    "MQTT_STATUS": {
+      "UUID": "b040",
+      "mqtt_name": "mqtt_status",
+      "description": "mqtt Status"
+    },
+    "BLUETOOTH_STATUS": {
+      "UUID": "b050",
+      "mqtt_name": "bluetooth_status",
+      "description": "bluetooth status"
+    },
+    "BLUETOOTH_MAC": {
+      "UUID": "b051",
+      "description": "bluetooth mac "
+    },
+    "BLUETOOTH_ENABLE": {
+      "UUID": "b052",
+      "mqtt_name": "bluetooth_enable",
+      "description": "Enable/disable bluetooth"
+    },
+    "REMOTE_LIST": {
+      "UUID": "b060",
+      "mqtt_name": "remote_list",
+      "description": "List of remotes"
+    },
+    "REMOTE_ADD": {
+      "UUID": "b062",
+      "mqtt_name": "remote_add",
+      "description": "Learn a new remote controller"
+    },
+    "REMOTE_REMOVE": {
+      "UUID": "b063",
+      "mqtt_name": "remote_remove",
+      "description": "Remove a remote controller"
+    },
+    "HISTORY_COMMANDS": {
+      "UUID": "b070",
+      "mqtt_name": "history_commands",
+      "description": "History of commands"
+    },
+    "HISTORY_ERRORS": {
+      "UUID": "b071",
+      "mqtt_name": "history_errors",
+      "description": "History of errors"
+    },
+    "REPORT": {
+      "UUID": "b072",
+      "mqtt_name": "report",
+      "description": "Report command ",
+      "values": [
+        "states",
+        "report1",
+        "factory"
+      ]
+    },
+    "REPORT_DATA": {
+      "UUID": "b073",
+      "mqtt_name": "report_data",
+      "description": "Report data"
+    },
+    "ERROR_LAST": {
+      "UUID": "b075",
+      "mqtt_name": "error_last",
+      "description": "Last error"
+    },
+    "PHOTOCELL_OPEN_CHECK": {
+      "UUID": "b081",
+      "mqtt_name": "photocell_open_check",
+      "description": "photocell_open_check",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "WARNING_PREBLINK_TIME": {
+      "UUID": "b085",
+      "mqtt_name": "warning_preblink_time",
+      "description": "warning_preblink_time",
+      "values": [
+        1000,
+        3000
+      ]
+    },
+    "MOTOR_SLOWDOWN_OPENING_DISTANCEMOTOR": {
+      "UUID": "b090",
+      "mqtt_name": "motor_slowdown_opening_distanceMotor",
+      "description": "Motor slowdown opening distance [0-200]ds (0 for same as motor slowdown distance)",
+      "values": []
+    },
+    "OPEN": {
+      "UUID": "0000",
+      "mqtt_name": "open",
+      "description": "Open",
+      "response": true
+    },
+    "HALF-OPEN": {
+      "UUID": "0000",
+      "mqtt_name": "half-open",
+      "description": "Half open",
+      "response": true
+    },
+    "CLOSE": {
+      "UUID": "0000",
+      "mqtt_name": "close",
+      "description": "Close",
+      "response": true
+    }
+  },
+  "EXT-761005": {
+    "BOARD_MODEL": {
+      "UUID": "b000",
+      "description": "Board model",
+      "default": "error"
+    },
+    "BOARD_ID": {
+      "UUID": "b001",
+      "description": "Board Id"
+    },
+    "BOARD_STATUS": {
+      "UUID": "b002",
+      "mqtt_name": "board_status",
+      "description": "BOARD STATUS description"
+    },
+    "BOARD_FIRMWARE": {
+      "UUID": "b003",
+      "mqtt_name": "board_firmware",
+      "description": "Firmware version"
+    },
+    "BOARD_BATTERY_LEVEL": {
+      "UUID": "b005",
+      "mqtt_name": "board_battery_level",
+      "description": "Battery level"
+    },
+    "UPDATE_BOARD_FIRMWARE": {
+      "UUID": "b007",
+      "mqtt_name": "ufw",
+      "description": "Update board firmware"
+    },
+    "BOARD_MAC": {
+      "UUID": "b008",
+      "description": "board mac",
+      "response": true
+    },
+    "BOARD_ERROR": {
+      "UUID": "b009",
+      "mqtt_name": "board_error",
+      "description": "Board Error",
+      "default": 0
+    },
+    "GATE_STATUS": {
+      "UUID": "b010",
+      "mqtt_name": "status",
+      "description": "Gate status"
+    },
+    "GATE_TYPE": {
+      "UUID": "b011",
+      "mqtt_name": "gate_type",
+      "description": "Gate type ( 0 :2 swings, 1: one Swing, 2: sliding)"
+    },
+    "GATE_MODE": {
+      "UUID": "b012",
+      "mqtt_name": "gate_mode",
+      "description": "Fermeture automatique (0 : halfauto, 1 : auto, 2 : collective)",
+      "values": [
+        0,
+        1,
+        2
+      ]
+    },
+    "AUTO_LEARNING": {
+      "UUID": "b013",
+      "description": "auto learn",
+      "response": true
+    },
+    "GATE_AUTO_CLOSE_DELAY": {
+      "UUID": "b014",
+      "mqtt_name": "gate_autoclose_delay",
+      "description": "Gate autoclose delay",
+      "values": [
+        15000,
+        30000,
+        45000,
+        60000,
+        75000,
+        90000
+      ]
+    },
+    "GATE_CYCLES": {
+      "UUID": "b015",
+      "mqtt_name": "gate_cycles",
+      "description": "Gate cycles"
+    },
+    "STOP": {
+      "UUID": "b016",
+      "description": "Stop",
+      "response": true
+    },
+    "GATE_LOCK_TIME": {
+      "UUID": "b01d",
+      "mqtt_name": "gate_lock_time",
+      "description": "Gate Lock Time",
+      "values": [
+        3,
+        5,
+        7,
+        10
+      ]
+    },
+    "HALFOPEN_PERCENT": {
+      "UUID": "b01e",
+      "mqtt_name": "halfopen_percent",
+      "description": "Half open percent [10-e0]%"
+    },
+    "STOPS_TOLERANCE": {
+      "UUID": "b01f",
+      "mqtt_name": "stops_tolerance",
+      "description": "Stops Tolerance",
+      "values": [
+        3,
+        5,
+        7,
+        9
+      ]
+    },
+    "MOTOR_STRENGTH": {
+      "UUID": "b020",
+      "mqtt_name": "motor_strength",
+      "description": "Motor strength",
+      "values": [
+        750,
+        1000,
+        1500,
+        2000
+      ]
+    },
+    "MOTOR_SPEED_MAX": {
+      "UUID": "b021",
+      "mqtt_name": "motor_speed_max",
+      "description": "Motor speed max",
+      "values": [
+        60,
+        70,
+        80,
+        90
+      ]
+    },
+    "MOTOR_SPEED_MIN": {
+      "UUID": "b022",
+      "mqtt_name": "motor_speed_min",
+      "description": "Motor speed min",
+      "values": [
+        20,
+        40
+      ]
+    },
+    "DECELERATION": {
+      "UUID": "b023",
+      "mqtt_name": "motor_slowdown_distance",
+      "description": "slowdown distance",
+      "values": [
+        60,
+        70,
+        80,
+        90
+      ]
+    },
+    "ACCELERATION": {
+      "UUID": "b024",
+      "mqtt_name": "motor_speedup_distance",
+      "description": "accelération 024",
+      "values": [
+        25,
+        20,
+        15,
+        10
+      ]
+    },
+    "MOTOR_DELAY2": {
+      "UUID": "b025",
+      "mqtt_name": "motor_delay2",
+      "description": "Motor delay second motor",
+      "values": [
+        2500,
+        3000,
+        3500,
+        4000,
+        4500
+      ]
+    },
+    "MOTOR_1_FLIP": {
+      "UUID": "b026",
+      "mqtt_name": "motor1_flip",
+      "description": "Motor 1 flip",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "MOTOR_2_FLIP": {
+      "UUID": "b027",
+      "mqtt_name": "motor2_flip",
+      "description": "Motor 2 flip",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "MOTORS_SWAP": {
+      "UUID": "b028",
+      "mqtt_name": "motors_swap",
+      "description": "Motors swap"
+    },
+    "MOTOR1_POSITION_MAX": {
+      "UUID": "0000",
+      "mqtt_name": "motor1_position_max",
+      "description": "Motor 1 position max"
+    },
+    "MOTOR2_POSITION_MAX": {
+      "UUID": "0000",
+      "mqtt_name": "motor2_position_max",
+      "description": "Motor 2 position max"
+    },
+    "MOTOR_1_DRIVE": {
+      "UUID": "b02a",
+      "mqtt_name": "NULL",
+      "description": "Motor 1 drive ",
+      "values": [
+        "open",
+        "close",
+        "stop"
+      ]
+    },
+    "MOTOR_2_DRIVE": {
+      "UUID": "b02b",
+      "mqtt_name": "NULL",
+      "description": "Motor 2 drive ",
+      "values": [
+        "open",
+        "close",
+        "stop"
+      ]
+    },
+    "MOTOR_LOST_POWER": {
+      "UUID": "b02c",
+      "mqtt_name": "motor_lost_power",
+      "description": "motor_lost_power ",
+      "default": 500,
+      "values": [
+        0,
+        500,
+        1000,
+        2000,
+        3000,
+        4000,
+        5000,
+        10000
+      ]
+    },
+    "MOTOR_BLOCKED_INTENSITY": {
+      "UUID": "b02d",
+      "mqtt_name": "motor_blocked_intensity",
+      "description": "motor_lost_power ",
+      "default": 3000,
+      "values": [
+        500,
+        1000,
+        1500,
+        2000,
+        2500,
+        3000,
+        3500,
+        4000
+      ]
+    },
+    "MOTOR1_RESISTANCE": {
+      "UUID": "b02e",
+      "mqtt_name": "motor1_resistance",
+      "description": "Motor 1 internal resistance in mOhms [-100000-100000] (-1 to autodetect)",
+      "default": -1,
+      "values": []
+    },
+    "MOTOR2_RESISTANCE": {
+      "UUID": "b02f",
+      "mqtt_name": "motor2_resistance",
+      "description": "Motor 2 internal resistance in mOhms [-100000-100000] (-1 to autodetect)",
+      "default": -1,
+      "values": []
+    },
+    "WIFI_STATUS": {
+      "UUID": "b030",
+      "description": "WiFi Status"
+    },
+    "WIFI_ssid": {
+      "UUID": "b031",
+      "description": "SSID du WiFi"
+    },
+    "WIFI_password": {
+      "UUID": "b032",
+      "description": "password du WiFi",
+      "response": true
+    },
+    "WIFI_CONNECT": {
+      "UUID": "b033",
+      "description": "activer wifi",
+      "response": true
+    },
+    "WIFI_SIGNAL": {
+      "UUID": "b034",
+      "mqtt_name": "wifi_signal",
+      "description": "signal wifi"
+    },
+    "WIFI_SCAN": {
+      "UUID": "b035",
+      "mqtt_name": "wifi_scan",
+      "description": "scan wifi"
+    },
+    "WIFI_NETWORKS": {
+      "UUID": "b036",
+      "mqtt_name": "wifi_networks",
+      "description": "wifi networks"
+    },
+    "MQTT_STATUS": {
+      "UUID": "b040",
+      "mqtt_name": "mqtt_status",
+      "description": "mqtt Status"
+    },
+    "BLUETOOTH_STATUS": {
+      "UUID": "b050",
+      "mqtt_name": "bluetooth_status",
+      "description": "bluetooth status"
+    },
+    "BLUETOOTH_MAC": {
+      "UUID": "b051",
+      "description": "bluetooth mac "
+    },
+    "BLUETOOTH_ENABLE": {
+      "UUID": "b052",
+      "mqtt_name": "bluetooth_enable",
+      "description": "Enable/disable bluetooth"
+    },
+    "REMOTE_LIST": {
+      "UUID": "b060",
+      "mqtt_name": "remote_list",
+      "description": "List of remotes"
+    },
+    "REMOTE_ADD": {
+      "UUID": "b062",
+      "mqtt_name": "remote_add",
+      "description": "Learn a new remote controller"
+    },
+    "REMOTE_REMOVE": {
+      "UUID": "b063",
+      "mqtt_name": "remote_remove",
+      "description": "Remove a remote controller"
+    },
+    "HISTORY_COMMANDS": {
+      "UUID": "b070",
+      "mqtt_name": "history_commands",
+      "description": "History of commands"
+    },
+    "HISTORY_ERRORS": {
+      "UUID": "b071",
+      "mqtt_name": "history_errors",
+      "description": "History of errors"
+    },
+    "REPORT": {
+      "UUID": "b072",
+      "mqtt_name": "report",
+      "description": "Report command ",
+      "values": [
+        "states",
+        "report1",
+        "factory"
+      ]
+    },
+    "REPORT_DATA": {
+      "UUID": "b073",
+      "mqtt_name": "report_data",
+      "description": "Report data"
+    },
+    "ERROR_LAST": {
+      "UUID": "b075",
+      "mqtt_name": "error_last",
+      "description": "Last error"
+    },
+    "PHOTOCELL_OPEN_CHECK": {
+      "UUID": "b081",
+      "mqtt_name": "photocell_open_check",
+      "description": "photocell_open_check",
+      "values": [
+        0,
+        1
+      ]
+    },
+    "WARNING_PREBLINK_TIME": {
+      "UUID": "b085",
+      "mqtt_name": "warning_preblink_time",
+      "description": "warning_preblink_time",
+      "values": [
+        1000,
+        3000
+      ]
+    },
+    "MOTOR_SLOWDOWN_OPENING_DISTANCEMOTOR": {
+      "UUID": "b090",
+      "mqtt_name": "motor_slowdown_opening_distanceMotor",
+      "description": "Motor slowdown opening distance [0-200]ds (0 for same as motor slowdown distance)",
+      "values": []
+    },
+    "OPEN": {
+      "UUID": "0000",
+      "mqtt_name": "open",
+      "description": "Open",
+      "response": true
+    },
+    "HALF-OPEN": {
+      "UUID": "0000",
+      "mqtt_name": "half-open",
+      "description": "Half open",
+      "response": true
+    },
+    "CLOSE": {
+      "UUID": "0000",
+      "mqtt_name": "close",
+      "description": "Close",
+      "response": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "REPORT_ERROR" : "Un problème à nous signaler ?",
+    "PROFILE" : "Profil",
+    "ASSISTANTS" : "Association Alexa ou Google",
+    "SHARE_ACCOUNT" : "Partage du compte",
+    "CLIENT_SERVICE" : "Service client",
+    "ASS" : "Service Après Vente",
+    "ALLOWED_ACCESS_NOTICE" : "Le Service client a actuellement accès à votre compte",
+    "STOP" : "Arrêter",
+    "ALLOWED_ACCESS_RUNNING_TITLE":"La résolution de votre problème est en cours",
+    "ALLOWED_ACCESS_RUNNING_DESCRIPTION" :  "Afin de vous aider au mieux à résoudre ce problème, le service client a actuellement accès à votre compte. <1>+ d’infos</1>.",
+    "ALLOWED_ACCESS_RUNNING_DESCRIPTION_LINK" :"https://en.wikipedia.org/wiki/Swedish_Chef",
+    "STOP_CLIENT_SERVICE_ACCESS" : "Arrêter l’accès au compte",
+    "CALL_CLIENT_SERVICE_BUTTON" : "Appeler",
+    "MAIL_TO_CLIENT_SERVICE_BUTTON" : "Envoyer un mail",
+    "CLIENT_SERVICE_PHONE_TITLE" : "Contact par téléphone",
+    "CLIENT_SERVICE_PHONE_DESCRIPTION" : "Du lundi au vendredi de 9h à 12h et de 14h à 18h.\nService 0,35€/minute + prix d’un appel local.",
+    "CLIENT_SERVICE_PHONE_NUMBER" : "0296148721",
+    "CLIENT_SERVICE_MAIL_TITLE" : "Contact par mail",
+    "CLIENT_SERVICE_MAIL_DESCRIPTION" : "Votre message sera traité dans les meilleurs délais.",
+    "CLIENT_SERVICE_MAIL_ADRESS" : "oparis@avidsen.com",
+    "CLIENT_SERVICE_MAIL_SUBJECT" : "Demande de renseignement Umii"
+    
+  
+ 
+
+}

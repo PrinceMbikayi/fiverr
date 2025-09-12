@@ -1,0 +1,22 @@
+{
+        "HOUSE":"Maison",
+        "NEW_ROOM":"Nouvelle pièce",
+        "ROOM_EXISTS":"Une pièce avec ce nom existe déjà",
+        "RENAME_ROOM": "Nommer la pièce :",
+        "SELECT_EQUIP":"Sélectionner les équipements à ajouter à la pièce :",
+        "CREATE_ROOM":"Créer la pièce",
+        "ADD_ROOM":"Ajouter une pièce",
+        "MODIFY_ROOM":"Modifier la pièce",
+        "DELETE_ROOM":"Supprimer la pièce",
+        "CANNOT_DELETE_DEFAULT_ROOM":"Vous ne pouvez pas supprimer la pièce par defaut",
+        "ROOM_DELETED":"Pièce supprimée",
+        "SELECT_ROOM_MODIFY":"Sélectionner la pièce à modifier",
+        "SELECT_ROOM_DELETE":"Sélectionner la pièce à supprimer",
+        "NAME_ROOM":"Nom de la pièce",
+        "NAME_MUST_HAVE_AT_LEAST_THREE_CHARACTERS":"Le nom doit contenir au minimum 3 caractères",
+        "NAME_INPUT_MANDATORY_FIELD":"Le nom est obligatoire",
+        "SELECT_AN_ELEMENT":"Sélectionnez un équipement",
+        "SERVER_ERROR": "Votre session a expirée",
+        "WARNING_DELETE":"Voulez-vous vraiment supprimer",
+        "THIS_ROOM":"cette pièce"
+}

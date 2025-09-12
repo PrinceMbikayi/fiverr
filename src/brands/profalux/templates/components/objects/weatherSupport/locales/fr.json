@@ -1,0 +1,11 @@
+{   
+"WEATHER_LOCAL":"Météo locale",
+"SUN_SET":"Coucher du soleil",
+"SUN_RISE":"Lever du soleil",
+"TEMPERATURE":"Température",
+"HUMIDITY": "Humidité",
+"PRESSURE":"Pression",
+"WIND":"Vitesse du vent",
+"WEATHER_NOW": "Actuellement",
+"WEATHER_MEAN":"En moyenne"
+}

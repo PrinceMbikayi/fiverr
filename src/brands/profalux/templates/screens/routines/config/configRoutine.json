@@ -1,0 +1,122 @@
+{
+    "Venetian_Shutter_Ezsp" : {
+        "action":[
+                ["OPEN","CLOSE","FAV_CALL_1","FAV_CALL_2", "FAV_CALL_3", "POSITION","LEVEL"],
+                ["TILT"]
+            ],
+        "icons":[
+                    "bsoLame0degIcon", "bsoLame22degIcon", "bsoLame45degIcon", "bsoLame67degIcon", "bsoLame90degIcon", "bsoCloseIcon", 
+                    "bsoLevel25Icon", "bsoLevel50Icon", "bsoLevel75Icon", "bsoOpenIcon", 
+                    "upIcon", "downIcon", "favIcon", "ajarIcon", "hemstitchIcon"
+                ]
+    } ,
+
+    "Rolling_Shutter_Ezsp" : {
+        "action":[
+                ["OPEN","CLOSE","FAV_CALL_1","FAV_CALL_2", "FAV_CALL_3", "POSITION","LEVEL"]
+            ],
+        "icons":[
+                "open75perIcon", "open50perIcon", "open25perIcon", "vrCloseIcon", 
+                "vrLevel25Icon", "vrLevel50Icon", "vrLevel75Icon", "vrOpenIcon",
+                "upIcon", "downIcon", "favIcon", "ajarIcon", "hemstitchIcon"
+            ] 
+    } ,
+
+    "Shade_Ezsp" : {
+        "action":[
+                ["OPEN","CLOSE","FAV_CALL_1","FAV_CALL_2", "FAV_CALL_3", "POSITION","LEVEL"]
+            ],
+        "icons":[
+                "open75perIcon", "open50perIcon", "open25perIcon", "vrCloseIcon", 
+                "vrLevel25Icon", "vrLevel50Icon", "vrLevel75Icon", "vrOpenIcon",
+                "upIcon", "downIcon", "favIcon", "ajarIcon", "hemstitchIcon"
+            ] 
+    } ,
+
+    "Rolling_Shutter_Profalux" : {
+        "action":[
+                ["OPEN","CLOSE","FAV_CALL_1", "FAV_CALL_3"]
+            ],
+        "icons":[
+                "bso868Icon", "store868Icon", "vr868Icon",
+                "upIcon", "downIcon", "favIcon", "ajarIcon", "hemstitchIcon"
+            ] 
+    } ,
+
+    "LightEzsp" : {
+        "action":[
+                ["ON","OFF"]
+            ],
+        "icons":[
+                "lightOnIcon", "lightOffIcon",  "onIcon", "offIcon"
+            ] 
+    } ,
+
+    "SwitchEzsp" : {
+        "action":[
+                ["ON","OFF"]
+            ],
+        "icons":[
+                "plugOffIcon", "plugOnIcon", "onIcon", "offIcon"
+            ] 
+    } ,
+
+    "Garage_Door_Ezsp" : {
+        "action":[
+                ["OPEN","CLOSE"]
+            ],
+        "icons":[
+                "garageOpenIcon", "garageSomewhereIcon", "garageCloseIcon",
+                "upIcon", "downIcon"
+            ] 
+    } ,
+
+    "Gate_Toggle_Ezsp" : {
+        "action":[
+                ["ACTION"]
+            ],
+        "icons":[
+                "gateCloseIcon", "gateSomewhereIcon", "gateOpenIcon"
+            ] 
+    } ,
+
+    "Garage_Door_Toggle_Ezsp" : {
+        "action":[
+                ["ACTION"]
+            ],
+        "icons":[
+                "garageOpenIcon", "garageSomewhereIcon", "garageCloseIcon"
+            ] 
+    } ,
+
+    "Gate_Ezsp" : {
+        "action":[
+                ["OPEN","CLOSE"]
+            ],
+        "icons":[
+                "gateCloseIcon", "gateSomewhereIcon", "gateOpenIcon",
+                "upIcon", "downIcon"
+            ] 
+    } ,
+
+    "composite" : {
+        "action":[
+                ["OPEN","CLOSE","FAV_CALL_1","FAV_CALL_2", "FAV_CALL_3",  "POSITION","LEVEL","ON","OFF","ACTION"],
+                ["TILT"]
+            ],
+            "icons":[
+                "bsoLame0degIcon", "bsoLame22degIcon", "bsoLame45degIcon", "bsoLame67degIcon", "bsoLame90degIcon", "bsoCloseIcon", 
+                "bsoLevel25Icon", "bsoLevel50Icon", "bsoLevel75Icon", "bsoOpenIcon", 
+                "open75perIcon", "open50perIcon", "open25perIcon", "vrCloseIcon", 
+                "vrLevel25Icon", "vrLevel50Icon", "vrLevel75Icon", "vrOpenIcon",
+                "bso868Icon", "store868Icon", "vr868Icon",
+                "upIcon", "downIcon", "favIcon", "ajarIcon", "hemstitchIcon",
+                "lightOnIcon", "lightOffIcon", "plugOffIcon", "plugOnIcon",
+                "onIcon", "offIcon",
+                "garageOpenIcon", "garageSomewhereIcon", "garageCloseIcon",
+                "gateCloseIcon", "gateSomewhereIcon", "gateOpenIcon"
+
+            ]
+    } 
+
+}

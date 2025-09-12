@@ -1,0 +1,590 @@
+{
+    "uri": "https://demo.athemium.com/services/durin/server/theme",
+    "resource": {
+        "name": "dark",
+        "pictures": {
+            "paths": {
+                "objects": "theme/dark/img/domus_objects",
+                "iconSets": "theme/dark/img/domus_objects/statuses"
+            },
+            "iconSets": {
+                "programmator-2.1.10_statusz4": {
+                    "OFF": "getfile?appImg=50/statusz4/OFF.png",
+                    "ON": "getfile?appImg=50/statusz4/ON.png"
+                },
+                "awning": {
+                    "middle": "awning_open.svg",
+                    "stop": "awning_open.svg",
+                    "up": "awning_open.svg",
+                    "down": "awning_closed.svg"
+                },
+                "heater_status_on_off": {
+                    "off": "heater_off.svg",
+                    "on": "heater_on.svg"
+                },
+                "remotebuttondimmable": {
+                    "0": "min_light_off.svg",
+                    "1": "min_light_on.svg",
+                    "2": "min_light_on.svg",
+                    "level": "min_light_on.svg",
+                    "off": "min_light_off.svg",
+                    "on": "min_light_on.svg"
+                },
+                "programmator-2.2.0_statusz3": {
+                    "OFF": "getfile?appImg=32639/statusz3/OFF.svg",
+                    "ON": "getfile?appImg=32639/statusz3/ON.svg"
+                },
+                "Alarme-2.2.0_status": {
+                    "Arrêt": "getfile?appImg=32626/status/Arrêt.svg",
+                    "INTRUSION DETECTEE": "getfile?appImg=32626/status/INTRUSION DETECTEE.svg",
+                    "Activée - mode périphérique": "getfile?appImg=32626/status/Activée - mode périphérique.svg",
+                    "Activée - mode global": "getfile?appImg=32626/status/Activée - mode global.svg"
+                },
+                "Alarme-3.0.1_status": {
+                    "Arrêt": "getfile?appImg=249784/status/Arrêt.svg",
+                    "INTRUSION DETECTEE": "getfile?appImg=249784/status/INTRUSION DETECTEE.svg",
+                    "Activée - mode périphérique": "getfile?appImg=249784/status/Activée - mode périphérique.svg",
+                    "Activée - mode global": "getfile?appImg=249784/status/Activée - mode global.svg"
+                },
+                "minuterie_mouvement-3.0.0_command": {
+                    "off": "getfile?appImg=119/command/off.png",
+                    "on": "getfile?appImg=119/command/on.png"
+                },
+                "gate_on_off": {
+                    "off": "gate_closed.svg",
+                    "on": "gate_open.svg"
+                },
+                "thermostat-3.3.2_status": {
+                    "OFF": "getfile?appImg=92/status/OFF.png",
+                    "ON": "getfile?appImg=92/status/ON.png"
+                },
+                "shutter": {
+                    "middle": "shutterObject_middle.svg",
+                    "stop": "shutterObject_middle.svg",
+                    "closed": "shutterObject_down.svg",
+                    "up": "shutterObject_up.svg",
+                    "down": "shutterObject_down.svg",
+                    "open": "shutterObject_up.svg"
+                },
+                "Smoke-2.3.1___status": {
+                    "deactivated": "getfile?appImg=249862/__status/deactivated.svg",
+                    "activated": "getfile?appImg=249862/__status/activated.svg"
+                },
+                "Alarme-2.1.1_status": {
+                    "Arrêt": "getfile?appImg=125/status/Arrêt.png",
+                    "INTRUSION DETECTEE": "getfile?appImg=125/status/INTRUSION DETECTEE.png",
+                    "Activée - mode périphérique": "getfile?appImg=125/status/Activée - mode périphérique.png",
+                    "Activée - mode global": "getfile?appImg=125/status/Activée - mode global.png"
+                },
+                "motiondetector_on_off": {
+                    "off": "pir_detector_off.svg",
+                    "on": "pir_detector_on.svg"
+                },
+                "minuterie_mouvement-4.0.3_command": {
+                    "off": "getfile?appImg=249772/command/off.svg",
+                    "on": "getfile?appImg=249772/command/on.svg"
+                },
+                "roof_window_status": {
+                    "middle": "roof_window_middle.svg",
+                    "up": "roof_window_open.svg",
+                    "down": "roof_window_closed.svg"
+                },
+                "weather": {
+                    "rain": "sky_rain.svg",
+                    "clear_night": "sky_clear_night.svg",
+                    "clear": "sky_clear.svg",
+                    "sleet_night": "sky_sleet_night.svg",
+                    "thunderstorm_night": "sky_thunderstorm_night.svg",
+                    "rain_night": "sky_rain_night.svg",
+                    "clouds": "sky_clouds.svg",
+                    "scattered_clouds_night": "sky_scattered_clouds_night.svg",
+                    "light_rain": "sky_light_rain.svg",
+                    "mist": "sky_mist.svg",
+                    "scattered_clouds": "sky_scattered_clouds.svg",
+                    "light_rain_night": "sky_light_rain_night.svg",
+                    "snow_night": "sky_snow_night.svg",
+                    "snow": "sky_snow.svg",
+                    "mist_night": "sky_mist_night.svg",
+                    "thunderstorm": "sky_thunderstorm.svg",
+                    "clouds_night": "sky_clouds_night.svg",
+                    "sleet": "sky_sleet.svg"
+                },
+                "remotebutton_status": {
+                    "0": "min_light_off.svg",
+                    "1": "min_light_on.svg",
+                    "off": "min_light_off.svg",
+                    "on": "min_light_on.svg"
+                },
+                "sliding_gate_on_off": {
+                    "off": "sliding_gate_closed.svg",
+                    "on": "sliding_gate_open.svg"
+                },
+                "shade": {
+                    "middle": "shade_50.svg",
+                    "up": "shade_open.svg",
+                    "down": "shade_closed.svg"
+                },
+                "garage_on_off": {
+                    "off": "garage_closed.svg",
+                    "on": "garage_open.svg"
+                },
+                "volets_roulants-4.4.0___vr_mode": {
+                    "sunset": "getfile?appImg=32598/__vr_mode/sunset.svg",
+                    "closed": "getfile?appImg=32598/__vr_mode/closed.svg",
+                    "climatic": "getfile?appImg=32598/__vr_mode/climatic.svg",
+                    "manual": "getfile?appImg=32598/__vr_mode/manual.svg",
+                    "open": "getfile?appImg=32598/__vr_mode/open.svg",
+                    "deactivated": "getfile?appImg=32598/__vr_mode/deactivated.svg"
+                },
+                "heater_on_off": {
+                    "off": "heater_off.svg",
+                    "on": "heater_on.svg"
+                },
+                "association": {
+                    "running": "association_running.svg",
+                    "stopped": "association_stopped.svg",
+                    "pause": "association_pause.svg"
+                },
+                "programmator-2.2.3_statusz3": {
+                    "OFF": "getfile?appImg=249807/statusz3/OFF.svg",
+                    "ON": "getfile?appImg=249807/statusz3/ON.svg"
+                },
+                "volets_roulants-4.4.2___vr_mode": {
+                    "sunset": "getfile?appImg=249845/__vr_mode/sunset.svg",
+                    "closed": "getfile?appImg=249845/__vr_mode/closed.svg",
+                    "climatic": "getfile?appImg=249845/__vr_mode/climatic.svg",
+                    "manual": "getfile?appImg=249845/__vr_mode/manual.svg",
+                    "open": "getfile?appImg=249845/__vr_mode/open.svg",
+                    "deactivated": "getfile?appImg=249845/__vr_mode/deactivated.svg"
+                },
+                "door_control-3.3.0___status": {
+                    "deactivated": "getfile?appImg=261762/__status/deactivated.svg",
+                    "activated": "getfile?appImg=261762/__status/activated.svg"
+                },
+                "sliding_garage_on_off": {
+                    "off": "sliding_garage_closed.svg",
+                    "on": "sliding_garage_open.svg"
+                },
+                "planificateur_allumage-1.0.1___ps_mode": {
+                    "deactivated": "getfile?appImg=42688/__ps_mode/deactivated.svg",
+                    "activated": "getfile?appImg=42688/__ps_mode/activated.svg"
+                },
+                "indoor_on_off": {
+                    "off": "indoor_closed.svg",
+                    "on": "indoor_open.svg"
+                },
+                "planificateur_allumage-1.0.3___ps_mode": {
+                    "deactivated": "getfile?appImg=249764/__ps_mode/deactivated.svg",
+                    "activated": "getfile?appImg=249764/__ps_mode/activated.svg"
+                },
+                "remotebutton": {
+                    "0": "min_light_off.svg",
+                    "1": "min_light_on.svg",
+                    "off": "min_light_off.svg",
+                    "on": "min_light_on.svg"
+                },
+                "wind_direction": {
+                    "NO": "wind_direction_NW.svg",
+                    "WNW": "wind_direction_WNW.svg",
+                    "NNE": "wind_direction_NNE.svg",
+                    "SSE": "wind_direction_SSE.svg",
+                    "SW": "wind_direction_SW.svg",
+                    "E": "wind_direction_E.svg",
+                    "NW": "wind_direction_NW.svg",
+                    "OSO": "wind_direction_WSW.svg",
+                    "SSO": "wind_direction_SSW.svg",
+                    "N": "wind_direction_N.svg",
+                    "NNO": "wind_direction_NNW.svg",
+                    "O": "wind_direction_W.svg",
+                    "ONO": "wind_direction_WNW.svg",
+                    "SE": "wind_direction_SE.svg",
+                    "S": "wind_direction_S.svg",
+                    "NNW": "wind_direction_NNW.svg",
+                    "ESE": "wind_direction_ESE.svg",
+                    "SSW": "wind_direction_SSW.svg",
+                    "NE": "wind_direction_NE.svg",
+                    "W": "wind_direction_W.svg",
+                    "WSW": "wind_direction_WSW.svg",
+                    "SO": "wind_direction_SW.svg",
+                    "ENE": "wind_direction_ENE.svg"
+                },
+                "programmator-2.2.0___mode": {
+                    "eco": "getfile?appImg=32639/__mode/eco.svg",
+                    "abs": "getfile?appImg=32639/__mode/abs.svg",
+                    "horsgel": "getfile?appImg=32639/__mode/horsgel.svg",
+                    "confort": "getfile?appImg=32639/__mode/confort.svg",
+                    "off": "getfile?appImg=32639/__mode/off.svg"
+                },
+                "shutter_command": {
+                    "middle": "shutterObject_middle.svg",
+                    "stop": "shutterObject_middle.svg",
+                    "closed": "shutterObject_down.svg",
+                    "up": "shutterObject_up.svg",
+                    "down": "shutterObject_down.svg",
+                    "open": "shutterObject_up.svg"
+                },
+                "remotebuttontiltable": {
+                    "closed": "window_closed.svg",
+                    "tilt": "window_tilt.svg",
+                    "open": "window_open.svg"
+                },
+                "simulation_presence-3.0.1___light_status": {
+                    "off": "getfile?appImg=249778/__light_status/off.svg",
+                    "on": "getfile?appImg=249778/__light_status/on.svg"
+                },
+                "minuterie_mouvement-4.0.0_command": {
+                    "off": "getfile?appImg=32620/command/off.svg",
+                    "on": "getfile?appImg=32620/command/on.svg"
+                },
+                "simulation_presence-3.0.0___chut_status": {
+                    "closed": "getfile?appImg=42624/__chut_status/closed.svg",
+                    "open": "getfile?appImg=42624/__chut_status/open.svg"
+                },
+                "door_control-3.2.1___status": {
+                    "deactivated": "getfile?appImg=249867/__status/deactivated.svg",
+                    "activated": "getfile?appImg=249867/__status/activated.svg"
+                },
+                "thermostat_control-1.0.0___mode": {
+                    "eco": "getfile?appImg=146699/__mode/eco.svg",
+                    "abs": "getfile?appImg=146699/__mode/abs.svg",
+                    "horsgel": "getfile?appImg=146699/__mode/horsgel.svg",
+                    "confort": "getfile?appImg=146699/__mode/confort.svg",
+                    "off": "getfile?appImg=146699/__mode/off.svg"
+                },
+                "Radio-2.1.0_status": {
+                    "arrêt": "getfile?appImg=32689/status/arrêt.svg",
+                    "marche": "getfile?appImg=32689/status/marche.svg"
+                },
+                "permit_join": {
+                    "0": "padlock_closed.png",
+                    "60": "padlock_open.png",
+                    "120": "padlock_open.png",
+                    "180": "padlock_open.png",
+                    "240": "padlock_open.png",
+                    "300": "padlock_open.png",
+                    "360": "padlock_open.png",
+                    "420": "padlock_open.png",
+                    "480": "padlock_open.png",
+                    "540": "padlock_open.png",
+                    "600": "padlock_open.png"
+                },
+                "shutter_on_off": {
+                    "off": "shutterObject_down.svg",
+                    "on": "shutterObject_up.svg"
+                },
+                "minuterie_mouvement-3.0.0_mode": {
+                    "désactivé": "getfile?appImg=119/mode/désactivé.png",
+                    "activé": "getfile?appImg=119/mode/activé.png"
+                },
+                "programmator-2.2.3_statusz1": {
+                    "OFF": "getfile?appImg=249807/statusz1/OFF.svg",
+                    "ON": "getfile?appImg=249807/statusz1/ON.svg"
+                },
+                "minuterie_mouvement-4.0.0_mode": {
+                    "désactivé": "getfile?appImg=32620/mode/désactivé.svg",
+                    "activé": "getfile?appImg=32620/mode/activé.svg"
+                },
+                "Alarme-3.0.0_status": {
+                    "Arrêt": "getfile?appImg=146725/status/Arrêt.svg",
+                    "INTRUSION DETECTEE": "getfile?appImg=146725/status/INTRUSION DETECTEE.svg",
+                    "Activée - mode périphérique": "getfile?appImg=146725/status/Activée - mode périphérique.svg",
+                    "Activée - mode global": "getfile?appImg=146725/status/Activée - mode global.svg"
+                },
+                "minuterie_mouvement-4.0.3_mode": {
+                    "désactivé": "getfile?appImg=249772/mode/désactivé.svg",
+                    "activé": "getfile?appImg=249772/mode/activé.svg"
+                },
+                "programmator-2.2.1_statusz2": {
+                    "OFF": "getfile?appImg=42586/statusz2/OFF.svg",
+                    "ON": "getfile?appImg=42586/statusz2/ON.svg"
+                },
+                "Smoke-2.2.0___status": {
+                    "deactivated": "getfile?appImg=87/__status/deactivated.png",
+                    "activated": "getfile?appImg=87/__status/activated.png"
+                },
+                "status_on_off": {
+                    "0": "min_light_off.svg",
+                    "1": "min_light_on.svg",
+                    "off": "min_light_off.svg",
+                    "on": "min_light_on.svg"
+                },
+                "planificateur_allumage-1.0.2___ps_mode": {
+                    "deactivated": "getfile?appImg=157548/__ps_mode/deactivated.svg",
+                    "activated": "getfile?appImg=157548/__ps_mode/activated.svg"
+                },
+                "Temperature_monitor-3.0.0___status": {
+                    "deactivated": "getfile?appImg=32691/__status/deactivated.svg",
+                    "activated": "getfile?appImg=32691/__status/activated.svg"
+                },
+                "simulation_presence-3.0.0___ps_mode": {
+                    "deactivated": "getfile?appImg=42624/__ps_mode/deactivated.svg",
+                    "activated": "getfile?appImg=42624/__ps_mode/activated.svg"
+                },
+                "programmator-2.2.3_statusz2": {
+                    "OFF": "getfile?appImg=249807/statusz2/OFF.svg",
+                    "ON": "getfile?appImg=249807/statusz2/ON.svg"
+                },
+                "window_on_off": {
+                    "off": "window_closed.svg",
+                    "on": "window_open.svg"
+                },
+                "switch_light": {
+                    "off": "light_off.svg",
+                    "on": "light_on.svg"
+                },
+                "simulation_presence-3.0.0___rad_status": {
+                    "off": "getfile?appImg=42624/__rad_status/off.svg",
+                    "on": "getfile?appImg=42624/__rad_status/on.svg"
+                },
+                "Temperature_monitor-3.0.0___state": {
+                    "normal": "getfile?appImg=32691/__state/normal.svg",
+                    "basse": "getfile?appImg=32691/__state/basse.svg",
+                    "haute": "getfile?appImg=32691/__state/haute.svg"
+                },
+                "camera": {
+                    "0": "off.svg",
+                    "1": "on.svg"
+                },
+                "Radio-2.1.1_status": {
+                    "arrêt": "getfile?appImg=249770/status/arrêt.svg",
+                    "marche": "getfile?appImg=249770/status/marche.svg"
+                },
+                "garage": {
+                    "middle": "garage_open.svg",
+                    "stop": "garage_open.svg",
+                    "up": "garage_open.svg",
+                    "down": "garage_closed.svg"
+                },
+                "programmator-2.2.1_statusz3": {
+                    "OFF": "getfile?appImg=42586/statusz3/OFF.svg",
+                    "ON": "getfile?appImg=42586/statusz3/ON.svg"
+                },
+                "planificateur_allumage-1.0.1___light_status": {
+                    "off": "getfile?appImg=42688/__light_status/off.svg",
+                    "on": "getfile?appImg=42688/__light_status/on.svg"
+                },
+                "programmator-2.1.10_statusz1": {
+                    "OFF": "getfile?appImg=50/statusz1/OFF.png",
+                    "ON": "getfile?appImg=50/statusz1/ON.png"
+                },
+                "programmator-2.2.1_statusz1": {
+                    "OFF": "getfile?appImg=42586/statusz1/OFF.svg",
+                    "ON": "getfile?appImg=42586/statusz1/ON.svg"
+                },
+                "Alarme-2.2.1_status": {
+                    "Arrêt": "getfile?appImg=37301/status/Arrêt.svg",
+                    "INTRUSION DETECTEE": "getfile?appImg=37301/status/INTRUSION DETECTEE.svg",
+                    "Activée - mode périphérique": "getfile?appImg=37301/status/Activée - mode périphérique.svg",
+                    "Activée - mode global": "getfile?appImg=37301/status/Activée - mode global.svg"
+                },
+                "ventilator_on_off": {
+                    "off": "off.svg",
+                    "on": "ventilator_on.svg"
+                },
+                "simulation_presence-3.0.1___rad_status": {
+                    "off": "getfile?appImg=249778/__rad_status/off.svg",
+                    "on": "getfile?appImg=249778/__rad_status/on.svg"
+                },
+                "Smoke-2.3.0___status": {
+                    "deactivated": "getfile?appImg=32615/__status/deactivated.svg",
+                    "activated": "getfile?appImg=32615/__status/activated.svg"
+                },
+                "Temperature_monitor-3.0.1___state": {
+                    "normal": "getfile?appImg=249801/__state/normal.svg",
+                    "basse": "getfile?appImg=249801/__state/basse.svg",
+                    "haute": "getfile?appImg=249801/__state/haute.svg"
+                },
+                "simulation_presence-3.0.1___chut_status": {
+                    "closed": "getfile?appImg=249778/__chut_status/closed.svg",
+                    "open": "getfile?appImg=249778/__chut_status/open.svg"
+                },
+                "programmator-2.2.1_statusz4": {
+                    "OFF": "getfile?appImg=42586/statusz4/OFF.svg",
+                    "ON": "getfile?appImg=42586/statusz4/ON.svg"
+                },
+                "programmator-2.1.10___mode": {
+                    "eco": "getfile?appImg=50/__mode/eco.png",
+                    "abs": "getfile?appImg=50/__mode/abs.png",
+                    "horsgel": "getfile?appImg=50/__mode/horsgel.png",
+                    "confort": "getfile?appImg=50/__mode/confort.png"
+                },
+                "volets_roulants-4.3.1___vr_mode": {
+                    "sunset": "getfile?appImg=34/__vr_mode/sunset.png",
+                    "closed": "getfile?appImg=34/__vr_mode/closed.png",
+                    "climatic": "getfile?appImg=34/__vr_mode/climatic.png",
+                    "manual": "getfile?appImg=34/__vr_mode/manual.png",
+                    "open": "getfile?appImg=34/__vr_mode/open.png",
+                    "deactivated": "getfile?appImg=34/__vr_mode/deactivated.png"
+                },
+                "battery": {
+                    "0": "battery.svg",
+                    "1": "battery.svg",
+                    "2": "battery.svg",
+                    "3": "battery.svg",
+                    "4": "battery.svg",
+                    "5": "battery.svg",
+                    "6": "battery.svg",
+                    "7": "battery.svg",
+                    "8": "battery.svg",
+                    "9": "battery.svg",
+                    "10": "battery.svg"
+                },
+                "programmator-2.2.0_statusz2": {
+                    "OFF": "getfile?appImg=32639/statusz2/OFF.svg",
+                    "ON": "getfile?appImg=32639/statusz2/ON.svg"
+                },
+                "swing_shutter_command": {
+                    "closed": "swing_shutter_closed.svg",
+                    "up": "swing_shutter_open.svg",
+                    "down": "swing_shutter_closed.svg",
+                    "open": "swing_shutter_open.svg"
+                },
+                "volets_roulants-4.4.1___vr_mode": {
+                    "sunset": "getfile?appImg=42569/__vr_mode/sunset.svg",
+                    "closed": "getfile?appImg=42569/__vr_mode/closed.svg",
+                    "climatic": "getfile?appImg=42569/__vr_mode/climatic.svg",
+                    "manual": "getfile?appImg=42569/__vr_mode/manual.svg",
+                    "open": "getfile?appImg=42569/__vr_mode/open.svg",
+                    "deactivated": "getfile?appImg=42569/__vr_mode/deactivated.svg"
+                },
+                "programmator-2.2.1___mode": {
+                    "eco": "getfile?appImg=42586/__mode/eco.svg",
+                    "abs": "getfile?appImg=42586/__mode/abs.svg",
+                    "horsgel": "getfile?appImg=42586/__mode/horsgel.svg",
+                    "confort": "getfile?appImg=42586/__mode/confort.svg",
+                    "off": "getfile?appImg=42586/__mode/off.svg"
+                },
+                "gate": {
+                    "middle": "gate_open.svg",
+                    "stop": "gate_open.svg",
+                    "closed": "gate_closed.svg",
+                    "open": "gate_open.svg"
+                },
+                "Temperature_monitor-3.0.1___status": {
+                    "deactivated": "getfile?appImg=249801/__status/deactivated.svg",
+                    "activated": "getfile?appImg=249801/__status/activated.svg"
+                },
+                "programmator-2.2.0_statusz4": {
+                    "OFF": "getfile?appImg=32639/statusz4/OFF.svg",
+                    "ON": "getfile?appImg=32639/statusz4/ON.svg"
+                },
+                "door_control-3.2.0___status": {
+                    "deactivated": "getfile?appImg=32677/__status/deactivated.svg",
+                    "activated": "getfile?appImg=32677/__status/activated.svg"
+                },
+                "programmator-2.2.3_statusz4": {
+                    "OFF": "getfile?appImg=249807/statusz4/OFF.svg",
+                    "ON": "getfile?appImg=249807/statusz4/ON.svg"
+                },
+                "programmator-2.2.0_statusz1": {
+                    "OFF": "getfile?appImg=32639/statusz1/OFF.svg",
+                    "ON": "getfile?appImg=32639/statusz1/ON.svg"
+                },
+                "planificateur_allumage-1.0.3___light_status": {
+                    "off": "getfile?appImg=249764/__light_status/off.svg",
+                    "on": "getfile?appImg=249764/__light_status/on.svg"
+                },
+                "Temperature_monitor-2.0.4_status": {
+                    "T° trop haute": "getfile?appImg=29/status/T° trop haute.png",
+                    "T° trop basse": "getfile?appImg=29/status/T° trop basse.png"
+                },
+                "bso": {
+                    "middle": "BSO_middle.svg",
+                    "stop": "BSO_middle.svg",
+                    "closed": "BSO_down.svg",
+                    "up": "BSO_up.svg",
+                    "down": "BSO_down.svg",
+                    "open": "BSO_up.svg"
+                },
+                "minuterie_mouvement-4.0.1_command": {
+                    "off": "getfile?appImg=38071/command/off.svg",
+                    "on": "getfile?appImg=38071/command/on.svg"
+                },
+                "garage_command": {
+                    "stop": "garage_open.svg",
+                    "closed": "garage_closed.svg",
+                    "open": "garage_open.svg"
+                },
+                "programmator-2.1.10_statusz3": {
+                    "OFF": "getfile?appImg=50/statusz3/OFF.png",
+                    "ON": "getfile?appImg=50/statusz3/ON.png"
+                },
+                "mobileOS": {
+                    "android": "android.svg",
+                    "ios": "apple.svg"
+                },
+                "roof_shutter_status": {
+                    "middle": "roof_shutter_middle.svg",
+                    "up": "roof_shutter_open.svg",
+                    "down": "roof_shutter_closed.svg"
+                },
+                "minuterie_mouvement-4.0.1_mode": {
+                    "désactivé": "getfile?appImg=38071/mode/désactivé.svg",
+                    "activé": "getfile?appImg=38071/mode/activé.svg"
+                },
+                "light_on_off": {
+                    "off": "light_off.svg",
+                    "on": "light_on.svg"
+                },
+                "awning_on_off": {
+                    "closed": "awning_closed.svg",
+                    "open": "awning_open.svg",
+                    "off": "awning_closed.svg",
+                    "on": "awning_open.svg"
+                },
+                "awning_in_out": {
+                    "in": "awning_closed.svg",
+                    "out": "awning_open.svg"
+                },
+                "swing_shutter_on_off": {
+                    "off": "swing_shutter_closed.svg",
+                    "on": "swing_shutter_open.svg"
+                },
+                "light": {
+                    "off": "light_off.svg",
+                    "on": "light_on.svg"
+                },
+                "pergola_on_off": {
+                    "closed": "pergola_closed.svg",
+                    "open": "pergola_open.svg",
+                    "off": "pergola_closed.svg",
+                    "on": "pergola_open.svg"
+                },
+                "simulation_presence-3.0.1___ps_mode": {
+                    "deactivated": "getfile?appImg=249778/__ps_mode/deactivated.svg",
+                    "activated": "getfile?appImg=249778/__ps_mode/activated.svg"
+                },
+                "simulation_presence-3.0.0___light_status": {
+                    "off": "getfile?appImg=42624/__light_status/off.svg",
+                    "on": "getfile?appImg=42624/__light_status/on.svg"
+                },
+                "door_lock_on_off": {
+                    "off": "door_lock_closed.svg",
+                    "on": "door_lock_open.svg"
+                },
+                "programmator-2.2.3___mode": {
+                    "eco": "getfile?appImg=249807/__mode/eco.svg",
+                    "abs": "getfile?appImg=249807/__mode/abs.svg",
+                    "horsgel": "getfile?appImg=249807/__mode/horsgel.svg",
+                    "confort": "getfile?appImg=249807/__mode/confort.svg",
+                    "off": "getfile?appImg=249807/__mode/off.svg"
+                },
+                "thermostat_control-1.0.1___mode": {
+                    "eco": "getfile?appImg=249738/__mode/eco.svg",
+                    "abs": "getfile?appImg=249738/__mode/abs.svg",
+                    "horsgel": "getfile?appImg=249738/__mode/horsgel.svg",
+                    "confort": "getfile?appImg=249738/__mode/confort.svg",
+                    "off": "getfile?appImg=249738/__mode/off.svg"
+                },
+                "planificateur_allumage-1.0.2___light_status": {
+                    "off": "getfile?appImg=157548/__light_status/off.svg",
+                    "on": "getfile?appImg=157548/__light_status/on.svg"
+                },
+                "programmator-2.1.10_statusz2": {
+                    "OFF": "getfile?appImg=50/statusz2/OFF.png",
+                    "ON": "getfile?appImg=50/statusz2/ON.png"
+                }                
+            }
+        }
+    }
+}

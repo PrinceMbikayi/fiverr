@@ -1,0 +1,22 @@
+{
+        "HOUR": "Heure",
+        "DAY": "Jour",
+        "WEEK": "Semaine",
+        "MONTH": "Mois",
+        "YEAR": "Année",
+        "SERVER_ERROR": "Erreur côté serveur",
+        "HISTORY": "Historique",
+        "MAX": "La plus haute",
+        "MIN": "La plus basse",
+        "NO_DATA_FOUND":"Pas de données trouvées",
+        "TEMPERATURE":"température",
+        "BRIGHTNESS":"luminosité",
+        "HUMIDITY":"humidité",
+        "PRESSURE":"pression",
+        "NOISE":"bruit",
+        "Co2":"Co2",
+        "BATTERY":"batterie",
+        "WIND_SPEED":"vent",
+        "WIND_GUST":"rafales",
+        "WATTS":"watts"
+}

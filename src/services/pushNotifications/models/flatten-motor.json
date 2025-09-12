@@ -1,0 +1,14 @@
+{
+    "attachments": [],
+    "body": "The board gate/swing/3C524EC4046F74134363F4A099F74E1EF29057C366DEF2E767875CD8C4C4A321 (28911) raised the error motor-12",
+    "category": "motor",
+    "categoryId": "motor",
+    "channelId": "motor",
+    "errorId": "12",
+    "from": "939765837595",
+    "messageId": "1700041522437760",
+    "objectId": "28911",
+    "sound": "default",
+    "timestamp": "1700041522",
+    "title": "Board Gate Error"
+}

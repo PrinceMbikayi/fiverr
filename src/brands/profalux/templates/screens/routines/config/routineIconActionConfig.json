@@ -1,0 +1,85 @@
+{
+    "Venetian_Shutter_Ezsp" : {
+        "OPEN/OPEN":{"iconName":"bsoOpenIcon", "label":"OPEN"},
+        "CLOSE/CLOSE":{"iconName":"bsoCloseIcon", "label":"CLOSE"},
+        "FAV_CALL_1/FAV_CALL_1":{"iconName":"favIcon","label":"FAV_CALL_1"},
+        "FAV_CALL_3/FAV_CALL_3":{"iconName":"hemstitchIcon","label":"FAV_CALL_3"},
+        "LEVEL/17":{"iconName":"ajarIcon", "label":"LEVEL_17"},
+        "LEVEL/25":{"iconName":"bsoLevel25Icon", "label":"LEVEL_25"},
+        "LEVEL/50":{"iconName":"bsoLevel50Icon", "label":"LEVEL_50"},
+        "LEVEL/75":{"iconName":"bsoLevel75Icon", "label":"LEVEL_75"},
+        "TILT/0":{"iconName":"bsoLame0degIcon", "label":"TILT_0"},
+        "TILT/22":{"iconName":"bsoLame22degIcon", "label":"TILT_22"},
+        "TILT/45":{"iconName":"bsoLame45degIcon", "label":"TILT_45"},
+        "TILT/67":{"iconName":"bsoLame67degIcon", "label":"TILT_67"},
+        "TILT/90":{"iconName":"bsoLame90degIcon", "label":"TILT_90"},
+        "NOACTION":{"iconName":"bsoLevel50Icon", "label":"?"}
+    } ,
+
+    "Rolling_Shutter_Ezsp" : {
+        "OPEN/OPEN":{"iconName":"vrOpenIcon", "label":"OPEN"},
+        "CLOSE/CLOSE":{"iconName":"vrCloseIcon", "label":"CLOSE"},
+        "FAV_CALL_1/FAV_CALL_1":{"iconName":"favIcon","label":"FAV_CALL_1"},
+        "FAV_CALL_3/FAV_CALL_3":{"iconName":"hemstitchIcon","label":"FAV_CALL_3"},
+        "LEVEL/17":{"iconName":"ajarIcon", "label":"LEVEL_17"},
+        "LEVEL/25":{"iconName":"vrLevel25Icon", "label":"LEVEL_25"},
+        "LEVEL/50":{"iconName":"vrLevel50Icon", "label":"LEVEL_50"},
+        "LEVEL/75":{"iconName":"vrLevel75Icon", "label":"LEVEL_75"},
+        "NOACTION":{"iconName":"vrLevel50Icon", "label":"?"}
+    } ,
+    
+    "Shade_Ezsp" : {
+        "OPEN/OPEN":{"iconName":"storeOpenIcon", "label":"OPEN"},
+        "CLOSE/CLOSE":{"iconName":"storeCloseIcon", "label":"CLOSE"},
+        "FAV_CALL_1/FAV_CALL_1":{"iconName":"favIcon","label":"FAV_CALL_1"},
+        "FAV_CALL_3/FAV_CALL_3":{"iconName":"hemstitchIcon","label":"FAV_CALL_3"},
+        "LEVEL/17":{"iconName":"ajarIcon", "label":"LEVEL_17"},
+        "LEVEL/25":{"iconName":"store4Icon", "label":"LEVEL_25"},
+        "LEVEL/50":{"iconName":"store3Icon", "label":"LEVEL_50"},
+        "LEVEL/75":{"iconName":"store2Icon", "label":"LEVEL_75"},
+        "NOACTION":{"iconName":"store3Icon", "label":"?"}
+    } ,
+
+    "Rolling_Shutter_Profalux" : {
+        "OPEN/OPEN":{"iconName":"vrOpenIcon", "label":"OPEN"},                         
+        "CLOSE/CLOSE":{"iconName":"vrCloseIcon", "label":"CLOSE"},
+        "FAV_CALL_1/FAV_CALL_1":{"iconName":"favIcon","label":"FAV_CALL_1"},
+        "FAV_CALL_3/FAV_CALL_3":{"iconName":"hemstitchIcon","label":"FAV_CALL_3"},
+        "NOACTION":{"iconName":"vr868Icon", "label":"?"}
+    } ,
+
+    "LightEzsp" : {
+        "ON/ON":{"iconName":"lightOnIcon", "label":"ON"},
+        "OFF/OFF":{"iconName":"lightOffIcon", "label":"OFF"},
+        "NOACTION":{"iconName":"lightOffIcon", "label":"?"}
+    } ,
+
+    "SwitchEzsp" : {
+        "ON/ON":{"iconName":"plugOnIcon", "label":"ON"},
+        "OFF/OFF":{"iconName":"plugOffIcon", "label":"OFF"},
+        "NOACTION":{"iconName":"plugOffIcon", "label":"?"}
+    } ,
+
+    "Garage_Door_Ezsp" : {
+        "OPEN/OPEN":{"iconName":"garageOpenIcon", "label":"OPEN"},
+        "CLOSE/CLOSE":{"iconName":"garageCloseIcon", "label":"CLOSE"},
+        "NOACTION":{"iconName":"garageOpenIcon", "label":"?"}
+    } ,
+
+    "Gate_Toggle_Ezsp" : {
+        "ACTION/ACTION":{"iconName":"gateSomewhereIcon", "label":"ACTION"},
+        "NOACTION":{"iconName":"gateSomewhereIcon", "label":"?"}
+    } ,
+
+    "Garage_Door_Toggle_Ezsp" : {
+        "ACTION/ACTION":{"iconName":"garageSomewhereIcon", "label":"ACTION"},
+        "NOACTION":{"iconName":"garageSomewhereIcon", "label":"?"}
+    } ,
+
+    "Gate_Ezsp" : {
+        "OPEN/OPEN":{"iconName":"gateOpenIcon", "label":"OPEN"},
+        "CLOSE/CLOSE":{"iconName":"gateCloseIcon", "label":"CLOSE"},
+        "NOACTION":{"iconName":"gateOpenIcon", "label":"?"}
+    } 
+
+}

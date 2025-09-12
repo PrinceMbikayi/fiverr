@@ -1,0 +1,19 @@
+{  
+"SETTING_HEADER_TITLE": "Réglages",
+"CONFIG_WIFI" : "Configuration WIFI",
+"LANGUAGE" : "Langues",
+"WEATHER_SETTING" : "Régler la météo",
+"LOCAL_WEATHER" : "Météo locale",
+"WEATHER_CONFIG_DESCRIP" : "Configurer dès maintenant notre outil météo\n pour obtenir des informations en temps réel\n sur les conditions météorologiques et optimiser vos actions en conséquence.",
+"WEATHER_HUMIDITY": "Humidité",
+"WEATHER_WIND_SPEED" : "Vent",
+"WEATHER_PRESSURE": "Pression",
+"WHICH_TOWN_DESCRIP" : "Indiquer votre ville",
+"WHICH_TOWN" : "Entrer la ville",
+"CONTINUE":"Continuer",
+"CHOOSE_WEATHER_TOWN":"Entrez votre ville et valider la sélection dans le menu déroulant ",
+"DEPEND_WEATHER_ROUTINE_WILL_BE_DELETED":"Toutes les planifications liées à la météo seront supprimées",
+"VALIDATE":"Valider",
+"CANCEL":"Annuler"
+
+}

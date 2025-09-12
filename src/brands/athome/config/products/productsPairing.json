@@ -1,0 +1,96 @@
+{
+    "CALI-O": {
+        "typeName": "AtHomeHeater",
+        "type": "heater",
+        "subtype": "on_off",
+        "subtypeNumber": 0
+    },
+    "CALI-P": {
+        "typeName": "AtHomeWirePilot",
+        "type": "heater",
+        "subtype": "wire_pilot",
+        "subtypeNumber": 1
+    },
+    "CALI-B": {
+        "typeName": "AtHomeBoilert",
+        "type": "heater",
+        "subtype": "boiler",
+        "subtypeNumber": 2
+    },
+    "DIANE-LED": {
+        "typeName": "AtHomeLight",
+        "type": "light",
+        "subtype": "light_rgb",
+        "subtypeNumber": 8
+    },
+    "DIANE-2": {
+        "typeName": "AtHome2ChLight",
+        "type": "light",
+        "subtype": "2ch",
+        "subtypeNumber": 6
+    },
+    "PLUG-I": {
+        "typeName": "AtHomePlugIn",
+        "type": "switch",
+        "subtype": "on_off_in",
+        "subtypeNumber": 3
+    },
+    "PLUG-O": {
+        "typeName": "AtHomePlugOut",
+        "type": "switch",
+        "subtype": "on_off_out",
+        "subtypeNumber": 4
+    },
+    "ACCESS-MICRS": {
+        "productName": "ACCESS",
+        "typeName": "AtHomeModuleShutter",
+        "type": "shutter",
+        "subtype": "micrs",
+        "subtypeNumber": 7
+    },
+    "ACCESS-MICRS2": {
+        "productName": "ACCESS",
+        "typeName": "AtHomeModuleShutter",
+        "type": "shutter",
+        "subtype": "micrs2",
+        "subtypeNumber": 11
+    },
+    "GUARDIAN": {
+        "typeName": "AtHomeModuleGate",
+        "type": "gate",
+        "subtype": "mic2ch",
+        "subtypeNumber": 5
+    },
+    "PROBE-TEMP": {
+        "typeName": "AtHomeProbe",
+        "type": "sensor",
+        "subtype": "temp_sensor",
+        "subtypeNumber": 9
+    },
+    "VDP": {
+        "typeName": "AtHomeVDP",
+        "type": "access",
+        "subtype": "vdp",
+        "subtypeNumber": 10
+    },
+    "QR-BASIC": {
+        "typeName": "VDoorBell",
+        "type": "access",
+        "subtype": "qr_basic",
+        "subtypeNumber": 20
+    },
+    "GATE-SLIDE": {
+        "productName": "GATE",
+        "typeName": "BoardGate",
+        "type": "gate",
+        "subtype": "sliding",
+        "subtypeNumber": 30
+    },
+    "GATE-SWING": {
+        "productName": "GATE",
+        "typeName": "BoardGate",
+        "type": "gate",
+        "subtype": "swing",
+        "subtypeNumber": 31
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "HEATER" : ["AtHomeBoiler","AtHomeHeater","AtHomeWirePilot"],
+    "LIGHT" : ["AtHomeLight","AtHome2ChLight"],
+    "SHUTTER": ["AtHomeModuleShutter"],
+    "GATE" : ["AtHomeModuleGate"],
+    "PLUG" : ["AtHomePlugOut","AtHomePlugIn","SwitchEzsp"],
+    "PROBE":["AtHomeProbe"]
+}

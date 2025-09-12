@@ -1,0 +1,23 @@
+{
+    "LOCATION_ACTIVATE" : "Le service de localisation doit être activé afin d'identifier votre réseau wifi",
+    "LOCATION_NOT_READY" : "Le service de localisation ne répond pas, attendez un instant et recommencez",
+    "YOUR_DEVICE_IS_PAIRED" : "Votre appareil de type \"{{infos}}\" est associé",
+    "DEVICE_NAME_ALREADY_IN_USE" : "Ce nom est déjà attribué à un objet, merci de modifier votre saisie",
+    "NO_DEVICES_FOUND" : "Aucun appareil trouvé durant l'appairage.\nVerifiez le mot de passe fourni et/ou la position de l'objet par rapport à la box WIFI.",
+    "DEVICE_RECONNECTED_TO_WIFI" : "L'objet \"{{infos}}\" s'est reconnecté via le réseau que vous avez fourni lors de l'appairage.",
+    "DEVICE_RECONNECTED_TO_WIFI_plural" : "Les objets \"{{infos}}\" se sont reconnectés via le réseau que vous avez fourni lors de l'appairage.",
+    "EXPECTED_DEVICE_NOT_FOUND" : "Aucun objet de type \"{{infos}}\" n'a été trouvé.",
+    "DEVICE_ALSO_FOUND" : "Un objet de type \"{{infos}}\" a été appairé durant la recherche.",
+    "DEVICE_ALSO_FOUND_plural" : "Des Objets ont été appairés lors de la recherche :",
+    "REGISTER_NEXT_DEVICE" : "Enregistrez l'appareil suivant",
+    "SUMMARY_TITLE" : "Résultat de l'appairage",
+    "KNOWN_DEVICE_RECONNECTED" : "Un objet connu s'est reconnecté :",
+    "KNOWN_DEVICE_RECONNECTED_plural": "Des objets connus se sont reconnectés :",
+    "REGISTER_DEVICE_BUTTON": "Enregistrer l'appareil",
+    "REGISTER_DEVICE_BUTTON_plural": "Enregistrer les appareils",
+    "REGISTER_DEVICE_DESCRIPTION" : "Vous allez enregistrer le dernier appareil",
+    "REGISTER_DEVICE_DESCRIPTION_plural" : "Vous allez enregistrer le premier appareil de la liste",
+    "REGISTER_DEVICE_BUTTON_TYPE": "enregistrer",
+    "FIELD_MAX_LENGTH" : "Ce champ ne peut contenir plus de {{max}} caractères"
+}   
+    

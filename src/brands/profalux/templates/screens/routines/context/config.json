@@ -1,0 +1,24 @@
+{
+    "Venetian_Shutter_Ezsp" : [
+                                ["OPEN","CLOSE","FAV_CALL_1","FAV_CALL_2","POSITION","LEVEL"],
+                                ["TILT"]
+                            ],
+    "Shade_Ezsp" : [
+        ["OPEN","CLOSE","FAV_CALL_1","FAV_CALL_2","POSITION","LEVEL"]
+    ],
+    "Rolling_Shutter_Ezsp": [
+        ["OPEN","CLOSE","FAV_CALL_1","FAV_CALL_2","POSITION","LEVEL"]
+    ],
+    "Rolling_Shutter_Profalux":[["OPEN","CLOSE","FAV_CALL_1"]],
+    "LightEzsp":[["ON","OFF"]],
+    "SwitchEzsp":[["ON","OFF"]],
+    "Garage_Door_Ezsp":[["OPEN","CLOSE"]],
+    "Gate_Ezsp":[["OPEN","CLOSE"]],
+    "Gate_Toggle_Ezsp":[["ACTION"]],
+    "Garage_Door_Toggle_Ezsp":[["ACTION"]],
+    "composite" : [
+        ["OPEN","CLOSE","FAV_CALL_1","FAV_CALL_2","POSITION","LEVEL","ON","OFF","ACTION"],
+        ["TILT"]
+    ]
+
+}

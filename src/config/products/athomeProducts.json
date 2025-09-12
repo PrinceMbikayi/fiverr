@@ -1,0 +1,21 @@
+{
+    "CALI-O": {},
+    "CALI-P": {},
+    "CALI-B": {},
+    "PLUG-I": {},
+    "PLUG-O": {},
+    "DIANE-LED": {},
+    "DIANE-2": {},
+    "ACCESS": {},
+    "GUARDIAN": { "showConfig" : true},
+    "DOORKEEPER": {},
+    "QR-BASIC": {
+        "showConfig" : true,
+        "noLevel2" : true
+    },
+    "PROBE-TEMP": {},
+    "GATE": {
+      "showConfig" : true,
+      "noLevel2" : true
+    }
+}

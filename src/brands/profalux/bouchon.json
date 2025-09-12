@@ -1,0 +1,74 @@
+[
+    {
+        "uri": "https://profalux.avidsen.one/services/durin/my/objects/67173000",
+        "resource": {
+            "connected": false,
+            "className": "GarageDoor",
+            "flags": {
+                "renamed": true
+            },
+            "id": 67173000,
+            "realName": "dev-0/IEEEAddr-00-0D-6F-00-15-18-2A-80:cluster-garage_door:endpoint-in_2",
+            "statuses": [
+                {
+                    "name": "__user_name",
+                    "value": "Porte de garage",
+                    "time": 1725009437000
+                },
+                {
+                    "name": "manufacturer_name",
+                    "value": "Profalux",
+                    "time": 1725009437000
+                },
+                {
+                    "name": "product_name",
+                    "value": "PRZ",
+                    "time": 1725009437000
+                },
+                {
+                    "name": "status",
+                    "value": "middle",
+                    "time": 1725009437000
+                }
+            ],
+            "typeName": "Gate_Ezsp",
+            "actions": [
+                {
+                    "name": "CLOSE"
+                },
+                {
+                    "name": "IDENTIFY",
+                    "mArgs": [
+                        {
+                            "name": "duration",
+                            "type": "INT",
+                            "min": 5,
+                            "max": 60
+                        }
+                    ]
+                },
+                {
+                    "name": "OPEN"
+                }
+            ],
+            "categories": [
+                {
+                    "uri": "https://profalux.avidsen.one/services/durin/my/categories/44694"
+                }
+            ],
+            "created": 1725009437467,
+            "eventId": "event/io/ezsp/dev-0/IEEEAddr-00-0D-6F-00-15-18-2A-80:cluster-garage_door:endpoint-in_2/",
+            "name": "Porte de garage",
+            "gw": {
+                "uri": "https://profalux.avidsen.one/services/durin/my/gateways/44706"
+            },
+            "room": {
+                "uri": "https://profalux.avidsen.one/services/durin/my/rooms/64010"
+            },
+            "traits": [
+                "Close",
+                "Open"
+            ]
+        }
+    }
+]

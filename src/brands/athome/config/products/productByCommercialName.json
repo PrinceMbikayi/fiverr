@@ -1,0 +1,7 @@
+{
+    "THERMOSTAT":{"typeName":"AtHomeThermostat"},
+    "WEATHER":{"typeName":"WeatherSupport"},
+    "ACCESS":{"typeName":"AtHomeModuleShutter"},
+    "GATE" : {"typeName":"BoardGate"},
+    "GATE-TO-CONNECT" : {"typeName":"BoardGateToConnect"} 
+}

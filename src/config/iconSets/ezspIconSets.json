@@ -1,0 +1,21 @@
+{
+     "resource": {
+          "pictures": {
+               "iconSets": {
+                   "SwitchEzsp_status" : {
+                        "on":"AtHomePlug_on.svg"
+                    },
+                    "EzspWirePilot_status" : {
+                         "on":"AtHomeWirePilot_on.svg"
+                     },
+                    
+                    "EzspHeater_status" : {
+                         "on":"AtHomeHeater_on.svg"
+                     },
+                    "EzspBoiler_status" : {
+                         "on":"AtHomeBoiler_on.svg"
+                     }
+               }
+          }
+     }
+}

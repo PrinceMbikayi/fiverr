@@ -1,0 +1,15 @@
+{   
+    "NEW" : "Nouveau scénario",
+    "NEW_DESCRIPTION" : "Automatisez votre maison simplement avec les routines. Vous les per'sonnalisez à votre mode de vie",
+    "DISCOVER_CATALOG" : "Découviri le catalogue",
+    "CATALOG" : "Catalogue de scénarios",
+    "CREATE_ROUTINE" : "Créer une nouvelle routine",
+    "SCENARIO_COMFORT_TITLE" : "Confort à la maison",
+    "SCENARIO_COMFORT_DESCRIPTION" : "Détendez-vous chez vous. Votre maison vous aide",
+    "SCENARIO_PROGRAM_TITLE" : "Programmation",
+    "SCENARIO_PROGRAM_DESCRIPTION" : "Votre maison se met en veille en attendant votre retour",
+    "SCENARIO_HEATING_TITLE" : "Chauffage",
+    "SCENARIO_HEATING_DESCRIPTION" : "Gérez la température de toutes les pièces de la maison",
+    "SCENARIO_AWAY_TITLE" : "Départ en vacances",
+    "SCENARIO_AWAY_DESCRIPTION" : "Partez l'esprit tranquille"
+}

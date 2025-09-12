@@ -1,0 +1,229 @@
+/**
+ * 
+ * 
+ *  base : https://heartbeat.fritz.ai/build-and-validate-forms-in-react-native-using-formik-and-yup-6489e2dff6a2
+ *  validation : https://www.youtube.com/watch?v=ftLy78R8xrg&list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ&index=32
+ * 
+ * 
+ */
+
+ import React, { useRef,useState,forwardRef,useImperativeHandle } from 'react';
+ import { View, Text, TouchableOpacity } from 'react-native';
+ import Toast from 'react-native-root-toast';
+
+ import { Formik } from 'formik';
+ import * as yup from 'yup';
+ import { useTranslation } from 'react-i18next';
+
+
+ import { useTheme } from '_theming/themeProvider';
+ 
+ import FormInput from '_brand/templates/components/forms/FormInput';
+ import WithTranslateFormErrors from "_utils/withTranslateFormErrors";
+
+ 
+ import {onChangeWithRulesExternal} from '_components/forms//utils';
+
+ //--- Appium -----
+ import {buildTestId} from '_helpers/appium';
+ 
+ //---------------------------------------------------------------
+ 
+ 
+ yup.setLocale({
+   
+   // use functions to generate an error object that includes the value from the schema
+   string: {
+     min: ({ min }) => ({ key: 'PASSWORD_TOO_SHORT', values: { min } }),
+     max: ({ max }) => ({ key: 'field_too_big', values: { max } }),
+   },
+ });
+ const loginFormSchema = yup.object({
+   login: yup.string().matches(/^\S*$/, 'EMAIL_NO_WHITESPACE').email("LOGIN_INPUT_IS_EMAIL").required("EMAIL_INPUT_MANDATORY_FIELD"),
+   password: yup.string().min(1).required("INPUT_MANDATORY_FIELD")
+ });
+ 
+ const forgottenPasswordFormSchema = yup.object({
+   login: yup.string().email("LOGIN_INPUT_IS_EMAIL").required("EMAIL_INPUT_MANDATORY_FIELD")  
+ });
+ 
+ //----------------------------------------------------------------
+ 
+
+ const LoginComponent = forwardRef((props,ref) => {
+
+  const formikRef = useRef(null)
+
+  // REF methods can be called (useImperativeHandle)
+
+  useImperativeHandle(ref, () => ({
+           
+     
+       submitForm() {   
+         formikRef.current.submitForm();        
+           //setModalVisible(!modalVisible);
+       }
+   }));
+
+
+  const { t, i18n } = useTranslation();    
+  const {theme} = useTheme();
+  
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
+  const [errServer, setErrServer] = useState(null);
+
+  const {bgColor} = props;
+
+ const passwordRef = useRef(null);
+ 
+ 
+ const handleChange = (prop,value) => {
+  return value;
+  //this.setState({errServer:null});
+  }
+
+const  handleSubmit = async(values) =>{
+  
+  let validData = [];
+  let isValid =  await loginFormSchema.isValid(values);
+
+  if(isValid) {
+    props.submit(values);
+    
+    //return true
+  } else {
+    try {
+      validData = await loginFormSchema.validate(values,{abortEarly:false});   
+    
+    } catch (error) {
+      validData = error.errors      
+    }   
+  
+    let msg ="\n";
+    validData.forEach(err => { 
+      if(typeof err == "object") {
+        msg+= t(err.key,err.values)+"\n";
+      } else {
+        msg+= t(err)+"\n";
+      }
+     
+    });
+    
+    Toast.show(msg);
+  }
+   
+
+}
+// in order to remove errServer State
+const handleFocus = (e) => {
+  //this.setState({errServer:null})
+}
+
+const goBack = () => {    
+  props.goBack();
+}
+
+const getForgottenPassword = async(values)=> {
+
+  let validData = [];
+  let isValid =  true //await forgottenPasswordFormSchema.isValid(values);
+
+  if(isValid) {
+    props.lostPasswordRequest(values);
+    //return true
+  } else {
+    try {
+      validData = await forgottenPasswordFormSchema.validate(values,{abortEarly:false});   
+    
+    } catch (error) {
+      validData = error.errors      
+    }   
+    let msg ="\n";
+    validData.forEach(err => { 
+      msg+= t(err)+"\n";
+    });
+    
+    Toast.show(msg,{position: Toast.positions.TOP});
+  }
+
+}
+
+const changeFocus = (myRef) => {
+  // if( myRef.current?.input) {
+  //   myRef.current.input.focus()
+  // }    
+}
+
+ //======== APPIUM =============
+ const loginID = buildTestId("login");
+ const passwordID = buildTestId("password")
+ const forgottenPasswordID = buildTestId("forgottenPassword")
+ const buttonPreviousID = buildTestId("buttonPrevious");
+ const buttonNextID = buildTestId("buttonNext");
+
+
+
+
+
+
+
+
+
+  return (
+    <React.StrictMode>
+     <View style={{backgroundColor:'transparent'}}>       
+      {props.connectingError != 200 && props.connectingError != undefined ?        
+       <Text>Error ...</Text>
+       :
+       null    
+     }
+       <Formik
+             //initialValues={{ login: 'test@profalux.com', password: 'testAP23;' }}
+             initialValues={{ login: login, password: '' }}
+             no_validationSchema={loginFormSchema}
+             onSubmit={handleSubmit}
+             innerRef={formikRef}    
+             >
+
+             {({ values, handleChange, errors, setFieldTouched, touched, isValid, handleSubmit ,setFieldValue}) => {
+
+               const noSpace = "noSpace"
+               
+
+
+             return ( <>
+              <WithTranslateFormErrors errors={errors} touched={touched} setFieldTouched={setFieldTouched}>
+               <View style={{backgroundColor:'transparent'}}>
+                  <FormInput  name='login' value={values.login}  placeholder={t('Email')}  autoCapitalize='none' keyboardType='email-address' onChangeText = {onChangeWithRulesExternal('login',noSpace)(values,setFieldValue)} returnKeyType={'next'} _onSubmitEditing={() => changeFocus(passwordRef)}   bgColor={bgColor} addTestId={loginID}/>               
+                  <FormInput name='password' value={values.password}  placeholder={t('Mot de passe')} secureTextEntry passwordToggle   onChangeText = {onChangeWithRulesExternal('password',noSpace)(values,setFieldValue)}  ref={passwordRef} returnKeyType='done' iconName='ios-lock' iconColor='#2C384A' bgColor={bgColor} addTestId = {passwordID}/>              
+                  <TouchableOpacity onPress={() => getForgottenPassword(values)} {...forgottenPasswordID} style={{backgroundColor:'transparent'}}>
+                   <Text style={{textAlign:'right',color:'#999',paddingTop:10,marginRight:10}}>{t("FORGOTTEN_PASSWORD")}</Text>
+                 </TouchableOpacity>
+               </View>
+               {/* {1 == 2 &&
+               <View style={{flex:2,alignItems:'flex-end',flexDirection:'row',backgroundColor:'transparent'}}>
+                 <View style={{flexDirection:'row',justifyContent:'space-between',padding:15,paddingBottom:25}}>
+                   <View  style={{width:'48%'}}>
+                     <AccessButton  onPress={goBack} specialColor='#333' title={t("BUTTON_BACK")} testAppium={buttonPreviousID}/>
+                   </View>
+                   <View  style={{width:'48%'}}>
+                     <AccessButton  onPress={handleSubmit} specialColor='#333' title={t("BUTTON_NEXT")} testAppium={buttonNextID}/>
+                   </View>
+                 </View> 
+               </View> 
+             }           */}
+               </WithTranslateFormErrors>
+             </>
+             );
+           }}
+         </Formik>  
+       </View>
+       </React.StrictMode>
+   )
+
+
+ })
+
+ export default LoginComponent;
+

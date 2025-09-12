@@ -1,0 +1,10 @@
+{
+    "QR-BASIC_NAME" : "Qair",
+    "QR-BASIC_SHORT_DESCRIPTION" : "Visiophone avec QR code",
+    "CAT_HEATER_NAME" : "Chauffage",
+    "CAT_HEATER_SHORT_DESCRIPTION" : "Qué calor",
+    "CAT_MOTOR_NAME" : "Motorisation",
+    "CAT_MOTOR_SHORT_DESCRIPTION" : "Portail magique",
+    "CAT_SECURITY_NAME": "Alarme sécurité",
+    "CAT_SECURITY_SHORT_DESCRIPTION" : "Attention à la marche en descendant du train"
+}

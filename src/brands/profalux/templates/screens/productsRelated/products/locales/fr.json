@@ -1,0 +1,13 @@
+{  
+"SETTING_FAVORITE_HEADER": "Favoris",
+"SETTING_FAVORITE_DESCRIP" : "Personnalisez votre page d'accueil en sélectionnant les équipements, groupes ou\n routines les plus importants pour vous.\nEn les ajoutant à vos favoris, vous aurez un\n accès rapide et direct à leur contrôle.",
+"END" : "Terminer",
+"VALIDATE":"Valider",
+"KEY_UNAVAILABLE":"Numéro de box indisponible",
+"BOX_NUMBER":"Indiquer le numéro de série de votre box :",
+"BOX_NAME":"Comment souhaitez-vous appeler votre \n installation ?",
+"HOUSE":"Maison",
+"EQUIPMENTS":"Mes favoris",
+"RESTART_BOX_TO_CONNECT_IT":"Redémarrer votre box pour terminer l'association à votre compte ",
+"CONFIGURED_LATER":"Configurer plus tard"
+}

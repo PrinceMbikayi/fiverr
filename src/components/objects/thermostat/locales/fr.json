@@ -1,0 +1,33 @@
+{
+   
+    "ADD_THERMOSTAT" : "Ajouter un thermostat",
+    "SELECT_PROBE_STEP" : "Choisir la sonde de température",
+    "SELECT_A_PROBE" : "Sélectionnez parmi les sondes présentes",
+    "POPUP_PROBE_TITLE" : "Choisir la sonde",
+    "THERMOSTAT_NO_PROBE" : "Il semble qu'il n'y ait pas de sonde de température appairée dans votre solution.",
+    "SELECT_HEATER_STEP" : "Choisir un chauffage",
+    "SELECT_A_HEATER" : "Sélectionnez parmi les chauffages on/off présents",
+    "POPUP_HEATERS_TITLE" : "Choisir le(s) chauffage(s)",
+    "THERMOSTAT_NO_HEATER" : "Il semble qu'il n'y ait pas de chauffage \"On/Off\" appairé dans votre solution.", 
+    "SELECT_THERMOSTAT_DELAY_STEP" : "Inertie des éléments chauffants de la zone principale",
+    "SELECT_THERMOSTAT_DELAY_PLACEHOLDER" : "Sélectonnez...",
+    "POPUP_DELAY_TITLE" : "Choisir l'inertie",
+    "THERMOSTAT_DELAY_LOW" : "Faible (5min ; électrique)",
+    "THERMOSTAT_DELAY_INTERMEDIATE" : "Moyenne (10min ; chaudière)",
+    "THERMOSTAT_DELAY_HIGH" : "Elevée (20 min ; Pompe à chaleur)",
+    "THERMOSTAT_DELAY_VERY_HIGH" : "Très élevée (60 min ; autre)",
+    "THERMOSTAT_GIVE_NAME" : "Nommer le Thermostat",
+    "THERMOSTAT_GIVE_NAME_PLACEHOLDER" : "saisissez le nom (4 car. min)",
+    "THERMOSTAT_UPDATE_TITLE" : "Mettre à jour les paramètres",
+    "THERMOSTAT_UPDATE_PROBE_TITLE" : "Changer la sonde",
+    "THERMOSTAT_UPDATE_HEATERS_TITLE" : "Modifiez la liste des chauffages",
+    "THERMOSTAT_UPDATE_DELAY_TITLE" : "Changez l'inertie",
+    "CREATION_COMPLETE" : "L'application Thermostat a été créée",
+    "THERMOSTAT_SETTINGS_MODE" : "Réglage des modes",
+    "THERMOSTAT_SETTINGS_COMPONENTS" : "Modules associés",
+    "CREATION_ERROR_GENERIC": "Il y a eu une erreur lors de la création du thermostat",
+    "TEMPERATURE_EXPECTED_LABEL" :"désirée",
+    "TEMPERATURE_REAL_LABEL" : "actuelle",
+    "SHOW_CREATED_THERMOSTAT" : "Voir le thermostat"
+
+}

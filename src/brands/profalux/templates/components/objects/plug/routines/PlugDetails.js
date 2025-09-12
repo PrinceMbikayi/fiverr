@@ -1,0 +1,169 @@
+import '_brand/templates/components/objects/common/locales'
+import React from 'react';
+import { View, Text, SafeAreaView, StyleSheet} from 'react-native';
+import {useState,useEffect,useRef} from 'react';
+import { useStore,useSelector,useDispatch } from 'react-redux';
+
+
+import { useTranslation } from 'react-i18next';
+import { useNavigation, useRoute } from '@react-navigation/native';
+import { useTheme } from '_theming/themeProvider';
+
+import { useObject } from '_hooks/object';
+
+import {iconsJs} from '_brand/utils/iconsJs';
+import { BottomDeleteSheet } from '_brand/templates/components/objects/common/BottomDeleteSheet';
+import { deleteObject } from '_api/objects';
+import * as Actions from '_actions/objects';
+import { PlugDetails } from '_brand/templates/components/objects/plug/widget/PlugDetails';
+import Toast from 'react-native-root-toast';
+import {LightPlugRoutine}  from '_brand/templates/components/objects/light/components/LightPlugRoutine';
+
+import {useScenario} from '_brand/templates/screens/routines/hook/useScenario'
+
+
+
+export const PlugDetails = (props) =>{
+
+    const {itemId, setKebab, traits} = props;
+    
+    const uObject = useObject(itemId);
+
+    const dispatch = useDispatch();
+    const {theme} = useTheme();  
+    const { t, i18n } = useTranslation(); 
+    const tns = "common";
+    const navigation = useNavigation();
+    const route = useRoute();
+    const navigationParams = route?.params || {};
+
+    const gloIsConnected = useSelector(state=> state?.network?.isConnected);
+    const gloServerIsDown = useSelector(state=> state?.network?.serverIsDown);
+    const netInfoIsConnected = (gloIsConnected == true && gloServerIsDown == false);
+    const connected = uObject?.objectDatas?.connected;
+
+    const testColor = theme?.onBody||'yellow';
+    const borderColor = theme?.prflxBorderColor||'orange';
+    const bgcolor = theme?.prflxContaintBgColor||'white';
+    const lineWidgetBgColor = theme?.prflxVerticalMultiIconsBgColor||"white";
+    const textColor = theme?.prflxTextColor||'black'
+
+
+    const uScenario = useScenario();
+    const { isRoutine, actionsByItemId } = uScenario;
+
+    useEffect(()=> {
+        console.log("USE SCENARIO:",actionsByItemId)
+    },[actionsByItemId]);
+
+    useEffect(() => {
+
+        if(setKebab){
+            setKebab(options)
+        }
+    },[]);
+
+    const options = [
+        {
+            id:"modify",
+            title:`${t(tns+":"+"KEBAB_MODIFY")}`,
+            iconJSName: iconsJs.modifyIcon.name,
+            action:()=>kebabUpdateAction()
+        },
+        {
+            id:'delete',
+            title:`${t(tns+":"+"KEBAB_DELETE")}`,
+            iconJSName: iconsJs.deleteIcon.name,
+            action:()=>kebabDeleteAction()
+        },
+    ]
+
+    //////////////////////////
+    const actionSheetRef = useRef(null);
+    const kebabDeleteAction = ()=>{
+        actionSheetRef.current?.present()
+        //  actionSheetRef.current?.show()
+    }
+
+////////////////////////
+
+const kebabUpdateAction = ()=>{
+    // variable "itemPicked" below, is what the GroupModifyScreen needs to be transfered via route params
+    const typeName = uObject?.objectDatas?.typeName;
+    (typeName === 'composite')  ? 
+                                    navigation.navigate('GroupModifyScreen', {itemPicked:itemId})
+                                :
+                                    navigation.navigate('ProductSettings',{'typeName':typeName,itemId:itemId});
+}
+
+
+const handleCancel = ()=>{
+    console.log('Delete canceled');
+    actionSheetRef.current?.dismiss();
+}
+
+
+const handleDelete = async()=>{
+    // alert("Really wanna delete?")
+    console.log("Deleted itemId :", itemId)
+     const res = await deleteObject(itemId).catch((err) => { console.log(err) });
+     if (res.errCode == 200) {     
+        Toast.show(
+            `${t(tns+":"+"TOAST_DELETE")}`,
+            { 
+                backgroundColor: 'black', 
+                textColor: 'white', 
+                textStyle:{fontSize:16, fontWeight:'600'},
+                containerStyle:{width:'80%', height:100, justifyContent:'center', alignItems:'center', borderRadius:10, borderColor:borderColor, borderWidth:2}, 
+                //position: Toast.positions.CENTER,
+                position:-350,
+                duration:3000,  
+                //onHide:()=>navigation.goBack()
+            }
+        );
+        navigation.goBack();   
+        const action = Actions?.objectDelete(itemId);    
+        dispatch(action)
+     }
+     //console.log('item deleted ', itemId);
+     actionSheetRef.current?.dismiss();
+ }
+
+    return(
+        <View style={[styles.bodyWrapper,{backgroundColor:bgcolor, borderColor:borderColor, margin:20}]}>
+            <View style={[
+                styles.bodyWrapper,
+                {backgroundColor:(connected == false || !netInfoIsConnected)? theme['card--color--deactivated-overlay'] : 'transparent', 
+                borderColor:'transparent',
+                zIndex:(connected == false || !netInfoIsConnected)? 1: 0,
+                position:'absolute',
+                opacity:0.6,
+                width:'100%',height:'100%',
+            }]}/>
+            <View>
+                {/* <PlugDetails itemId = {itemId} iconSize = {52} bodyStyle={styles.bodyStyle}/> */}
+                <LightPlugRoutine itemId = {itemId} iconSize = {40} isPlug isRoutine={isRoutine}/>
+            </View>
+            <BottomDeleteSheet 
+                myRef= {actionSheetRef}
+                handleCancel={handleCancel}
+                handleDelete = {handleDelete}
+            /> 
+        </View>
+    )
+}
+
+const styles = StyleSheet.create({
+    bodyWrapper:{
+        flexDirection:'column',
+        justifyContent:'flex-start',
+        borderWidth:1, 
+        borderRadius:12,
+    },
+    bodyStyle:{
+        backgroundColor:'transparent',
+        flex:1,flexDirection:'column',
+        alignItems:'flex-start', 
+        justifyContent:'flex-start',
+    }
+})

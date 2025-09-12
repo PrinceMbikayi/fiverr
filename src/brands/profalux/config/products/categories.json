@@ -1,0 +1,42 @@
+{
+    "qair" :        {
+                        "name":"CAT_VDP",
+                        "devices" : [ "QR-BASIC","DOORKEEPER"],
+                        "tileColor" : "additional_2_lighter",
+                        "icon" : "notification",
+                        "iconColor" : "#70A896"
+                    },
+    "heaters" :     {
+                        "name":"CAT_HEATER",
+                        "devices" : [ "EZSP-WIREPILOT","EZSP-BOILER","CALI-O","CALI-P","CALI-B","THERMOSTAT","PROBE-TEMP"],
+                        "tileColor" : "additional_3_lighter",
+                        "icon" : "heater",
+                        "iconColor" : "#DB7160"
+                        
+                    },
+    "motorisation" : {
+                         "name":"CAT_MOTOR",
+                         "devices" :["GUARDIAN","GATE","MOTOR_1","MOTOR_2","Rolling_Shutter_Ezsp"],                      
+                         "Nope_tileColor" : "primary_1_lighter",
+                         "tileColor" : "#EEF7FB",
+                         "icon" : "car",
+                         "iconColor" : "#F1AD3E"
+                    },
+     "security" :   { 
+                        "name" : "CAT_SECURITY",
+                        "devices": ["ACCESS"],                      
+                        "tileColor" : "additional_1_lighter",
+                        "icon" : "security",
+                        "iconColor" : "#427A9D"
+                    },
+    "light"    :   {
+                        "name": "CAT_LIGHT",
+                        "devices": ["DIANE-LED","DIANE-2"],
+                        "tileColor" : "#F8F7F2"
+                    },
+    "extras"    :   {
+                        "name": "CAT_EXTRAS",
+                        "devices": ["WEATHER"],
+                        "tileColor" : "#F1EDFD"
+                    }
+}

@@ -1,0 +1,26 @@
+{   
+        "WEIGHT_QUESTION" : "Combien pèse votre portail ?",
+        "WEIGHT_ANSWER_1" : "Moins de XXX kg",
+        "WEIGHT_ANSWER_1_DESCRIPTION" : "Ex : Portail plein en plastique",
+        "WEIGHT_ANSWER_2" : "Entre XXX kg et XXX kg",
+        "WEIGHT_ANSWER_2_DESCRIPTION" : "Ex : Portail ajouré en métal ou en bois",
+        "WEIGHT_ANSWER_3" : "Plus de XXX kg",
+        "WEIGHT_ANSWER_3_DESCRIPTION" : "Ex : Portail plein en métal",
+        "WEIGHT_ANSWER_4" : "Je ne sais pas",
+        "TYPE_QUESTION" : "Votre portail est …",
+        "TYPE_ANSWER_1" : "Ajouré",     
+        "TYPE_ANSWER_2" : "Plein",    
+        "TYPE_ANSWER_3" : "Je ne sais pas",
+        "WIND_QUESTION" : "Vivez-vous dans une région venteuse ?",
+        "WIND_ANSWER_1" : "Ajouré",     
+        "WIND_ANSWER_2" : "Plein",    
+        "WIND_ANSWER_3" : "Je ne sais pas",
+        "AUTO_QUESTION" : "Voulez-vous que votre portail se ferme automatiquement ?",
+        "AUTO_ANSWER_1" : "Oui",
+        "AUTO_ANSWER_1_DESCRIPTION" : "mon portail se fermera automatiquement au bout de 30 secondes",
+        "AUTO_ANSWER_2" : "Non",
+        "AUTO_ANSWER_2_DESCRIPTION" : "je préfère appuyer à nouveau pour le fermer"
+
+
+       
+}

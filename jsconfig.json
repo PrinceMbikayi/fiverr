@@ -1,0 +1,28 @@
+
+{
+    "include": [
+        "./src/**/*.js"
+      ],
+   
+    "compilerOptions": {
+        "jsx": "react",
+        "baseUrl": "./src",
+        "paths": {
+           "_src/*" : ["./*"],
+            "_actions/*": ["actions/*"],
+            "_api/*" : ["api/*"],
+            "_assets/*":["assets/*"],
+            "_components/*": ["components/*"],
+            "@components/*": ["components/*"],
+            "_config/*": ["config/*"],
+            "_helpers/*": ["helpers/*"], 
+            "_selectors/*" : ["selectors/*"],           
+            "_screens/*": ["screens/*"],
+            "_hooks/*": ["hooks/*"],
+            "_services/*": ["services/*"],
+            "react-native-redash/lib/module/v1": [
+              "./node_modules/react-native-redash/lib/typescript/v1/index.d.ts"
+          ]
+          }
+    }
+}

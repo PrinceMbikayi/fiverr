@@ -1,0 +1,55 @@
+{
+    "atHomeHeaterMode" : {
+        "eco"       : {"icon": "AtHomeWirePilotEco", "label" : "scenarios:HEATER_MODE_ECO"},
+        "comfort" : {"icon":"AtHomeWirePilotComfort", "label":"scenarios:HEATER_MODE_COMFORT"},
+        "comfort-1" : {"icon":"AtHomeWirePilotComfort", "label":"scenarios:HEATER_MODE_COMFORT_1"},
+        "comfort-2" : {"icon":"AtHomeWirePilotComfort", "label":"scenarios:HEATER_MODE_COMFORT_2"}
+    },
+    "heaterBasePrograms" : {
+        "eco"       : {"icon": "AtHomeWirePilotEco", "label" : "scenarios:HEATER_MODE_ECO","mode":"eco"},
+        "comfort" : {"icon":"AtHomeWirePilotComfort", "label":"scenarios:HEATER_MODE_COMFORT","mode":"comfort"},
+        "comfort-1" : {"icon":"AtHomeWirePilotComfort", "label":"scenarios:HEATER_MODE_COMFORT_1","mode":"comfort-1"},
+        "comfort-2" : {"icon":"AtHomeWirePilotComfort", "label":"scenarios:HEATER_MODE_COMFORT_2","mode":"comfort-2"},
+        "on" : {"icon":"AtHomeWirePilotComfort", "label":"scenarios:HEATER_MODE_ON","mode":"on"},
+        "off" : {"icon":"AtHomeWirePilotEco", "label":"scenarios:HEATER_MODE_OFF","mode":"off"},
+        "frost_free" : {"icon":"AtHomeWirePilotFrostFree", "label":"scenarios:THERMOSTAT_MODE_FROSTFREE","mode":"frost_free"},           
+        "frost-free" : {"rem" : "needed for wirepilot status name","icon":"AtHomeWirePilotFrostFree", "label":"scenarios:THERMOSTAT_MODE_FROSTFREE","mode":"frost-free"}, 
+        "absence" : {"icon":"AtHomeThermostatAbsence", "label":"scenarios:THERMOSTAT_MODE_ABSENCE","mode":"absence"},
+        "boost" : {"icon":"AtHomeThermostatBoost", "label":"scenarios:THERMOSTAT_MODE_BOOST","mode":"boost"}
+        
+    },
+    "wirepilot_normalDay" : [   
+        {"start":"00:00","end":"06:00","mode":"eco"},
+        {"start":"06:00","end":"09:00","mode":"comfort-1"},
+        {"start":"09:00","end":"12:00","mode":"eco"},
+        {"start":"12:00","end":"17:00","mode":"comfort-2"},      
+        {"start":"17:00","end":"22:00","mode":"comfort-1"},
+        {"start":"22:00","end":"24:00","mode":"eco"}
+    ],
+    "wirepilot_wp_weekendDay" : [
+        {"start":"00:00","end":"07:00","mode":"eco"},
+        {"start":"07:00","end":"12:00","mode":"comfort-1"},  
+        {"start":"12:00","end":"17:00","mode":"comfort"},      
+        {"start":"17:00","end":"22:00","mode":"comfort-2"},
+        {"start":"22:00","end":"24:00","mode":"eco"} 
+    ],
+    "boilerDay" : [
+        {"start":"00:00","end":"06:00","mode":"on"},
+        {"start":"06:00","end":"22:00","mode":"off"},
+        {"start":"22:00","end":"24:00","mode":"on"}
+    ],
+    "heaterOnOff_normalDay" : [   
+        {"start":"00:00","end":"06:00","mode":"off"},
+        {"start":"06:00","end":"09:00","mode":"on"},
+        {"start":"09:00","end":"12:00","mode":"off"},
+        {"start":"12:00","end":"14:00","mode":"on"},
+        {"start":"14:00","end":"17:00","mode":"off"},      
+        {"start":"17:00","end":"22:00","mode":"on"},
+        {"start":"22:00","end":"24:00","mode":"off"}   
+    ],
+    "heaterOnOff_weekendDay" : [
+        {"start":"00:00","end":"08:00","mode":"off"},
+        {"start":"08:00","end":"22:00","mode":"on"},
+        {"start":"22:00","end":"24:00","mode":"off"}
+    ]
+}

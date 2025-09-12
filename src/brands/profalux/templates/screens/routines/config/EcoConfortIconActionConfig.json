@@ -1,0 +1,56 @@
+{
+    "Rolling_Shutter_Ezsp" : {
+        "itemId":1,
+        "OPEN/OPEN":{"iconName":"vrOpenIcon", "label":"OPEN"},
+        "CLOSE/CLOSE":{"iconName":"vrCloseIcon", "label":"CLOSE"},
+        "FAV_CALL_1/FAV_CALL_1":{"iconName":"favIcon","label":"FAV_CALL_1"},
+        "FAV_CALL_3/FAV_CALL_3":{"iconName":"hemstitchIcon","label":"FAV_CALL_3"},
+        "LEVEL/17":{"iconName":"ajarIcon", "label":"LEVEL_17"},
+        "LEVEL/25":{"iconName":"vrLevel25Icon", "label":"LEVEL_25"},
+        "LEVEL/50":{"iconName":"vrLevel50Icon", "label":"LEVEL_50"},
+        "LEVEL/75":{"iconName":"vrLevel75Icon", "label":"LEVEL_75"},
+        "NOACTION":{"iconName":"vrLevel50Icon", "label":"?"}
+    } ,
+    
+    "Shade_Ezsp" : {
+        "itemId":2,
+        "OPEN/OPEN":{"iconName":"storeOpenIcon", "label":"OPEN"},
+        "CLOSE/CLOSE":{"iconName":"storeCloseIcon", "label":"CLOSE"},
+        "FAV_CALL_1/FAV_CALL_1":{"iconName":"favIcon","label":"FAV_CALL_1"},
+        "FAV_CALL_3/FAV_CALL_3":{"iconName":"hemstitchIcon","label":"FAV_CALL_3"},
+        "LEVEL/17":{"iconName":"ajarIcon", "label":"LEVEL_17"},
+        "LEVEL/25":{"iconName":"store4Icon", "label":"LEVEL_25"},
+        "LEVEL/50":{"iconName":"store3Icon", "label":"LEVEL_50"},
+        "LEVEL/75":{"iconName":"store2Icon", "label":"LEVEL_75"},
+        "NOACTION":{"iconName":"store3Icon", "label":"?"}
+    },
+    "Venetian_Shutter_Ezsp" : {
+        "itemId":3,
+        "OPEN/OPEN":{"iconName":"bsoOpenIcon", "label":"OPEN"},
+        "CLOSE/CLOSE":{"iconName":"bsoCloseIcon", "label":"CLOSE"},
+        "FAV_CALL_1/FAV_CALL_1":{"iconName":"favIcon","label":"FAV_CALL_1"},
+        "FAV_CALL_3/FAV_CALL_3":{"iconName":"hemstitchIcon","label":"FAV_CALL_3"},
+        "LEVEL/17":{"iconName":"ajarIcon", "label":"LEVEL_17"},
+        "LEVEL/25":{"iconName":"bsoLevel25Icon", "label":"LEVEL_25"},
+        "LEVEL/50":{"iconName":"bsoLevel50Icon", "label":"LEVEL_50"},
+        "LEVEL/75":{"iconName":"bsoLevel75Icon", "label":"LEVEL_75"},
+        "TILT/0":{"iconName":"bsoLame0degIcon", "label":"TILT_0"},
+        "TILT/22":{"iconName":"bsoLame22degIcon", "label":"TILT_22"},
+        "TILT/45":{"iconName":"bsoLame45degIcon", "label":"TILT_45"},
+        "TILT/67":{"iconName":"bsoLame67degIcon", "label":"TILT_67"},
+        "TILT/90":{"iconName":"bsoLame90degIcon", "label":"TILT_90"},
+        "NOACTION":{"iconName":"bsoLevel50Icon", "label":"?"}
+    },
+    "Rolling_Shutter_Profalux" : {
+        "itemId":4,
+        "OPEN/OPEN":{"iconName":"vrOpenIcon", "label":"OPEN"},
+        "CLOSE/CLOSE":{"iconName":"vrCloseIcon", "label":"CLOSE"},
+        "FAV_CALL_1/FAV_CALL_1":{"iconName":"favIcon","label":"FAV_CALL_1"},
+        "FAV_CALL_3/FAV_CALL_3":{"iconName":"hemstitchIcon","label":"FAV_CALL_3"},
+        "LEVEL/17":{"iconName":"ajarIcon", "label":"LEVEL_17"},
+        "LEVEL/25":{"iconName":"vrLevel25Icon", "label":"LEVEL_25"},
+        "LEVEL/50":{"iconName":"vrLevel50Icon", "label":"LEVEL_50"},
+        "LEVEL/75":{"iconName":"vrLevel75Icon", "label":"LEVEL_75"},
+        "NOACTION":{"iconName":"vrLevel50Icon", "label":"?"}
+    } 
+}

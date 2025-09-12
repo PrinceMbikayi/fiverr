@@ -1,0 +1,16 @@
+{   
+    "CALI-O":"AtHomeHeater",
+    "CALI-P":"AtHomeWirePilot",
+    "CALI-B":"AtHomeBoiler",
+    "PLUG-I":"AtHomePlugIn",
+    "PLUG-O":"AtHomePlugOut",
+    "DIANE-LED":"AtHomeLight",
+    "DIANE-2":"AtHome2ChLight",
+    "ACCESS":"AtHomeModuleShutter",
+    "GUARDIAN":"AtHomeModuleGate",
+    "PROBE-TEMP":"AtHomeProbe",
+    "EZSP-WIREPILOT" : "EzspWirePilot",
+    "Rolling_Shutter_Ezsp":"Rolling_Shutter_Ezsp",
+    "Venetian_Shutter_Ezsp":"Venetian_Shutter_Ezsp"
+
+}

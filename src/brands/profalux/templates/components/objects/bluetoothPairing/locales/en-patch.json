@@ -1,0 +1,7 @@
+{
+    "PERMISSION_UMII_TITLE": "Permissions required",
+    "PERMISSIONS_UMII_BODY": "Umii use Location and Near By Wifi Devices, in order to permit the addition and configuration of Umii devices.\nNo Location datas are stored, used to provide advertising, nor provided to third party",
+    "PERMISSION_NEUTRAL_BUTTON": "ask later",
+    "PERMISSION_ACCEPT_BUTTON": "I accept",
+    "PERMISSION_DENY_BUTTON": "I refuse"
+}

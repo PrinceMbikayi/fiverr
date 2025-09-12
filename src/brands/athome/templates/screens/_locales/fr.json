@@ -1,0 +1,26 @@
+{   
+    "WELCOME" : "Bienvenue !", 
+    "DESCRIPTION" : "Créer votre compte pour une expérience personnalisée et sécurisée",
+    "GOOGLE_CREATE" : "Continue avec Google",
+    "AMAZON_CREATE" : "Continue avec Amazon",
+    "APPLE_CREATE" : "Continue avec Apple",
+    "EMAIL_CREATE" : "Continuer avec votre email",
+    "CREATE_ACCOUNT_TITLE" : "Créer votre compte",
+    "CREATE_ACCOUNT_SUBMIT" : "Créer votre compte",
+    "ALREADY_GOT_ACCOUNT" :  "Déjà enregistré ? <1>Connectez-vous</1>.",
+    "MAIL_SEND" : "Un mail vous a été envoyé",
+    "MAIL_SEND_CODE" : "Afin de valider votre inscription, un code vous a été envoyé à l'adresse mail indiquée.\nMerci de le saisir ci-dessous",
+    "SUBMIT_CODE_BUTTON" : "Valider",
+    "LOGIN_TITLE" : "Se connecter",
+    "NO_ACCOUNT_SO_CREATE" :  "Vous n’êtes pas enregistrés ? <1>Créer un compte</1>.",
+    "LOGIN_SUBMIT" : "Se connecter",
+    "LOST_PASSWORD_TITLE" : "Mot de Passe oublié ?",
+    "LOST_PASWWORD_DESCRIPTION" : "Merci de renseigner l’adresse mail que vous avez utilisé pour créer votre compte. Nous vous enverrons les instructions pour réinitialiser votre mot de passe.",
+    "LOST_PASSWORD_SUBMIT" :"Envoyer les instructions",
+    "LOST_PASSWORD_MAIL_RECIEVED" : "Il contient un code à renseigner dans l'écran suivant",
+    "LOST_PASSWORD_CONTINUE": "J'ai reçu le mail !",
+    "REINIT_PASSWORD_TITLE" : "Nouveau mot de passe",
+    "REINIT_PASSWORD_DESCRIPTION" : "Saisissez le code et votre nouveau mot de passe.",
+    "REINIT_PASSWORD_SUBMIT" : "Envoyer"
+   
+}

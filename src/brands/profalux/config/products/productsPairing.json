@@ -1,0 +1,44 @@
+{ 
+    
+    "VERRIN-BATTANT" : {
+        "name" : "EXT_761003",
+        "typeName": "BoardGate",
+        "type" :"gate",
+        "subType" : "swing",
+        "reference" : "EXT-761003",
+        "pairing" : "bluetooth",
+        "image" : "EXT_761003"
+
+    },
+    "COULLISSANT" : {
+        "name" : "EXT_761004",
+        "typeName": "BoardGate",
+        "type" :"gate",
+        "subType" : "sliding",
+        "reference" : "EXT-761004",
+        "pairing" : "bluetooth",
+        "image" : "EXT_761004"
+
+    },
+    "BRAS_MOTORISE" : {
+        "name" : "EXT_761005",
+        "typeName": "BoardGate",
+        "type" :"gate",
+        "subType" : "swing",
+        "reference" : "EXT-761005",
+        "pairing" : "bluetooth",
+        "image" : "EXT_761005"
+
+    }
+    ,
+    "SESAME" : {
+        "name" : "SAT-OPROLL",
+        "typeName": "SesameGate",
+        "type" :"gate",
+        "subType" : "sesame",
+        "reference" : "SAT-OPROLL",
+        "pairing" : "bluetooth",
+        "image" : "SAT-OPROLL"
+
+    }
+}

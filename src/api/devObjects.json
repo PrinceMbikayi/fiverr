@@ -1,0 +1,112 @@
+[
+    {
+        "uri": "https://demo.athemium.com/services/durin/my/objects/684520",
+        "resource": {
+            "eventId": "event/io/athome/sensor/temp_sensor/bb6d3f24da2db515037499ef6e45ca6091bfe71d/",
+            "img": "sondeObject.svg",
+            "defaultCategory": "probes",
+            "noPresentEvt": false,
+            "flags": {
+                "voice-controlled": true
+            },
+            "typeName": "AtHomeProbe",
+            "className": "Sonde",
+            "room": {
+                "uri": "https://demo.athemium.com/services/durin/my/rooms/541"
+            },
+            "connected": true,
+            "gw": {
+                "uri": "https://demo.athemium.com/services/durin/my/gateways/477436094"
+            },
+            "rDependencies": {
+                "applications": [
+                    {
+                        "uri": "https://demo.athemium.com/services/durin/my/objects/710086"
+                    },
+                    {
+                        "uri": "https://demo.athemium.com/services/durin/my/objects/767060"
+                    }
+                ]
+            },
+            "statusImages": [
+                {
+                    "status": "battery",
+                    "iconSet": "battery"
+                }
+            ],
+            "realName": "sensor/temp_sensor/bb6d3f24da2db515037499ef6e45ca6091bfe71d",
+            "name": "Probe Mock",
+            "statuses": [
+                {
+                    "name": "temperature",
+                    "value": "17.50",
+                    "time": 1666085924000
+                },
+                {
+                    "name": "humidity",
+                    "value": "46.90",
+                    "time": 1666085618000
+                },
+                {
+                    "name": "__firmware",
+                    "value": "1.7.14",
+                    "time": 1665737498000
+                },
+                {
+                    "name": "__link_disconnections",
+                    "value": "0",
+                    "time": 1665737510000
+                },
+                {
+                    "name": "__mqtt_disconnections",
+                    "value": "0",
+                    "time": 1665737507000
+                },
+                {
+                    "name": "present",
+                    "value": "1",
+                    "time": 1665952372000
+                },
+                {
+                    "name": "setpoint",
+                    "value": "7.0",
+                    "time": 1666065603000
+                }
+            ],
+            "id": 198400001,
+            "categories": [
+                {
+                    "uri": "https://demo.athemium.com/services/durin/my/categories/268000"
+                },
+                {
+                    "uri": "https://demo.athemium.com/services/durin/my/categories/2174"
+                },
+                {
+                    "uri": "https://demo.athemium.com/services/durin/my/categories/533"
+                }
+            ],
+            "actions": [
+                {
+                    "name": "SETPOINT",
+                    "importance": 3,
+                    "mArgs": [
+                        {
+                            "name": "value",
+                            "type": "TEXT"
+                        }
+                    ]
+                },
+                {
+                    "name": "OFFSET",
+                    "importance": 3,
+                    "mArgs": [
+                        {
+                            "name": "value",
+                            "type": "TEXT"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,1 @@
+export const PLAYER_STATES = {PAUSED:"paused",PLAYING:"playing",ENDED:"ended"}

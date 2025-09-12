@@ -1,0 +1,4 @@
+{
+    "GATE" : {"typeName":"BoardGate"},
+    "GATE-TO-CONNECT" : {"typeName":"BoardGateToConnect"}
+}

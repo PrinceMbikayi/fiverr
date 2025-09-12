@@ -1,0 +1,6 @@
+{
+    "THERMOSTAT":{"typeName":"AtHomeThermostat"},
+    "WEATHER":{"typeName":"WeatherSupport"},
+    "ACCESS":{"typeName":"AtHomeModuleShutter"},
+    "EZSP-WIREPILOT" : {"typeName":"EzspWirePilot"}
+}
