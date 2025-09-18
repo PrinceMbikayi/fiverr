@@ -1,0 +1,93 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    package="com.stellagroup.macalypshome.mobile" android:versionName="1.0.5" android:versionCode="1000061">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+     <!-- required by webrtc -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MICROPHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- required by qrCode reader , webrtc -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- required by qrCode reader -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+    <!-- required by Bluetooth -->
+    <!-- Request legacy Bluetooth permissions on older devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH"
+                     android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"
+                     android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <!-- Needed only if your app makes the device discoverable to Bluetooth
+         devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+    <!-- Needed only if your app communicates with already-paired Bluetooth
+         devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <!-- Add this line if your application always requires BLE. More info can be found on:
+        https://developer.android.com/guide/topics/connectivity/bluetooth-le.html#permissions
+      -->
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme"
+      android:largeHeap="true"
+      android:requestLegacyExternalStorage="true">
+      
+        <meta-data android:name = "com.google.firebase.messaging.default_notification_icon" android:resource = "@drawable/ic_notification" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification_color" tools:replace="android:resource"/>
+
+        <!-- android:windowSoftInputMode="adjustResize" -->
+        <activity
+          android:name=".MainActivity"
+          android:label="@string/app_name"
+          android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
+          android:windowSoftInputMode="adjustResize"
+          android:exported="true" 
+          android:launchMode="singleTask"       
+          android:turnScreenOn="true"
+          
+          >
+          <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>     
+        </activity>
+        <activity
+            android:name=".CustomActivity"
+            android:exported="true" 
+            android:launchMode="singleTask"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+          />
+    
+          <!-- add the following lines (use the theme you created at step 3) -->
+        <activity
+          android:name="com.zoontek.rnbootsplash.RNBootSplashActivity"
+          android:theme="@style/BootTheme"
+          android:launchMode="singleTask"
+          android:exported="true">
+          <!-- <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter> -->
+        </activity>
+  
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+    </application>
+</manifest>

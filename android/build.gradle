@@ -1,49 +1,36 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-// 2021-09-06 : 
-// - compileSdKVersin from 29 to 31
-// - targetSdkVersion from 29 to 31 // then changed to 30 for trampoline issue
-// - buildToolsVersion from 29.0.3 to 31.0.0
-
 buildscript {
     ext {
         googlePlayServicesVersion = "+" // default: "+"
-        firebaseVersion = "23.0.0" // was 21.0.0 ||  default: "+"
-        buildToolsVersion = "34.0.0"
+        firebaseVersion = "33.5.1" // Latest Firebase version
+        buildToolsVersion = "35.0.0"
         minSdkVersion = 24
-        compileSdkVersion = 34
-        targetSdkVersion = 34 
+        compileSdkVersion = 35
+        targetSdkVersion = 35 
         renderscriptVersion = 21
-        googlePlayServicesAuthVersion = "19.2.0"
-        ndkVersion = "25.1.8937393"
-       // kotlinVersion = '1.6.10' // <- add this line
-        kotlinVersion = '1.8.0' // <- add this line
-
+        googlePlayServicesAuthVersion = "21.2.0"
+        ndkVersion = "27.2.12479018" // Latest NDK
+        kotlinVersion = '2.1.0' // Latest Kotlin version
 
         if (System.properties['os.arch'] == "aarch64") {
-            // For M1 Users we need to use the NDK 24 which added support for aarch64
-            ndkVersion = "24.0.8215888"
+            // For M1 Users - latest NDK supports aarch64
+            ndkVersion = "27.2.12479018"
         } else {
-            // Otherwise we default to the side-by-side NDK version from AGP.
-            ndkVersion = "21.4.7075529"
+            // Latest NDK for all architectures
+            ndkVersion = "27.2.12479018"
         }
-        
     }
     repositories {
         google()
-        jcenter()
-         mavenCentral()
+        mavenCentral()
     }
     dependencies {
-       
-        classpath("com.android.tools.build:gradle:7.2.1") 
-        classpath("com.facebook.react:react-native-gradle-plugin")
-        classpath("de.undercouch:gradle-download-task:5.0.1")       
-         //classpath("com.android.tools.build:gradle:4.1.0")        
-        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.2.0'
-        classpath 'com.google.gms:google-services:4.3.3'
-       // classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion" // <- add this line
-         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0" // <- add this line
+        classpath("com.android.tools.build:gradle:8.7.3") 
+        classpath("de.undercouch:gradle-download-task:5.4.0")       
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:3.0.2'
+        classpath 'com.google.gms:google-services:4.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.0" // Latest Kotlin
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -51,13 +38,11 @@ buildscript {
 
 def REACT_NATIVE_VERSION = new File(['node', '--print',"JSON.parse(require('fs').readFileSync(require.resolve('react-native/package.json'), 'utf-8')).version"].execute(null, rootDir).text.trim())
 
-
 allprojects {
     configurations.all {
         resolutionStrategy {
             // Remove this override in 0.65+, as a proper fix is included in react-native itself.
             force "com.facebook.react:react-native:" + REACT_NATIVE_VERSION
-            //force 'com.facebook.flipper:flipper-fresco-plugin:0.125.0'
         }
     }
     repositories {
@@ -83,7 +68,160 @@ allprojects {
         google()
         jcenter()
         maven { url 'https://jitpack.io' }
-        
+    }
+    
+    // Fix for AGP 8.0+ buildConfig requirement for all Android libraries
+    pluginManager.withPlugin("com.android.library") {
+        android {
+            buildFeatures {
+                buildConfig true
+            }
+            
+            // Fix namespace issues for specific libraries with AGP 8.0+
+            if (project.name == "react-native-bluetooth-state-manager") {
+                namespace 'de.patwoz.rn.bluetoothstatemanager'
+            }
+            if (project.name == "react-native-community_art") {
+                namespace 'com.reactnativecommunity.art'
+            }
+            if (project.name == "react-native-community_toolbar-android") {
+                namespace 'com.reactnativecommunity.toolbarandroid'
+            }
+            if (project.name == "react-native-date-picker") {
+                namespace 'com.henninghall.date_picker'
+            }
+            if (project.name == "react-native-exception-handler") {
+                namespace 'com.masteratul.exceptionhandler'
+            }
+            if (project.name == "react-native-image-picker") {
+                namespace 'com.imagepicker'
+            }
+            if (project.name == "react-native-video") {
+                namespace 'com.brentvatne.react'
+            }
+            if (project.name == "react-native-webview") {
+                namespace 'com.reactnativecommunity.webview'
+            }
+            if (project.name == "react-native-camera") {
+                namespace 'org.reactnative.camera'
+            }
+            if (project.name == "react-native-vector-icons") {
+                namespace 'com.oblador.vectoricons'
+            }
+            if (project.name == "react-native-ble-manager") {
+                namespace 'it.innove'
+            }
+            if (project.name == "react-native-blob-util") {
+                namespace 'com.ReactNativeBlobUtil'
+            }
+            if (project.name == "react-native-bootsplash") {
+                namespace 'com.zoontek.rnbootsplash'
+            }
+            if (project.name == "react-native-community_checkbox") {
+                namespace 'com.reactnativecommunity.checkbox'
+            }
+            if (project.name == "react-native-community_datetimepicker") {
+                namespace 'com.reactcommunity.rndatetimepicker'
+            }
+            if (project.name == "react-native-community_geolocation") {
+                namespace 'com.reactnativecommunity.geolocation'
+            }
+            if (project.name == "react-native-community_netinfo") {
+                namespace 'com.reactnativecommunity.netinfo'
+            }
+            if (project.name == "react-native-community_slider") {
+                namespace 'com.reactnativecommunity.slider'
+            }
+            if (project.name == "react-native-config") {
+                namespace 'com.lugg.ReactNativeConfig'
+            }
+            if (project.name == "react-native-device-info") {
+                namespace 'com.learnium.RNDeviceInfo'
+            }
+            if (project.name == "react-native-flipper") {
+                namespace 'com.reactnativeflipper'
+            }
+            if (project.name == "react-native-flipper-performance-plugin") {
+                namespace 'com.oblador.performance'
+            }
+            if (project.name == "react-native-gesture-handler") {
+                namespace 'com.swmansion.gesturehandler'
+            }
+            if (project.name == "react-native-get-random-values") {
+                namespace 'org.linusu'
+            }
+            if (project.name == "react-native-google-signin_google-signin") {
+                namespace 'co.apptailor.googlesignin'
+            }
+            if (project.name == "react-native-keychain") {
+                namespace 'com.oblador.keychain'
+            }
+            if (project.name == "react-native-linear-gradient") {
+                namespace 'com.BV.LinearGradient'
+            }
+            if (project.name == "react-native-localize") {
+                namespace 'com.zoontek.rnlocalize'
+            }
+            if (project.name == "react-native-masked-view_masked-view") {
+                namespace 'org.reactnative.maskedview'
+            }
+            if (project.name == "react-native-network-info") {
+                namespace 'com.pusherman.networkinfo'
+            }
+            if (project.name == "react-native-orientation-locker") {
+                namespace 'org.wonday.orientation'
+            }
+            if (project.name == "react-native-pager-view") {
+                namespace 'com.reactnativepagerview'
+            }
+            if (project.name == "react-native-permissions") {
+                namespace 'com.zoontek.rnpermissions'
+            }
+            if (project.name == "react-native-picker_picker") {
+                namespace 'com.reactnativecommunity.picker'
+            }
+            if (project.name == "react-native-reanimated") {
+                namespace 'com.swmansion.reanimated'
+            }
+            if (project.name == "react-native-safe-area-context") {
+                namespace 'com.th3rdwave.safeareacontext'
+            }
+            if (project.name == "react-native-screens") {
+                namespace 'com.swmansion.rnscreens'
+            }
+            if (project.name == "react-native-send-intent") {
+                namespace 'com.burnweb.rnsendintent'
+            }
+            if (project.name == "react-native-svg") {
+                namespace 'com.horcrux.svg'
+            }
+            if (project.name == "react-native-udp") {
+                namespace 'com.tradle.react'
+            }
+            if (project.name == "react-native-vision-camera") {
+                namespace 'com.mrousavy.camera'
+            }
+            if (project.name == "react-native-webrtc") {
+                namespace 'com.oney.WebRTCModule'
+            }
+            if (project.name == "react-native-wheel-picker-android") {
+                namespace 'com.wheelpicker'
+            }
+            if (project.name == "react-native-wifi-reborn") {
+                namespace 'com.reactlibrary'
+            }
+            if (project.name == "sayem314_react-native-keep-awake") {
+                namespace 'com.corbt.keepawake'
+            }
+            if (project.name == "invertase_react-native-apple-authentication") {
+                namespace 'com.reactnativeappleauthentication'
+            }
+            if (project.name == "lottie-react-native") {
+                namespace 'com.airbnb.android.react.lottie'
+            }
+            if (project.name == "react-native-async-storage_async-storage") {
+                namespace 'com.reactnativeasyncstorage.asyncstorage'
+            }
+        }
     }
 }
-

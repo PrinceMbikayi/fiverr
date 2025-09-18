@@ -8,7 +8,7 @@ let babel_json = require('./brand.config.json');
 console.log('the json obj',babel_json);
 //const btheme = process.env.VENDOR;
 module.exports = {
-  presets: [['module:metro-react-native-babel-preset', {
+  presets: [['@react-native/babel-preset', {
     unstable_disableES6Transforms: true
 }]],
 

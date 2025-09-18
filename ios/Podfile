@@ -9,7 +9,7 @@ $RNFirebaseAsStaticFramework = true
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, '13.1'
+platform :ios, '14.0'
 install! 'cocoapods', :deterministic_uuids => false
 
 production = ENV["PRODUCTION"] == "1"
@@ -37,8 +37,8 @@ target 'CalypsHome' do
   
 
   permissions_path = '../node_modules/react-native-permissions/ios'
-  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse.podspec"
-  pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
 
   #pod 'RNFBMessaging', :path => '../node_modules/@react-native-firebase/messaging'
 
@@ -66,7 +66,7 @@ end
 $NotifeeExtension = true
 
 target 'richNotification' do
-  pod 'Firebase/Messaging', '~> 9.6.0' #was 8.8.0 ----7.5.0 # eg 6.31.0
+  pod 'Firebase/Messaging', '~> 10.15.0' #was 8.8.0 ----7.5.0 # eg 6.31.0
   pod 'RNNotifeeCore', :path => '../node_modules/@notifee/react-native/RNNotifeeCore.podspec'
 end
 
