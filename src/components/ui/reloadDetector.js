@@ -1,8 +1,7 @@
 
-import React, {useState} from 'react';
-import { Text, View,StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
 

@@ -7,7 +7,7 @@ import styled from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation,useRoute } from '@react-navigation/native';
 import {getKey,setKey} from '_services/storage';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {getObjectById} from '_helpers/objects';
 import { useUser } from '_hooks/useUserHigher';
 

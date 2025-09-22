@@ -1,7 +1,7 @@
-import * as axios from 'axios';
+import axios from 'axios';
 
-import {AppConfig} from '../config';
-import {getServer as getStoredServer} from '_services/storage';
+import { getServer as getStoredServer } from '_services/storage';
+import { AppConfig } from '../config';
 
 
 const timeoutDuration = 30*1000;
@@ -519,4 +519,5 @@ const support = async(params) => {
 
 
 
-export {add, update, remove, removeMultiple, get, search, graphs, apps, files, getAllFiles, support}
+export { add, apps, files, get, getAllFiles, graphs, remove, removeMultiple, search, support, update };
+

@@ -1,17 +1,15 @@
-import {createStore, applyMiddleware} from 'redux'  
-import { composeWithDevTools } from 'redux-devtools-extension';
+import { composeWithDevTools } from '@redux-devtools/extension';
+import { applyMiddleware, createStore } from 'redux';
 
-import { devToolsEnhancer } from 'redux-devtools-extension';
 import apiMiddleware from '../middleware/api';
+import notificationsMiddleware from '../middleware/notifications';
 import objectsMiddleware from '../middleware/objects';
 import roomsMiddleware from '../middleware/rooms';
-import notificationsMiddleware from '../middleware/notifications';
- import throttledMiddleware from '../middleware/throttled';
 import rootReducer from '../reducers';
 
-import { persistStore, persistReducer } from 'redux-persist';
+import { persistReducer } from 'redux-persist';
 
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 /*
 const composeEnhancers = composeWithDevTools({

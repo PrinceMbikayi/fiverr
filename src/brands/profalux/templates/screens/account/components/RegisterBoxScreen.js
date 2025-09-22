@@ -12,7 +12,7 @@ import { useNavigation,useRoute } from '@react-navigation/native';
 import { useTheme} from '_theming/themeProvider'
 import {AutomatedTestIdDisplay} from '_components/objects/@common/testAutomation/AutomatedTestId';
 
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import ScreenContainer from './ScreenContainer'
 import {logout as ApiLogout} from '_api/Api';
 import { SimpleForm } from './SimpleForm';

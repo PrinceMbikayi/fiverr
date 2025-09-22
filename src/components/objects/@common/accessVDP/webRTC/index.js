@@ -1,33 +1,29 @@
 
-import React, {useContext,useEffect,useState,useRef,useCallback,useImperativeHandle} from 'react';
 import KeepAwake from '@sayem314/react-native-keep-awake';
+import React, { useEffect, useImperativeHandle, useRef, useState } from 'react';
 
 
-import { View,ImageBackground} from 'react-native'; // use in styled components
+import { ImageBackground, View } from 'react-native'; // use in styled components
 
-import { useSelector,useDispatch } from 'react-redux';
 import store from '_store';
-import {isArray as lodashIsArray,isString as lodashIsString} from 'lodash'
+import { isArray as lodashIsArray, isString as lodashIsString } from 'lodash';
 import {
     RTCPeerConnection,
-    RTCIceCandidate,
     RTCSessionDescription,
     RTCView,
-    MediaStream,
-    MediaStreamTrack,
-    mediaDevices,
-    registerGlobals
-  } from 'react-native-webrtc';
+    mediaDevices
+} from 'react-native-webrtc';
+import { useDispatch } from 'react-redux';
 
 import styled from 'styled-components/native';
 
-import {Api} from '_api';
 import { updateStatus } from '_actions/objects';
+import { Api } from '_api';
 
-import {IconButtonRound} from '@components/ui/buttons/iconButtonRound';
+import { IconButtonRound } from '@components/ui/buttons/iconButtonRound';
 // note icons are comonent related
+import { AnimatedEstablishWebRtc } from '_assets/lotties/EstablishWebRtc';
 import icons from '../assets/icons';
-import {AnimatedEstablishWebRtc} from '_assets/lotties/EstablishWebRtc';
 
 
 
@@ -118,6 +114,10 @@ const RTCComponent = React.forwardRef((props,ref) => {
         const [remoteStream,setRemoteStream] = useState(null);
         const [forceRefresh,setForceRefresh] = useState(null);
        
+        // Media initialization state
+        const [mediaInitialized, setMediaInitialized] = useState(false);
+        const [mediaError, setMediaError] = useState(null);
+        const mediaInitializedRef = useRef(false);
         
         const answerReadyRef = useRef(false)
         const remoteCandidatesRef = useRef([]);
@@ -216,8 +216,76 @@ const RTCComponent = React.forwardRef((props,ref) => {
            
         } 
 
+        const initializeMediaEarly = async() => {
+            console.log("initializeMediaEarly - Starting media initialization before room join");
+            
+            try {
+                // Check if media is already initialized
+                if (mediaInitializedRef.current) {
+                    console.log("Media already initialized, skipping");
+                    return true;
+                }
+                
+                // Clear any previous errors
+                setMediaError(null);
+                
+                const sourceInfos = await mediaDevices.enumerateDevices();
+                let videoSourceId = -1;
+                sourceInfos.map((sourceInfo,i)=> {
+                    if ( sourceInfo.kind == 'videoinput' &&  sourceInfo.facing == 'front' && videoSourceId == -1){
+                        videoSourceId = sourceInfo.deviceId;
+                    }
+                });
+                
+                console.log("Requesting media permissions with constraints:", getDevicesConstraints(videoSourceId));
+                let stream = await mediaDevices.getUserMedia(getDevicesConstraints(videoSourceId))
+                
+                if (!stream) {
+                    throw new Error('Failed to get media stream');
+                }
+                
+                localStreamRef.current = stream;
+                
+                const videoStreams = stream.getVideoTracks();
+                console.log("Media initialized successfully - videoStreams:", videoStreams);
+
+                if(videoStreams.length > 0) {
+                    setLocalVideo(videoStreams[0]);
+                    videoStreams[0].enabled = false;
+                }
+                
+                mediaInitializedRef.current = true;
+                setMediaInitialized(true);
+                setForceRefresh(Date.now());
+                
+                console.log("Media initialization completed successfully");
+                return true;
+                
+            } catch (error) {
+                console.error("Media initialization failed:", error);
+                setMediaError(error.message || 'Media initialization failed');
+                setMediaInitialized(false);
+                mediaInitializedRef.current = false;
+                
+                if (callback) {
+                    callback('mediaInitializationFailed', { error: error.message });
+                }
+                
+                return false;
+            }
+        }
+
         const getDeviceMedia = async() => {
-            //console.log("getDeviceMedia");
+            console.log("getDeviceMedia - Using pre-initialized media");
+            
+            // If media was already initialized, just return success
+            if (mediaInitializedRef.current && localStreamRef.current && localStreamRef.current.getTracks) {
+                console.log("Using pre-initialized media stream");
+                return await mypc.current.addStream(localStreamRef.current);
+            }
+            
+            // Fallback to original implementation if early initialization failed
+            console.warn("Media not pre-initialized, falling back to original implementation");
             const sourceInfos = await mediaDevices.enumerateDevices();
             let videoSourceId = -1;
             sourceInfos.map((sourceInfo,i)=> {
@@ -239,7 +307,6 @@ const RTCComponent = React.forwardRef((props,ref) => {
             }
             console.log("videoStream2",videoStreams)
             setForceRefresh(Date.now());
-            //setIsRinging(true)
             return added;        
         }
 
@@ -302,72 +369,101 @@ const RTCComponent = React.forwardRef((props,ref) => {
         }
 
         const initWebRTC = async() => {
-
-            console.log("initWebRTCt")
-            mypc.current = new RTCPeerConnection(_peerConnectionConfiguration);
-           // mypc.current.createDataChannel("Mydata");
-           console.log("pass 2")
-            //PC Listeners (peer connection) -----------------------------    
-            mypc.current.onaddstream = (event) => {
-                //console.log("WebRtc onaddstream recieved from Remote",event)                
-                //setRemoteStreamURL(event.stream.toURL())
-                setRemoteStream(event.stream)
-                //setVideoPresent(true)
-                if(callback) {
-                    callback('remoteStreamPresent');
+            console.log("initWebRTC - Starting with media validation");
+            
+            try {
+                // Validate media is initialized before proceeding
+                if (!mediaInitializedRef.current || !localStreamRef.current || !localStreamRef.current.getTracks) {
+                    console.warn("Media not properly initialized, attempting to initialize now");
+                    const mediaSuccess = await initializeMediaEarly();
+                    if (!mediaSuccess) {
+                        throw new Error('Media initialization failed, cannot proceed with WebRTC setup');
+                    }
                 }
-            }            
-    
-            // Listeners here for debug purposes
-            
-            mypc.current.oniceconnectionstatechange = (event) => {
-                console.log("WebRtc oniceconnectionstatechange",event)
-            }            
-            mypc.current.onicegatheringstatechange = (event) => {
-                console.log("WebRtc onicegatheringstatechange",event)
-            }
-            mypc.current.onnegotiationneeded = () => {
-                console.log("WebRtc onnegotiationneeded")
-               // createOffer();
-            }
-            mypc.current.ontrack = (event) => {
-                console.log("WebRtc ontrack",event)
-            }
-           
-            //-------------------------------------------------------------------
-            // Getting Medias (device Camera and mikes)
-            // LocalStream managed during getDeviceMedia Process
-           
-            const agd = await getDeviceMedia().catch((e) => { console.log("err getDevice",e)});
-           //console.log("agd",agd)
-            //-------------------------------------------------------------------
-            // manage device candidates
-            mypc.current.onicecandidate = async(event) => {
-               // Think it's faster to wait for the null event.candidate
-                // then send a request with all candidates in an array
-                // by now each event.candidate send a request
-                if(event.candidate != null) {
-                    //console.log(" candidate generated and sent  --------------------------> onicecandidate =>",event.candidate);          
                 
-                    myCandidates.current.push(JSON.stringify(event.candidate))
-                    //console.log("------ candidate++",JSON.stringify(event.candidate))
-                    const a = await sendCandidate(event.candidate)
-                    console.log("------ candidate sent",a)
-                } else {
-                    // this is for indicate no all candidates sent
-                    console.log("----- last candidate null")
-                    const lc = await sendCandidate({"candidate":"","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"612fd59c"})
-                    console.log("------ empty candidate sent",lc)
-                    setCandidatesRefresh(Date.now());
-                } 
-            };
-            
-           
-
-            //============ OFFER CREATION ============================================       
-            createOffer();
-    
-            //console.log("/initWebRTC")
+                console.log("Media validation passed, proceeding with WebRTC setup");
+                mypc.current = new RTCPeerConnection(_peerConnectionConfiguration);
+                // mypc.current.createDataChannel("Mydata");
+                console.log("RTCPeerConnection created successfully");
+                
+                //PC Listeners (peer connection) -----------------------------    
+                mypc.current.onaddstream = (event) => {
+                    console.log("WebRtc onaddstream received from Remote", event);                
+                    setRemoteStream(event.stream)
+                    if(callback) {
+                        callback('remoteStreamPresent');
+                    }
+                }            
+        
+                // Enhanced listeners with better error handling
+                mypc.current.oniceconnectionstatechange = (event) => {
+                    console.log("WebRtc oniceconnectionstatechange", event.target.iceConnectionState);
+                    if (event.target.iceConnectionState === 'failed') {
+                        console.error("ICE connection failed");
+                        if (callback) {
+                            callback('iceConnectionFailed');
+                        }
+                    }
+                }            
+                mypc.current.onicegatheringstatechange = (event) => {
+                    console.log("WebRtc onicegatheringstatechange", event.target.iceGatheringState);
+                }
+                mypc.current.onnegotiationneeded = () => {
+                    console.log("WebRtc onnegotiationneeded");
+                }
+                mypc.current.ontrack = (event) => {
+                    console.log("WebRtc ontrack", event);
+                }
+               
+                //-------------------------------------------------------------------
+                // Getting Medias (device Camera and mikes)
+                // LocalStream managed during getDeviceMedia Process with validation
+               
+                console.log("Adding pre-initialized media stream to peer connection");
+                const agd = await getDeviceMedia().catch((e) => { 
+                    console.error("Error in getDeviceMedia:", e);
+                    throw new Error(`Failed to setup media: ${e.message}`);
+                });
+                console.log("Media stream added successfully:", agd);
+                
+                //-------------------------------------------------------------------
+                // manage device candidates
+                mypc.current.onicecandidate = async(event) => {
+                   // Think it's faster to wait for the null event.candidate
+                    // then send a request with all candidates in an array
+                    // by now each event.candidate send a request
+                    if(event.candidate != null) {
+                        //console.log(" candidate generated and sent  --------------------------> onicecandidate =>",event.candidate);          
+                    
+                        myCandidates.current.push(JSON.stringify(event.candidate))
+                        //console.log("------ candidate++",JSON.stringify(event.candidate))
+                        const a = await sendCandidate(event.candidate)
+                        console.log("------ candidate sent",a)
+                    } else {
+                        // this is for indicate no all candidates sent
+                        console.log("----- last candidate null")
+                        const lc = await sendCandidate({"candidate":"","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"612fd59c"})
+                        console.log("------ empty candidate sent",lc)
+                        setCandidatesRefresh(Date.now());
+                    } 
+                };
+                
+               
+                //============ OFFER CREATION ============================================       
+                createOffer();
+        
+                console.log("WebRTC initialization completed successfully");
+                
+            } catch (error) {
+                console.error("WebRTC initialization failed:", error);
+                setMediaError(error.message || 'WebRTC initialization failed');
+                
+                if (callback) {
+                    callback('webrtcInitializationFailed', { error: error.message });
+                }
+                
+                throw error;
+            }
         }
         // ========== effects ====================
 
@@ -382,10 +478,23 @@ const RTCComponent = React.forwardRef((props,ref) => {
                     
                 }
             }, []);
+            
+            // Early media initialization - happens before any room joining events
             useEffect(() => {       
                 const init = async() => {
+                    console.log("Component mounted - initializing media and UI");
+                    
+                    // Initialize media early to avoid delays during room join
+                    if (hasLocalVideo || true) { // Always try to initialize media
+                        console.log("Starting early media initialization");
+                        await initializeMediaEarly();
+                    }
+                    
+                    // Initialize image
                     const img = await getImage(itemId);
                     setImageSource((snap == 'default')? default_image : {uri:snap});
+                    
+                    console.log("Component initialization completed");
                  }
                  init();
             }, []); 
@@ -402,8 +511,36 @@ const RTCComponent = React.forwardRef((props,ref) => {
                     console.log("iceStatus is ignored, because it's still in object");
     
                     // it means you just have accepted the incoming call
-                    // so init RTC
-                    initWebRTC();
+                    // Validate media is ready before initializing WebRTC
+                    console.log("Room joined event - validating media before WebRTC setup");
+                    
+                    if (!mediaInitializedRef.current) {
+                        console.warn("Media not initialized for room join, initializing now");
+                        initializeMediaEarly().then((success) => {
+                            if (success) {
+                                console.log("Media initialized successfully, proceeding with WebRTC");
+                                initWebRTC().catch((error) => {
+                                    console.error("WebRTC initialization failed after media setup:", error);
+                                    if (callback) {
+                                        callback('webrtcInitializationFailed', { error: error.message });
+                                    }
+                                });
+                            } else {
+                                console.error("Media initialization failed, cannot proceed with WebRTC");
+                                if (callback) {
+                                    callback('mediaInitializationFailedOnJoin');
+                                }
+                            }
+                        });
+                    } else {
+                        console.log("Media already initialized, proceeding with WebRTC setup");
+                        initWebRTC().catch((error) => {
+                            console.error("WebRTC initialization failed:", error);
+                            if (callback) {
+                                callback('webrtcInitializationFailed', { error: error.message });
+                            }
+                        });
+                    }
     
                 } else {
                     const type = iceStatus?.type;

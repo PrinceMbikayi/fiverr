@@ -1,26 +1,22 @@
-import React from 'react';
-import {useContext,useState,useEffect, useRef} from 'react';
-import {SafeAreaView,Alert,Text, Platform,BackHandler} from 'react-native';
-import {useSelector,useDispatch} from "react-redux";
+import { difference as lodashDifference, pull as lodashPull } from 'lodash';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {difference as lodashDifference, pull as lodashPull} from 'lodash';
+import { BackHandler, Platform } from 'react-native';
+import { useDispatch, useSelector } from "react-redux";
 
-import { useNavigation,useRoute } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
-import { useTheme} from '_theming/themeProvider'
-import { HeaderWithMenu } from '_components/headers/header-with-menu';
-import { SimpleListWithReorder} from '../templates/SimpleListWithReorder';
-import {getOrderedList,setOrderedList} from '_services/storage';
-import {getAllObjects,getObjectsVisible,getObjectsByTypeName,getObjectById,getWidgetReference,getObjectRuntimeDatas,getUser, getObjectsByTypes, getObjectsByType} from '_helpers/selectors';
+import { getAllObjects, getObjectsByTypes, getUser } from '_helpers/selectors';
+import { setOrderedList } from '_services/storage';
+import { useTheme } from '_theming/themeProvider';
+import { SimpleListWithReorder } from '../templates/SimpleListWithReorder';
 
 //import {checkStartFromPushNotification} from '_services/pushNotifications/myPushNotifications';
 import { deleteStartFromNotification } from '_actions/notificationPush';
 import notificationPushManager from '_services/pushNotifications/pushNotificationManager';
-import {AutomatedTestIdDisplay} from '_components/objects/@common/testAutomation/AutomatedTestId';
 
 import ProductsTemplateScreen from '_brand/templates/screens/productsRelated/products';
 import { useUser } from '_hooks/useUserHigher';
-import { useObject } from '_hooks/object';
 
 const ProductsScreen = (props) => {
     
@@ -73,9 +69,9 @@ const ProductsScreen = (props) => {
       }, [objectsTypes]);
 
     useEffect(() => {        
-        BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+        const backHandlerSubscription = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
         return () => {
-            BackHandler.removeEventListener('hardwareBackPress', handleBackPress);
+            backHandlerSubscription.remove();
             //console.log("je suis retiré")
         };
       }, []);

@@ -1,12 +1,11 @@
-import React from 'react';
 
-import { createStackNavigator,TransitionPresets } from '@react-navigation/stack';
+import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 
 import UpdatePasswordScreen from '_screens/updatePassword';
 import ChangeWifiAccessPointScreen from '_screens/wifiAccessPoint';
 //import BlueToothScanHomeScreen from '_screens/settings/bluetooth';
 
-import {BLEStack} from '_screens/settings/bluetooth/navigation';
+//import {BLEStack} from '_screens/settings/bluetooth/navigation';
 
 
 import SettingsScreen from '_screens/settings';
@@ -27,7 +26,7 @@ export const  SettingsStack = () => {
     >
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="WifiAccessPoint" component={ChangeWifiAccessPointScreen}/>
-        <Stack.Screen name="BlueToothScanHome" component={BLEStack} />
+        {/* <Stack.Screen name="BlueToothScanHome" component={BLEStack} /> */}
         <Stack.Screen name="UdpAudit" component={UdpAuditScreen}/>
         <Stack.Screen name="UpdatePassword" component={UpdatePasswordScreen}/>
     </Stack.Navigator>

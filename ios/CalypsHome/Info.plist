@@ -2,18 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BGTaskSchedulerPermittedIdentifiers</key>
-	<array>
-		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>fr_FR</string>
+	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>CalypsHOME</string>
+	<string>CalypsHome</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleGetInfoString</key>
-	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -26,109 +20,41 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string></string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.939765837595-bhog6osmik8rupn6b9g3guk5e7n4l0le</string>
-			</array>
-		</dict>
-	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Access bluetooth device over serial connection to document connection features</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Access bluetooth device over serial connection to document connection features</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Veuillez accorder l'accès afin de lire les QR Codes des produits lors de l'appairage  </string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Veuillez accorder l'accès à l'application pour permettre la détection WiFi.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Veuillez accorder l'accès à l'application pour permettre la détection WiFi.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Veuillez accorder l'accès à l'application pour permettre la détection WiFi.</string>
-	<key>NSLocationWhenInUseUsageDescription - 2</key>
-	<string>Veuillez accorder l'accès à l'application pour permettre la détection WiFi.</string>
-	<key>NSMainNibFile</key>
-	<string>LaunchScreen</string>
+	<string>This app needs access to location when in use for location-based features.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs access to camera to take photos and scan QR codes.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Veuillez permettre à l'application d'accéder au micro afin d'utiliser le vidéo portier</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>pour exporter les captures VDP</string>
+	<string>This app needs access to microphone for audio recording and WebRTC calls.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>pour exporter les captures VDP en général</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Ionicons.ttf</string>
-		<string>Comic Sans MS.ttf</string>
-		<string>Comic Sans MS_bold.ttf</string>
-		<string>Segoe UI_bold.ttf</string>
-		<string>Segoe UI_bolditalic.ttf</string>
-		<string>Segoe UI_italic.ttf</string>
-		<string>Segoe UI.ttf</string>
-		<string>Source Sans Pro_Black.ttf</string>
-		<string>Source Sans Pro_BlackItalic.ttf</string>
-		<string>Source Sans Pro_Bold.ttf</string>
-		<string>Source Sans Pro_BoldItalic.ttf</string>
-		<string>Source Sans Pro_ExtraLight.ttf</string>
-		<string>Source Sans Pro_ExtraLightItalic.ttf</string>
-		<string>Source Sans Pro_Italic.ttf</string>
-		<string>Source Sans Pro_Light.ttf</string>
-		<string>Source Sans Pro_LightItalic.ttf</string>
-		<string>Source Sans Pro_SemiBold.ttf</string>
-		<string>Source Sans Pro_SemiBoldItalic.ttf</string>
-		<string>Source Sans Pro.ttf</string>
-		<string>AntDesign.ttf</string>
-		<string>Entypo.ttf</string>
-		<string>EvilIcons.ttf</string>
-		<string>Feather.ttf</string>
-		<string>FontAwesome.ttf</string>
-		<string>FontAwesome5_Brands.ttf</string>
-		<string>FontAwesome5_Regular.ttf</string>
-		<string>FontAwesome5_Solid.ttf</string>
-		<string>Fontisto.ttf</string>
-		<string>Foundation.ttf</string>
-		<string>MaterialCommunityIcons.ttf</string>
-		<string>MaterialIcons.ttf</string>
-		<string>Octicons.ttf</string>
-		<string>SimpleLineIcons.ttf</string>
-		<string>Zocial.ttf</string>
-	</array>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>fetch</string>
-		<string>processing</string>
-		<string>remote-notification</string>
-	</array>
+	<string>This app needs access to photo library to select images.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This app needs access to Bluetooth to connect with IoT devices.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app needs access to Bluetooth to communicate with IoT devices.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>arm64</string>
 	</array>
-	<key>UIStatusBarStyle</key>
-	<string></string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

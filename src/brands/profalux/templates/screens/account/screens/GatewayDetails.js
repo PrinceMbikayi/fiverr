@@ -1,26 +1,20 @@
-import '_brand/templates/screens/_locales'
-import React from 'react';
-import {useContext,useState,useEffect, useRef} from 'react';
-import {View, StyleSheet, Text} from 'react-native';
-import {useSelector,useDispatch} from "react-redux";
-import { useTranslation } from 'react-i18next';
-import { useNavigation,useRoute } from '@react-navigation/native';
-import { useTheme} from '_theming/themeProvider'
-import {BoxScreenTemplate} from "_brand/templates/screens/account/components/BoxScreenTemplate"
-import { Api } from '_api';
-import { useObject } from '_hooks/object';
-import { MyButton } from '_brand/templates/components/ui/MyButton';
-import {useGlobalModal} from '_components/ui/globalModal'
-import {GlobalToast} from '_brand/templates/components/objects/common/GlobalToast'
-import { userRemoveFavorite} from '_actions/user';
-import AsyncStorage from '@react-native-community/async-storage';
-import { myToast } from '_brand/templates/components/ui/myToast';
-import { CommonBottomSheetDeleteContent } from '_brand/templates/components/objects/common/CommonBottomSheetDeleteContent';
-import { DonglesPrecence } from '_brand/templates/screens/account/components/DonglesPrecence';
-import { quickToast } from '_brand/templates/components/ui/quickToast';
-import Toast from 'react-native-toast-message';
-import { toastConfig } from '_brand/templates/components/ui/toastConfig';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import * as Actions from '_actions/objects';
+import { Api } from '_api';
+import { CommonBottomSheetDeleteContent } from '_brand/templates/components/objects/common/CommonBottomSheetDeleteContent';
+import { GlobalToast } from '_brand/templates/components/objects/common/GlobalToast';
+import { myToast } from '_brand/templates/components/ui/myToast';
+import { toastConfig } from '_brand/templates/components/ui/toastConfig';
+import '_brand/templates/screens/_locales';
+import { DonglesPrecence } from '_brand/templates/screens/account/components/DonglesPrecence';
+import { useGlobalModal } from '_components/ui/globalModal';
+import { useObject } from '_hooks/object';
+import { useTheme } from '_theming/themeProvider';
+import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+import { StyleSheet, View } from 'react-native';
+import Toast from 'react-native-toast-message';
+import { useDispatch } from "react-redux";
 
 
 export const GatewayDetails = (props) => {

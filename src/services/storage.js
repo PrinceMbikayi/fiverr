@@ -1,7 +1,7 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Keychain from 'react-native-keychain';
-import AsyncStorage from '@react-native-community/async-storage';
 //import AsyncStorage from '@react-native-async-storage/async-storage'
-import {AppConfig} from '_config/';
+import { AppConfig } from '_config/';
 import { Platform } from 'react-native';
 
 /**
@@ -324,22 +324,6 @@ async function deleteUserFavoriteObjects() {
 
 
 export {
-    getUserCredentials,
-    setUserCredentials,
-    deleteUserCredentials,
-    foolUserCredentials,
-    getSessionId,
-    deleteSessionId,
-    getServer,setServer,
-    getOrderedList,setOrderedList,
-    getIsTester,setIsTester,
-    getHeaterSchedule,setHeaterSchedule,
-    setSecureSorage,
-    getSecureStorage,
-    getKey,
-    setKey,
-    getUserFavoriteObjects,
-    deleteUserFavoriteObjects
-
-}
+    deleteSessionId, deleteUserCredentials, deleteUserFavoriteObjects, foolUserCredentials, getHeaterSchedule, getIsTester, getKey, getOrderedList, getSecureStorage, getServer, getSessionId, getUserCredentials, getUserFavoriteObjects, setHeaterSchedule, setIsTester, setKey, setOrderedList, setSecureSorage, setServer, setUserCredentials
+};
 

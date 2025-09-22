@@ -1,34 +1,28 @@
+import { Normalise } from '../helpers/normalise';
 import store from '../store';
-import {Normalise} from '../helpers/normalise';
 //import * as Normalise from '../helpers/normalise';
-import * as ActionsTypes from '../actions/objectTypes';
-import {AppConfig} from '../config';
-import * as Durin from './durin';
-import {addObjectAction} from '../actions/asyncActions';
-import {objectPairingInfos} from '../config/products/core';
-import {dataGetAtHomeGateway} from '_helpers/dataTools';
-import { getServer as getStoredServer } from '_services/storage';
-import {getObjectUriById} from '_brand/utils/tools';
-import {getObjectById} from '_helpers/objects';
-import { useSelector, useDispatch } from 'react-redux';
 import { refreshObjectAction } from '_actions/asyncActions';
+import { dataGetAtHomeGateway } from '_helpers/dataTools';
+import { getObjectById } from '_helpers/objects';
+import { getServer as getStoredServer } from '_services/storage';
+import { addObjectAction } from '../actions/asyncActions';
+import * as ActionsTypes from '../actions/objectTypes';
+import { AppConfig } from '../config';
+import { objectPairingInfos } from '../config/products/core';
+import * as Durin from './durin';
 
 // import {appendUnconnectedMotor} from '_components/objects/boardgate/notConnected';
 //import devObjects from './devObjects.json'
-import devObjects from '_brand/bouchon.json'
 
 //Harold important for retrieving user favorite objects list from local storage 
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
-  USER_ADD_FAVORITE,
+    USER_ADD_FAVORITE,
+} from '../actions/user';
 
-} from '../actions/user'
-
-import {getPreferences, setUserDefinedPreferences} from '_api/user'
-import {userSetPref} from '_actions/user';
-import {getObjectsByTypeName} from '_helpers/selectors';
+import { userSetPref } from '_actions/user';
+import { getPreferences } from '_api/user';
 //----Harold end import
-import * as axios from 'axios';
 
 
 
@@ -1148,47 +1142,10 @@ const addStatus = async (id,statusName,value) => {
 
 
 export {
-  createObject,
-  addStatus,
-  getObjects,
-  renameObject,
-  updateObjectFlags,
-  sendServerParameters,
-  getObject,
-  getUses,
-  getByName,
-  deleteObject,
-  deleteObjects,
-  pairingObject,
-  createWeatherObject,
-  createQrCodeVDP,
-  createThermostatApplication,
-  createDonkeyThermostatApplication,
-  createScenario,
-  modifyScenario,
-  createDelayAction,
-  createSchedulerTask,
-  createMultipleScheduleTask,
-  updateParametersOnServer,
-  getGraphs,
-  getGraphsTimeSeries,
-  setParameters,
-  setPoint,
-  getObjectFiles,
-  getApps,
-  updateApplication,
-  updateObjectRoom,
-  updateScenario,
-  getGateways,
-  createWeeklyPlanner,
-  removeRoutinePlannings,
-  createEcoConfortApplication,
-  setEcoConfortParameters,
-  updateEcoConfortApplication,
-  activateApp,
-  deactivateApp,
-  createWindProtectiontApplication,
-  updateWindProtectiontApplication
+    activateApp, addStatus, createDelayAction, createDonkeyThermostatApplication, createEcoConfortApplication, createMultipleScheduleTask, createObject, createQrCodeVDP, createScenario, createSchedulerTask, createThermostatApplication, createWeatherObject, createWeeklyPlanner, createWindProtectiontApplication, deactivateApp, deleteObject,
+    deleteObjects, getApps, getByName, getGateways, getGraphs,
+    getGraphsTimeSeries, getObject, getObjectFiles, getObjects, getUses, modifyScenario, pairingObject, removeRoutinePlannings, renameObject, sendServerParameters, setEcoConfortParameters, setParameters,
+    setPoint, updateApplication, updateEcoConfortApplication, updateObjectFlags, updateObjectRoom, updateParametersOnServer, updateScenario, updateWindProtectiontApplication
 };
 
 

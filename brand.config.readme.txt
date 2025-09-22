@@ -1,4 +1,0 @@
-Eachtime you change values in brand.config.json
-Also to get path autocomplete working change the line with _brand in tsconfg.json
-You need to reset cache ( npx react-native start --reset-cache )
-In order to see changes

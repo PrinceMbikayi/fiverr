@@ -13,7 +13,7 @@ import { MyButton } from '_brand/templates/components/ui/MyButton';
 import {useGlobalModal} from '_components/ui/globalModal'
 import {GlobalToast} from '_brand/templates/components/objects/common/GlobalToast'
 import { userRemoveFavorite} from '_actions/user';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { CommonBottomSheetDeleteContent } from '_brand/templates/components/objects/common/CommonBottomSheetDeleteContent';
 
 

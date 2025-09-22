@@ -1,5 +1,5 @@
-import AsyncStorage from '@react-native-community/async-storage';
-import store from '_store'
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import store from '_store';
 
 
 async function removeItemFromUserFav(itemId){
@@ -22,4 +22,4 @@ async function removeItemFromUserFav(itemId){
 
 export {
     removeItemFromUserFav
-}
+};

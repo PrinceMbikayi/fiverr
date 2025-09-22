@@ -1,27 +1,24 @@
-import React from 'react';
-import {useState,useEffect, useRef} from 'react';
-import {Platform,BackHandler, StyleSheet, View, Alert} from 'react-native';
-import {useSelector,useDispatch} from "react-redux";
+import { difference as lodashDifference, pull as lodashPull } from 'lodash';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {difference as lodashDifference, pull as lodashPull} from 'lodash';
+import { BackHandler, Platform, StyleSheet, View } from 'react-native';
+import { useDispatch, useSelector } from "react-redux";
 
-import { useNavigation,useRoute } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 
-import { useTheme} from '_theming/themeProvider'
-import { SimpleListWithReorder} from './SimpleListWithReorder';
-import {getOrderedList,setOrderedList} from '_services/storage';
-import {getAllObjects,getObjectsByTypeName,getUser, getObjectsByTypes} from '_helpers/selectors';
+import { getAllObjects, getObjectsByTypeName, getObjectsByTypes } from '_helpers/selectors';
+import { setOrderedList } from '_services/storage';
+import { useTheme } from '_theming/themeProvider';
+import { SimpleListWithReorder } from './SimpleListWithReorder';
 
 import { deleteStartFromNotification } from '_actions/notificationPush';
 import notificationPushManager from '_services/pushNotifications/pushNotificationManager';
-import {AutomatedTestIdDisplay} from '_components/objects/@common/testAutomation/AutomatedTestId';
 
 import ProductsTemplateScreen from '_brand/templates/screens/productsRelated/products';
-import { useUser } from '_hooks/useUserHigher';
-import {getObjectById} from '_helpers/objects';
-import {logout as ApiLogout} from '_api/Api';
 import { alphabeticSort } from '_brand/utils/alphabeticSort';
+import { getObjectById } from '_helpers/objects';
+import { useUser } from '_hooks/useUserHigher';
 
 const ProductsScreen = (props) => {
     
@@ -100,9 +97,9 @@ const ProductsScreen = (props) => {
       }, [objectsTypes]);
 
     useEffect(() => {        
-        BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+        const backHandlerSubscription = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
         return () => {
-            BackHandler.removeEventListener('hardwareBackPress', handleBackPress);
+            backHandlerSubscription.remove();
         };
       }, []);
 

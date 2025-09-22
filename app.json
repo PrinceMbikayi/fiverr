@@ -1,5 +1,5 @@
 {
-  "test_name": "CalypsHome",
   "name": "CalypsHome",
-  "displayName": "CalypsHome"
+  "displayName": "Calyps Home",
+  "package": "com.avidsen.calypshome"
 }

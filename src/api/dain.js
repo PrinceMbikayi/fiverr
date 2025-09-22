@@ -1,4 +1,4 @@
-import * as axios from 'axios';
+import axios from 'axios';
 import store from '../store';
 
 
@@ -39,9 +39,9 @@ axios.interceptors.request.use(
   }
 )
 
-import { AppConfig } from '../config';
 import { getServer as getStoredServer } from '_services/storage';
-import {appendVersion} from './config';
+import { AppConfig } from '../config';
+import { appendVersion } from './config';
 
 const timeoutDuration = 30 * 1000;
 
@@ -125,4 +125,5 @@ async function post(typePath, userInfos) {
 
 
 
-export { post }
+export { post };
+

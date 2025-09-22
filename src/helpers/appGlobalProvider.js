@@ -1,10 +1,8 @@
-import React, { useContext, useState, useEffect } from 'react';
-import AsyncStorage from '@react-native-community/async-storage';
-
-import store from '../store';
+import React, { useContext, useEffect, useState } from 'react';
 
 
-import {omit as lodashOmit} from 'lodash'
+
+import { omit as lodashOmit } from 'lodash';
 
 
 

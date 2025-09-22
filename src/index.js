@@ -1,59 +1,48 @@
+import { Component } from 'react';
+import { Alert, AppRegistry, AppState, BackHandler, Platform, Text } from 'react-native';
 import 'react-native-gesture-handler';
-import React, {Component} from 'react';
-import {BackHandler, AppState,Platform,Alert,View,Text} from 'react-native';
-import {AppRegistry} from 'react-native';
 
-import {Provider} from 'react-redux';
 import NetInfo from "@react-native-community/netinfo";
-import {getLocales} from 'react-native-localize';
+import { getLocales } from 'react-native-localize';
+import { Provider } from 'react-redux';
 
 
-import { NavigationContainer } from '@react-navigation/native';
-
+import { NavigationContainer } from '@react-navigation/native'; // Now compatible with React Navigation v6
 
 import BleManager from 'react-native-ble-manager';
 
-
-
-/* Loading FONTS */
-import IconIonicons from 'react-native-vector-icons/Ionicons';
-IconIonicons.loadFont();
-import IconMaterialIcons from 'react-native-vector-icons/MaterialIcons'
-IconMaterialIcons.loadFont();
-import IconEntypo from 'react-native-vector-icons/Entypo';
-IconEntypo.loadFont();
+/* Loading FONTS - Updated for unified vector icons package */
+import 'react-native-vector-icons/Fonts/Entypo.ttf';
+import 'react-native-vector-icons/Fonts/Ionicons.ttf';
+import 'react-native-vector-icons/Fonts/MaterialIcons.ttf';
 
 import i18next from './utils/i18next'; // the instance
 
 import i18n from 'i18next';
-import { enableScreens } from 'react-native-screens';
-import { MenuProvider } from 'react-native-popup-menu';
 import RNBootSplash from "react-native-bootsplash";
-import { setJSExceptionHandler, setNativeExceptionHandler } from 'react-native-exception-handler';
+import { setNativeExceptionHandler } from 'react-native-exception-handler';
+import { MenuProvider } from 'react-native-popup-menu';
 
 //-------------------------------------------
 import store from './store';
 
 
+import { appRefresh } from '_actions/app';
+import { AppContextProvider } from '_helpers/appGlobalProvider';
 import { ThemeContextProvider } from './theming/themeProvider';
-import {AppContextProvider} from '_helpers/appGlobalProvider';
-import {appRefresh,closeWS} from '_actions/app';
 
-import {ReloadDetector} from '_components/ui/reloadDetector';
-import {NetworkDetector} from '_components/ui/netWorkDetector';
-import  NavigationService from '_services/navigationService';
+import { NetworkDetector } from '_components/ui/netWorkDetector';
+import { ReloadDetector } from '_components/ui/reloadDetector';
 
-import {GlobalModalContextProvider} from '_components/ui/globalModal'; 
+import RootStack from '_brand/navigation/rootStack';
+import { GlobalModalContextProvider } from '_components/ui/globalModal';
+import NavigationService from '_services/navigationService';
 
 //-----  push notifications
 //-----  push notifications
 //import {ForegroundNotifications} from '@components/ui/notificationPush/foregroudNotifications';
-import {ForegroundNotifications} from '_components/ui/notificationPush/foregroudNotifications';
-import {checkNotificationFromBackground,checkPushNotificationOnStateChange} from '_services/pushNotifications/myPushNotifications';
 
-import {setPushNotificationCategories,notifeeManageInitialNotification} from '_services/pushNotifications/notifee';
-import {initPushNotifications} from '_services/pushNotifications/pushNotificationManager';
-import { getInitialNotificationSync } from '_services/pushNotifications/myPushNotifications';
+import { initPushNotifications } from '_services/pushNotifications/pushNotificationManager';
 // react-native-render-html doesn't require initialization
 
 
@@ -67,7 +56,7 @@ import {setPushNotificationCategories,notifeeManageInitialNotification} from '_s
 */
 // ------ end push notifications 
 
-import {support as errSupport} from './api/durin';
+import { support as errSupport } from './api/durin';
 
 // default font
 import { typography } from './config/typography';
@@ -85,19 +74,18 @@ import crashlytics from '@react-native-firebase/crashlytics';
 
 import { FullscreenNotification } from '_components/objects/@common/pushNotifications/fullscreenNotification';
 
-import  RootStack from '_brand/navigation/rootStack';
 
 import { RootSiblingParent } from 'react-native-root-siblings';
 
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
-//====== BOTTOM SHEET ================
+//====== BOTTOM SHEET - REMOVED due to compatibility issues ================
 
-import {
-  BottomSheetModal,
-  BottomSheetModalProvider,
-} from '@gorhom/bottom-sheet';
+// import {
+//   BottomSheetModal,
+//   BottomSheetModalProvider,
+// } from '@gorhom/bottom-sheet';
 
 
 
@@ -177,7 +165,7 @@ if (__DEV__) {
   const errorWarn = global.console.error;
   global.console.error = (...arg) => {
     for (const error of ignoreWarns) {
-      if (arg[0].startsWith(error)) {
+      if (arg[0] && typeof arg[0] === 'string' && arg[0].startsWith(error)) {
         return;
       }
     }
@@ -235,15 +223,15 @@ if (__DEV__) {
   };
 
   //----------------------------------------------
-    componentDidMount() {
-      this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
-      AppState.addEventListener('change', this._handleAppStateChange);
-      
-      /* not supported in IOS Check this
+  componentDidMount() {
+    console.log("App componentDidMount started");
+    this.backHandler = BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+    this.appStateSubscription = AppState.addEventListener('change', this._handleAppStateChange);      /* not supported in IOS Check this
       AppState.addEventListener('blur', this._handleBlur);
       AppState.addEventListener('focus', this._handleFocus);
       */
 
+      console.log("Setting up NetInfo listener...");
       this.unsubscribeNetInfo = NetInfo.addEventListener(state => {        
           store.dispatch({
             type: 'UPDATE_CONNECTIVITY',
@@ -258,10 +246,19 @@ if (__DEV__) {
       )
       //------- splash screen ---------------  
       try {
+        console.log("Attempting to hide RNBootSplash...");
         RNBootSplash.hide({ duration: 250 });
+        console.log("RNBootSplash hidden successfully");
       } catch (error) {
-        //Alert.alert()
-        console.log("RNBootSplash error")
+        console.log("RNBootSplash error:", error);
+        // Force hide splash screen even if RNBootSplash fails
+        setTimeout(() => {
+          try {
+            RNBootSplash.hide();
+          } catch (e) {
+            console.log("Secondary RNBootSplash hide attempt failed:", e);
+          }
+        }, 100);
       }
 
       
@@ -312,15 +309,12 @@ if (__DEV__) {
     }
 
 
-    componentWillUnmount() {
-      this.backHandler.remove();
-      this.unsubscribeNetInfo()
-      AppState.removeEventListener('change', this._handleAppStateChange);
-    }
-
-    handleBackPress = () => {
+  componentWillUnmount() {
+    this.backHandler.remove();
+    this.unsubscribeNetInfo();
+    this.appStateSubscription.remove();
+  }    handleBackPress = () => {
       return false;
-      return true;
     }   
   
     getNavigation = () => {
@@ -344,7 +338,7 @@ if (__DEV__) {
                   <AppContextProvider>
                  
                   <GlobalModalContextProvider>  
-                    <BottomSheetModalProvider>
+                    {/* <BottomSheetModalProvider> - REMOVED for compatibility */}
                       <RootSiblingParent> 
                                 
                         <MenuProvider> 
@@ -353,22 +347,13 @@ if (__DEV__) {
                           <RootStack/>
                         </NavigationContainer>
                         </SafeAreaProvider>
-                            {/*}            
-                              <Navigator screenProps={{
-                                  t,
-                                  i18n
-                                }} ref={navigatorRef => {this.navigatorRef = navigatorRef;NavigationService.setTopLevelNavigator(navigatorRef);}}
-                              />
-
-                              */}
-
                         </MenuProvider>
                       
                         <ReloadDetector/> 
                         <NetworkDetector getNavigation={this.getNavigation}/> 
-                        <ForegroundNotifications getNavigation={this.getNavigation} fullscreenProp={this.fullscreenRef}/>  
+                        {/* <ForegroundNotifications getNavigation={this.getNavigation} fullscreenProp={this.fullscreenRef}/>  */}
                         </RootSiblingParent>
-                      </BottomSheetModalProvider>
+                      {/* </BottomSheetModalProvider> */}
                     </GlobalModalContextProvider>         
                   </AppContextProvider>
                 </ThemeContextProvider>                         

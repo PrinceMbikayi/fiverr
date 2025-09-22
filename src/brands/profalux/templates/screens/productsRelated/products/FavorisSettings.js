@@ -4,7 +4,7 @@ import {SafeAreaView,Text, View, ScrollView, StyleSheet, StatusBar, Dimensions} 
 import { useTranslation } from 'react-i18next';
 import { useNavigation,useRoute } from '@react-navigation/native';
 import { useSelector,useDispatch } from 'react-redux';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { useTheme} from '_theming/themeProvider'
 import {AutomatedTestIdDisplay} from '_components/objects/@common/testAutomation/AutomatedTestId';

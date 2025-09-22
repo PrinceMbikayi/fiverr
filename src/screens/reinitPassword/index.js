@@ -1,14 +1,13 @@
-import React,{ useState,useRef, useEffect } from 'react';
-import {ScrollView, View,Text,StyleSheet,ImageBackground,Image, KeyboardAvoidingView, BackHandler,Alert } from 'react-native';
-import {useNetInfo} from "@react-native-community/netinfo";
-import { useTranslation } from 'react-i18next';
-import { useTheme } from '_theming/themeProvider';
+import { useNetInfo } from "@react-native-community/netinfo";
 import ReinitPasswordComponent from '_components/forms/reinitPasswordComponent';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useTheme } from '_theming/themeProvider';
+import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Alert, BackHandler, KeyboardAvoidingView, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-import {TextStyles} from '_styles/text';
-import {Api} from "_api";
+import { Api } from "_api";
 import { useUser } from '_hooks/useUserHigher';
+import { TextStyles } from '_styles/text';
 //import { ScrollView } from 'r-eact-native-gesture-handler';
 
 
@@ -40,9 +39,9 @@ const ReinitPasswordScreen = (props) => {
      */
 
     useEffect(() =>{
-        BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+        const backHandlerSubscription = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
         return () => {
-            BackHandler.removeEventListener('hardwareBackPress', handleBackPress);
+            backHandlerSubscription.remove();
             console.log("je suis retiré")
         };
       }, []);

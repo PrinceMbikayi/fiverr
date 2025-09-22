@@ -1,9 +1,8 @@
-import '_brand/templates/screens/addObject/locales'
-import React, {useState,useEffect} from 'react';
-import { Text, View,StyleSheet,Pressable } from 'react-native';
-import {useSelector,useDispatch} from 'react-redux';
-import NetInfo from "@react-native-community/netinfo";
-import {useNetInfo} from "@react-native-community/netinfo";
+import NetInfo, { useNetInfo } from "@react-native-community/netinfo";
+import '_brand/templates/screens/addObject/locales';
+import { useEffect } from 'react';
+import { Pressable, Text, View } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
  
  
 //import AppIcon from '_images/icons/index.js';
@@ -11,8 +10,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 //import {NETWORK_DETECTOR} from '_brand/config/appIconSharedNames'
 import { Api } from '_api';
  
-import {useGlobalModal} from '_components/ui/globalModal';
 import ModalContainer from '_brand/templates/components/ui/modal/modalContainer';
+import { useGlobalModal } from '_components/ui/globalModal';
 //import {GlobalToast} from '_brand/templates/components/objects/common/GlobalToast'
 import { useTheme } from '_theming/themeProvider';
 import { useTranslation } from 'react-i18next';

@@ -1,40 +1,34 @@
-import '../_locales'
+import '../_locales';
 
-import React,{ useState,useRef, useEffect } from 'react';
-import { View,Text,StyleSheet,KeyboardAvoidingView,ImageBackground,Image,Alert,TouchableWithoutFeedback,TouchableOpacity} from 'react-native';
-import { useSelector, useDispatch } from 'react-redux';
+import { useEffect, useRef, useState } from 'react';
+import { StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
 
+import { Trans, useTranslation } from 'react-i18next';
 import PagerView from 'react-native-pager-view';
-import {useNetInfo} from "@react-native-community/netinfo";
-import styled from 'styled-components/native';
-import { useTranslation } from 'react-i18next';
-import { Trans } from 'react-i18next';
-import { BackHandler } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import styled from 'styled-components/native';
 
 import { useTheme } from '_theming/themeProvider';
-import {H1,P} from '../../styled';
+import { H1, P } from '../../styled';
 
-import Button from '../../components/ui/Button'
+import Button from '../../components/ui/Button';
 
 
 import SubscribeComponent from '_components/forms/subscribeComponent';
 import SubscribeConfirmComponent from '_components/forms/subscribeConfirmComponent';
 
-import MailSend from '_brand/images/illustrations/MailSend'
+import MailSend from '_brand/images/illustrations/MailSend';
 
 
-import {TextStyles} from '_styles/text';
 
 
 //--- icons ------
 //import CloseCircle from  '_brand/images/icons/app/CloseCircle';
 
 //--- brand ----
-import brandAppTexts from '_brand/texts/app.json';
 
 //--- Appium -----
-import {buildTestId} from '_helpers/appium';
+import { buildTestId } from '_helpers/appium';
 
 // Function component start Here
 
@@ -61,9 +55,9 @@ const SubscribeScreen = (props) => {
 
     /*
     useEffect(() =>{
-        BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+        const backHandlerSubscription = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
         return () => {
-            BackHandler.removeEventListener('hardwareBackPress', handleBackPress);
+            backHandlerSubscription.remove();
             console.log("je suis retiré")
         };
       }, [pageIndex]);

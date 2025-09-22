@@ -1,27 +1,5 @@
 {
-  "compilerOptions": {
-      "allowJs": true,
-      "noEmit": true,
-       "baseUrl": "./",
-              "paths": {
-                "react-native-calendars": ["node_modules/@types/react-native-calendars"],
-                "@components/*": ["src/components/*"],
-                "_components/*": ["src/components/*"],
-                "_config/*": ["src/config/*"],
-                "_hooks/*": ["src/hooks/*"],
-                "_api/*": ["src/api/*"],
-                "react-native-redash/lib/module/v1": [
-                  "./node_modules/react-native-redash/lib/typescript/v1/index.d.ts"
-                ],
-                "_brand/*" : ["src/brands/umii/*"]
-              }
-          },
-  "include": [
-    "./src/**/*.js",
-    "node_modules/react-native-redash/lib/typescript/v1/index.d.ts"
-, "src/brands/profalux/templates/components/objects/common/settings"  ],
-  "exclude" : [
-    "node_modules",
-    "./src/actions/app.js"
-  ]
+  "extends": "@react-native/typescript-config",
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/Pods"]
 }

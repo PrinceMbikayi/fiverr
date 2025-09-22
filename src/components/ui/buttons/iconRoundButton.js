@@ -1,7 +1,7 @@
-import React from 'react';
-import {TouchableHighlight} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { TouchableHighlight } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import PureIconRender from '_components/pureIconRender';
 

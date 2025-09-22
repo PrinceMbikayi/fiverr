@@ -1,7 +1,7 @@
 import React, {useState, useEffect}  from 'react';
 import { SafeAreaView,View,Text , StyleSheet, Pressable, Dimensions} from 'react-native';
 import { useNavigation,useRoute } from '@react-navigation/native';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { useTranslation } from 'react-i18next';
 import {getKey,setKey} from '_services/storage';

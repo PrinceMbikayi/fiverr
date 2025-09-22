@@ -1,23 +1,21 @@
-import React from 'react';
-import {useEffect,useState,useRef} from 'react';
-import { useDispatch,useSelector } from 'react-redux';
-import { View,SafeAreaView,Text,StyleSheet,ImageBackground,Image,BackHandler } from 'react-native';
+import { useNetInfo } from "@react-native-community/netinfo";
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {useNetInfo} from "@react-native-community/netinfo";
+import { BackHandler } from 'react-native';
 import Toast from 'react-native-root-toast';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 //---------- server selector -------------
 
+import { userSetIsTester } from '_actions/user';
 import ServerSelector from '_components/ui/serverSelector';
-import {multiServers} from '_config/AppConfig';
-import {setServer as storeServer,setIsTester as storeIsTester,removeServer} from '_services/storage'
-import { APP_PREVIOUS_ROUTE } from '_actions/app';
-import {userSetIsTester} from '_actions/user';
+import { multiServers } from '_config/AppConfig';
+import { setIsTester as storeIsTester, setServer as storeServer } from '_services/storage';
 
 //------------ oAuth ---------------------
-import {createAccountWithGoogle} from '_api/social';
-import {onAppleButtonPress} from './appleAuth';
+import { createAccountWithGoogle } from '_api/social';
+import { onAppleButtonPress } from './appleAuth';
 
 //--- Template ----------------------------------------------
 import AccessTemplate from '_brand/templates/screens/access';
@@ -39,16 +37,14 @@ const AccessScreen = (props) => {
 
 
     useEffect(() => {        
-        BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+        const backHandlerSubscription = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
         return () => {
-            BackHandler.removeEventListener('hardwareBackPress', handleBackPress);           
+            backHandlerSubscription.remove();           
         };
       }, []);
 
     const handleBackPress =  () => { 
       return true;
-        //console.log(navigation,navigation.isFocused())
-        return navigation.isFocused(); // intercept event  mean no back when focused 
     }
 
    

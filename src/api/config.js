@@ -1,10 +1,9 @@
-import * as axios from 'axios';
-import * as Durin from './durin';
+import axios from 'axios';
 
 import apiVersions from "_brand/config/apiVersions.json";
 
-import {AppConfig} from '../config';
-import {getServer as getStoredServer} from '_services/storage';
+import { getServer as getStoredServer } from '_services/storage';
+import { AppConfig } from '../config';
 
 
 export const getConfigFromServer = async() => {

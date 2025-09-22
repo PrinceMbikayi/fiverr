@@ -22,7 +22,7 @@ import Toast from 'react-native-root-toast';
 import { deleteObject } from '_api/objects';
 import {appRefresh,closeWS} from '_actions/app';
 import * as ApiObjects from "_api/objects"
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export const InstallZigbeeNetworkScreen = () => {

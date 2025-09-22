@@ -1,5 +1,5 @@
 
-import '_brand/templates/screens/_locales'
+import '_brand/templates/screens/_locales';
 /**
  * 
  * 
@@ -9,25 +9,24 @@ import '_brand/templates/screens/_locales'
  * 
  */
 
- import React, {useState,useEffect,useRef,forwardRef,useImperativeHandle } from 'react';
+ import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 
- import { View, Text, TextInput, Switch, Linking} from 'react-native';
- import { useTranslation } from 'react-i18next';
- import { Trans } from 'react-i18next'
- import { useTheme } from '_theming/themeProvider';
- import Toast from 'react-native-root-toast';
- import { Formik } from 'formik'
- import * as yup from 'yup'
- import AsyncStorage from '@react-native-community/async-storage';
- import Button from '_brand/templates/components/ui/Button';
+ import AsyncStorage from '@react-native-async-storage/async-storage';
+import Button from '_brand/templates/components/ui/Button';
+import { useTheme } from '_theming/themeProvider';
+import { Formik } from 'formik';
+import { Trans, useTranslation } from 'react-i18next';
+import { Linking, Switch, Text, TextInput, View } from 'react-native';
+import Toast from 'react-native-root-toast';
+import * as yup from 'yup';
 
  
  import FormInput from '_brand/templates/components/forms/FormInput';
- import WithTranslateFormErrors from "_utils/withTranslateFormErrors";
- import {onChangeWithRulesExternal} from '_components/forms/utils';
+import { onChangeWithRulesExternal } from '_components/forms/utils';
+import WithTranslateFormErrors from "_utils/withTranslateFormErrors";
  
  //--- Appium -----
- import {buildTestId} from '_helpers/appium';
+ import { buildTestId } from '_helpers/appium';
  
  yup.setLocale({
    

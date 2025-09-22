@@ -1,26 +1,21 @@
-import React,{ useState,useRef, useEffect } from 'react';
-import { View,Text,StyleSheet,KeyboardAvoidingView,ImageBackground,Image,Alert,TouchableWithoutFeedback,TouchableOpacity, SafeAreaView} from 'react-native';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useEffect, useRef, useState } from 'react';
+import { Alert, SafeAreaView, StyleSheet } from 'react-native';
+import { useDispatch } from 'react-redux';
 
-import {useNetInfo} from "@react-native-community/netinfo";
-import styled from 'styled-components/native';
-import {Input} from 'react-native-elements';
-import Toast from 'react-native-root-toast';
+import { useNetInfo } from "@react-native-community/netinfo";
 import { useTranslation } from 'react-i18next';
-import { Trans } from 'react-i18next';
 import { BackHandler } from 'react-native';
+import Toast from 'react-native-root-toast';
+import styled from 'styled-components/native';
 
 
-import { withTheme } from '_theming/themeProvider';
-import SubscribeComponent from '_components/forms/subscribeComponent';
-import SubscribeConfirmComponent from '_components/forms/subscribeConfirmComponent';
-import {TextStyles} from '_styles/text';
-import {Api} from "_api";
-import {multiServers} from '_config/AppConfig';
+import { userSetIsTester } from '_actions/user';
+import { Api } from "_api";
+import { getUserDetails } from '_api/user';
 import ServerSelector from '_components/ui/serverSelector';
-import {setServer as storeServer,setIsTester as storeIsTester} from '_services/storage'
-import {userSetIsTester, userNickname} from '_actions/user';
-import {getUserDetails} from '_api/user'
+import { multiServers } from '_config/AppConfig';
+import { setIsTester as storeIsTester, setServer as storeServer } from '_services/storage';
+import { withTheme } from '_theming/themeProvider';
 
 //--- Template ----------------------------------------------
 import RecoverAccountTemplate from '_brand/templates/screens/recoverAccount';
@@ -29,7 +24,7 @@ import RecoverAccountTemplate from '_brand/templates/screens/recoverAccount';
 //import brandAppTexts from '_brand/texts/app.json';
 
 //--- Appium -----
-import {buildTestId} from '_helpers/appium';
+import { buildTestId } from '_helpers/appium';
 
 
 
@@ -74,9 +69,9 @@ const RecoverAccountScreen = (props) => {
      */
 
     useEffect(() =>{
-        BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+        const backHandlerSubscription = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
         return () => {
-            BackHandler.removeEventListener('hardwareBackPress', handleBackPress);
+            backHandlerSubscription.remove();
             console.log("Subscribe Screen BackHandler je suis retiré")
         };
       }, [pageIndex]);

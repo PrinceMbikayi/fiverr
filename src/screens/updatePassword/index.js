@@ -1,16 +1,15 @@
-import React,{ useState,useRef, useEffect } from 'react';
-import { SafeAreaView,View,Text,StyleSheet,ImageBackground,Image, KeyboardAvoidingView, BackHandler,Alert,ScrollView } from 'react-native';
-import { useSelector } from 'react-redux';
-import {useNetInfo} from "@react-native-community/netinfo";
-import { useTranslation } from 'react-i18next';
-import { useTheme } from '_theming/themeProvider';
 import UpdatePasswordComponent from '_components/forms/updatePasswordComponent';
+import { useTheme } from '_theming/themeProvider';
+import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Alert, BackHandler, KeyboardAvoidingView, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useSelector } from 'react-redux';
 
 
-import {TextStyles} from '_styles/text';
-import {Api} from "_api";
+import { Api } from "_api";
+import { TextStyles } from '_styles/text';
 //import { ScrollView } from 'r-eact-native-gesture-handler';
-import {HeaderWithBack} from '_components/headers/header-with-back';
+import { HeaderWithBack } from '_components/headers/header-with-back';
 
 
 const UpdatePasswordScreen = (props) => {
@@ -43,9 +42,9 @@ const UpdatePasswordScreen = (props) => {
      */
 
     useEffect(() =>{
-        BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+        const backHandlerSubscription = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
         return () => {
-            BackHandler.removeEventListener('hardwareBackPress', handleBackPress);
+            backHandlerSubscription.remove();
             console.log("je suis retiré")
         };
       }, [pageIndex]);

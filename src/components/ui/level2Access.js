@@ -1,6 +1,6 @@
 import React from 'react';
-import { View,Text,TouchableHighlight} from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { Text, TouchableHighlight, View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import { useTheme } from '_theming/themeProvider';

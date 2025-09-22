@@ -7,7 +7,7 @@ import '_brand/templates/screens/_locales'
  import Toast from 'react-native-root-toast';
  import { Formik } from 'formik'
  import * as yup from 'yup'
- import AsyncStorage from '@react-native-community/async-storage';
+ import AsyncStorage from '@react-native-async-storage/async-storage';
 
  
  import FormInput from '_brand/templates/components/forms/FormInput';

@@ -1,196 +1,186 @@
 {
-  "root": "H:\\fiverr",
-  "reactNativePath": "H:\\fiverr\\node_modules\\react-native",
+  "root": "H:\\prince-fix\\CalypsHome",
+  "reactNativePath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native",
   "reactNativeVersion": "0.81",
   "dependencies": {
-    "react-native-vlc-media-player": {
-      "root": "H:\\fiverr\\node_modules\\react-native-vlc-media-player",
-      "name": "react-native-vlc-media-player",
-      "platforms": {
-        "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-vlc-media-player\\react-native-vlc-media-player.podspec",
-          "configurations": [],
-          "scriptPhases": []
-        },
-        "android": null
-      }
-    },
-    "react-native-flipper": {
-      "root": "H:\\fiverr\\node_modules\\react-native-flipper",
-      "name": "react-native-flipper",
-      "platforms": {
-        "ios": null,
-        "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-flipper\\android",
-          "packageImportPath": "import com.facebook.flipper.reactnative.FlipperPackage;",
-          "packageInstance": "new FlipperPackage()",
-          "buildTypes": [],
-          "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-flipper/android/build/generated/source/codegen/jni/CMakeLists.txt"
-        }
-      }
-    },
     "@invertase/react-native-apple-authentication": {
-      "root": "H:\\fiverr\\node_modules\\@invertase\\react-native-apple-authentication",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@invertase\\react-native-apple-authentication",
       "name": "@invertase/react-native-apple-authentication",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@invertase\\react-native-apple-authentication\\RNAppleAuthentication.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@invertase\\react-native-apple-authentication\\RNAppleAuthentication.podspec",
+          "version": "2.4.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@invertase\\react-native-apple-authentication\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@invertase\\react-native-apple-authentication\\android",
           "packageImportPath": "import com.RNAppleAuthentication.AppleAuthenticationAndroidPackage;",
           "packageInstance": "new AppleAuthenticationAndroidPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@invertase/react-native-apple-authentication/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@invertase/react-native-apple-authentication/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@notifee/react-native": {
-      "root": "H:\\fiverr\\node_modules\\@notifee\\react-native",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@notifee\\react-native",
       "name": "@notifee/react-native",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@notifee\\react-native\\RNNotifee.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@notifee\\react-native\\RNNotifee.podspec",
+          "version": "9.1.8",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@notifee\\react-native\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@notifee\\react-native\\android",
           "packageImportPath": "import io.invertase.notifee.NotifeePackage;",
           "packageInstance": "new NotifeePackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@notifee/react-native/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@notifee/react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-async-storage/async-storage": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-async-storage\\async-storage",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-async-storage\\async-storage",
       "name": "@react-native-async-storage/async-storage",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-async-storage\\async-storage\\RNCAsyncStorage.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-async-storage\\async-storage\\RNCAsyncStorage.podspec",
+          "version": "2.2.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-async-storage\\async-storage\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-async-storage\\async-storage\\android",
           "packageImportPath": "import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;",
           "packageInstance": "new AsyncStoragePackage()",
           "buildTypes": [],
           "libraryName": "rnasyncstorage",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/CMakeLists.txt"
-        }
-      }
-    },
-    "@react-native-community/art": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-community\\art",
-      "name": "@react-native-community/art",
-      "platforms": {
-        "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-community\\art\\ReactNativeART.podspec",
-          "configurations": [],
-          "scriptPhases": []
-        },
-        "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-community\\art\\android",
-          "packageImportPath": "import com.reactnativecommunity.art.ARTPackage;",
-          "packageInstance": "new ARTPackage()",
-          "buildTypes": [],
-          "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-community/art/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-community/checkbox": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-community\\checkbox",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\checkbox",
       "name": "@react-native-community/checkbox",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-community\\checkbox\\RNCCheckbox.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\checkbox\\RNCCheckbox.podspec",
+          "version": "0.5.20",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-community\\checkbox\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\checkbox\\android",
           "packageImportPath": "import com.reactnativecommunity.checkbox.ReactCheckBoxPackage;",
           "packageInstance": "new ReactCheckBoxPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-community/checkbox/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-community/checkbox/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-community/datetimepicker": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-community\\datetimepicker",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\datetimepicker",
       "name": "@react-native-community/datetimepicker",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-community\\datetimepicker\\RNDateTimePicker.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\datetimepicker\\RNDateTimePicker.podspec",
+          "version": "8.4.5",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-community\\datetimepicker\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\datetimepicker\\android",
           "packageImportPath": "import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;",
           "packageInstance": "new RNDateTimePickerPackage()",
           "buildTypes": [],
           "libraryName": "RNDateTimePickerCGen",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-community/datetimepicker/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-community/datetimepicker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-community/geolocation": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-community\\geolocation",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\geolocation",
       "name": "@react-native-community/geolocation",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-community\\geolocation\\react-native-geolocation.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\geolocation\\react-native-geolocation.podspec",
+          "version": "3.4.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-community\\geolocation\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\geolocation\\android",
           "packageImportPath": "import com.reactnativecommunity.geolocation.GeolocationPackage;",
           "packageInstance": "new GeolocationPackage()",
           "buildTypes": [],
           "libraryName": "RNCGeolocationSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-community/geolocation/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-community/geolocation/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-community/netinfo": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-community\\netinfo",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\netinfo",
       "name": "@react-native-community/netinfo",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-community\\netinfo\\react-native-netinfo.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\netinfo\\react-native-netinfo.podspec",
+          "version": "11.4.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-community\\netinfo\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\netinfo\\android",
           "packageImportPath": "import com.reactnativecommunity.netinfo.NetInfoPackage;",
           "packageInstance": "new NetInfoPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-community/netinfo/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-community/netinfo/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-community/push-notification-ios": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-community\\push-notification-ios",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\push-notification-ios",
       "name": "@react-native-community/push-notification-ios",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-community\\push-notification-ios\\RNCPushNotificationIOS.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\push-notification-ios\\RNCPushNotificationIOS.podspec",
+          "version": "1.11.0",
           "configurations": [],
           "scriptPhases": []
         },
@@ -198,16 +188,17 @@
       }
     },
     "@react-native-community/slider": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-community\\slider",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\slider",
       "name": "@react-native-community/slider",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-community\\slider\\react-native-slider.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\slider\\react-native-slider.podspec",
+          "version": "5.0.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-community\\slider\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\slider\\android",
           "packageImportPath": "import com.reactnativecommunity.slider.ReactSliderPackage;",
           "packageInstance": "new ReactSliderPackage()",
           "buildTypes": [],
@@ -215,35 +206,45 @@
           "componentDescriptors": [
             "RNCSliderComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-community/slider/android/src/main/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-community/slider/android/src/main/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-community/toolbar-android": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-community\\toolbar-android",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\toolbar-android",
       "name": "@react-native-community/toolbar-android",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-community\\toolbar-android\\toolbar-android.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\toolbar-android\\toolbar-android.podspec",
+          "version": "0.2.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-community\\toolbar-android\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-community\\toolbar-android\\android",
           "packageImportPath": "import com.reactnativecommunity.toolbarandroid.ReactToolbarPackage;",
           "packageInstance": "new ReactToolbarPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-community/toolbar-android/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-community/toolbar-android/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-firebase/app": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-firebase\\app",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\app",
       "name": "@react-native-firebase/app",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-firebase\\app\\RNFBApp.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\app\\RNFBApp.podspec",
+          "version": "23.3.1",
           "configurations": [],
           "scriptPhases": [
             {
@@ -257,40 +258,50 @@
           ]
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-firebase\\app\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\app\\android",
           "packageImportPath": "import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;",
           "packageInstance": "new ReactNativeFirebaseAppPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-firebase/app/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-firebase/app/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-firebase/auth": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-firebase\\auth",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\auth",
       "name": "@react-native-firebase/auth",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-firebase\\auth\\RNFBAuth.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\auth\\RNFBAuth.podspec",
+          "version": "23.3.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-firebase\\auth\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\auth\\android",
           "packageImportPath": "import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;",
           "packageInstance": "new ReactNativeFirebaseAuthPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-firebase/auth/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-firebase/auth/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-firebase/crashlytics": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-firebase\\crashlytics",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\crashlytics",
       "name": "@react-native-firebase/crashlytics",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-firebase\\crashlytics\\RNFBCrashlytics.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\crashlytics\\RNFBCrashlytics.podspec",
+          "version": "23.3.1",
           "configurations": [],
           "scriptPhases": [
             {
@@ -305,83 +316,106 @@
           ]
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-firebase\\crashlytics\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\crashlytics\\android",
           "packageImportPath": "import io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsPackage;",
           "packageInstance": "new ReactNativeFirebaseCrashlyticsPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-firebase/crashlytics/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-firebase/crashlytics/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-firebase/messaging": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-firebase\\messaging",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\messaging",
       "name": "@react-native-firebase/messaging",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-firebase\\messaging\\RNFBMessaging.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\messaging\\RNFBMessaging.podspec",
+          "version": "23.3.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-firebase\\messaging\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-firebase\\messaging\\android",
           "packageImportPath": "import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;",
           "packageInstance": "new ReactNativeFirebaseMessagingPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-firebase/messaging/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-firebase/messaging/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-google-signin/google-signin": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-google-signin\\google-signin",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-google-signin\\google-signin",
       "name": "@react-native-google-signin/google-signin",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-google-signin\\google-signin\\RNGoogleSignin.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-google-signin\\google-signin\\RNGoogleSignin.podspec",
+          "version": "16.0.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-google-signin\\google-signin\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-google-signin\\google-signin\\android",
           "packageImportPath": "import com.reactnativegooglesignin.RNGoogleSigninPackage;",
           "packageInstance": "new RNGoogleSigninPackage()",
           "buildTypes": [],
-          "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-google-signin/google-signin/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "libraryName": "RNGoogleSignInCGen",
+          "componentDescriptors": [
+            "RNGoogleSigninButtonComponentDescriptor"
+          ],
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-google-signin/google-signin/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-masked-view/masked-view": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-masked-view\\masked-view",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-masked-view\\masked-view",
       "name": "@react-native-masked-view/masked-view",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-masked-view\\masked-view\\RNCMaskedView.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-masked-view\\masked-view\\RNCMaskedView.podspec",
+          "version": "0.3.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-masked-view\\masked-view\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-masked-view\\masked-view\\android",
           "packageImportPath": "import org.reactnative.maskedview.RNCMaskedViewPackage;",
           "packageInstance": "new RNCMaskedViewPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-masked-view/masked-view/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-masked-view/masked-view/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@react-native-picker/picker": {
-      "root": "H:\\fiverr\\node_modules\\@react-native-picker\\picker",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-picker\\picker",
       "name": "@react-native-picker/picker",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@react-native-picker\\picker\\RNCPicker.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-picker\\picker\\RNCPicker.podspec",
+          "version": "2.11.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@react-native-picker\\picker\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@react-native-picker\\picker\\android",
           "packageImportPath": "import com.reactnativecommunity.picker.RNCPickerPackage;",
           "packageInstance": "new RNCPickerPackage()",
           "buildTypes": [],
@@ -390,36 +424,73 @@
             "RNCAndroidDialogPickerComponentDescriptor",
             "RNCAndroidDropdownPickerComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/@react-native-picker/picker/android/src/main/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@react-native-picker/picker/android/src/main/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "@sayem314/react-native-keep-awake": {
-      "root": "H:\\fiverr\\node_modules\\@sayem314\\react-native-keep-awake",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@sayem314\\react-native-keep-awake",
       "name": "@sayem314/react-native-keep-awake",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\@sayem314\\react-native-keep-awake\\react-native-keep-awake.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@sayem314\\react-native-keep-awake\\react-native-keep-awake.podspec",
+          "version": "1.3.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\@sayem314\\react-native-keep-awake\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@sayem314\\react-native-keep-awake\\android",
           "packageImportPath": "import com.sayem.keepawake.KCKeepAwakePackage;",
           "packageInstance": "new KCKeepAwakePackage()",
           "buildTypes": [],
           "libraryName": "ReactNativeKCKeepAwakeSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/@sayem314/react-native-keep-awake/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@sayem314/react-native-keep-awake/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "@shopify/react-native-skia": {
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\@shopify\\react-native-skia",
+      "name": "@shopify/react-native-skia",
+      "platforms": {
+        "ios": {
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\@shopify\\react-native-skia\\react-native-skia.podspec",
+          "version": "2.2.18",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\@shopify\\react-native-skia\\android",
+          "packageImportPath": "import com.shopify.reactnative.skia.RNSkiaPackage;",
+          "packageInstance": "new RNSkiaPackage()",
+          "buildTypes": [],
+          "libraryName": "rnskia",
+          "componentDescriptors": [
+            "SkiaPictureViewComponentDescriptor"
+          ],
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/@shopify/react-native-skia/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "lottie-ios": {
-      "root": "H:\\fiverr\\node_modules\\lottie-ios",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\lottie-ios",
       "name": "lottie-ios",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\lottie-ios\\lottie-ios.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\lottie-ios\\lottie-ios.podspec",
+          "version": "4.5.1",
           "configurations": [],
           "scriptPhases": []
         },
@@ -427,16 +498,17 @@
       }
     },
     "lottie-react-native": {
-      "root": "H:\\fiverr\\node_modules\\lottie-react-native",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\lottie-react-native",
       "name": "lottie-react-native",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\lottie-react-native\\lottie-react-native.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\lottie-react-native\\lottie-react-native.podspec",
+          "version": "7.3.4",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\lottie-react-native\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\lottie-react-native\\android",
           "packageImportPath": "import com.airbnb.android.react.lottie.LottiePackage;",
           "packageInstance": "new LottiePackage()",
           "buildTypes": [],
@@ -444,119 +516,173 @@
           "componentDescriptors": [
             "LottieAnimationViewComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/lottie-react-native/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/lottie-react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-ble-manager": {
-      "root": "H:\\fiverr\\node_modules\\react-native-ble-manager",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-ble-manager",
       "name": "react-native-ble-manager",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-ble-manager\\react-native-ble-manager.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-ble-manager\\react-native-ble-manager.podspec",
+          "version": "11.6.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-ble-manager\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-ble-manager\\android",
           "packageImportPath": "import it.innove.BleManagerPackage;",
           "packageInstance": "new BleManagerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-ble-manager/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-ble-manager/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-blob-util": {
-      "root": "H:\\fiverr\\node_modules\\react-native-blob-util",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-blob-util",
       "name": "react-native-blob-util",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-blob-util\\react-native-blob-util.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-blob-util\\react-native-blob-util.podspec",
+          "version": "0.19.11",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-blob-util\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-blob-util\\android",
           "packageImportPath": "import com.ReactNativeBlobUtil.ReactNativeBlobUtilPackage;",
           "packageInstance": "new ReactNativeBlobUtilPackage()",
           "buildTypes": [],
           "libraryName": "ReactNativeBlobUtilSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-blob-util/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-blob-util/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-bluetooth-state-manager": {
-      "root": "H:\\fiverr\\node_modules\\react-native-bluetooth-state-manager",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-bluetooth-state-manager",
       "name": "react-native-bluetooth-state-manager",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-bluetooth-state-manager\\RNBluetoothStateManager.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-bluetooth-state-manager\\RNBluetoothStateManager.podspec",
+          "version": "1.3.5",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-bluetooth-state-manager\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-bluetooth-state-manager\\android",
           "packageImportPath": "import de.patwoz.rn.bluetoothstatemanager.RNBluetoothStateManagerPackage;",
           "packageInstance": "new RNBluetoothStateManagerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-bluetooth-state-manager/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-bluetooth-state-manager/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-bootsplash": {
-      "root": "H:\\fiverr\\node_modules\\react-native-bootsplash",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-bootsplash",
       "name": "react-native-bootsplash",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-bootsplash\\RNBootSplash.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-bootsplash\\RNBootSplash.podspec",
+          "version": "6.3.11",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-bootsplash\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-bootsplash\\android",
           "packageImportPath": "import com.zoontek.rnbootsplash.RNBootSplashPackage;",
           "packageInstance": "new RNBootSplashPackage()",
           "buildTypes": [],
           "libraryName": "RNBootSplashSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-bootsplash/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-bootsplash/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
-    "react-native-config": {
-      "root": "H:\\fiverr\\node_modules\\react-native-config",
-      "name": "react-native-config",
+    "react-native-camera": {
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-camera",
+      "name": "react-native-camera",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-config\\react-native-config.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-camera\\react-native-camera.podspec",
+          "version": "4.2.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-config\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-camera\\android",
+          "packageImportPath": "import org.reactnative.camera.RNCameraPackage;",
+          "packageInstance": "new RNCameraPackage()",
+          "buildTypes": [],
+          "componentDescriptors": [],
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-camera/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-config": {
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-config",
+      "name": "react-native-config",
+      "platforms": {
+        "ios": {
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-config\\react-native-config.podspec",
+          "version": "1.5.9",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-config\\android",
           "packageImportPath": "import com.lugg.RNCConfig.RNCConfigPackage;",
           "packageInstance": "new RNCConfigPackage()",
           "buildTypes": [],
           "libraryName": "RNCConfigModule",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-config/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-config/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-date-picker": {
-      "root": "H:\\fiverr\\node_modules\\react-native-date-picker",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-date-picker",
       "name": "react-native-date-picker",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-date-picker\\react-native-date-picker.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-date-picker\\react-native-date-picker.podspec",
+          "version": "5.0.13",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-date-picker\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-date-picker\\android",
           "packageImportPath": "import com.henninghall.date_picker.DatePickerPackage;",
           "packageInstance": "new DatePickerPackage()",
           "buildTypes": [],
@@ -564,78 +690,122 @@
           "componentDescriptors": [
             "RNDatePickerComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-date-picker/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-date-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-device-info": {
-      "root": "H:\\fiverr\\node_modules\\react-native-device-info",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-device-info",
       "name": "react-native-device-info",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-device-info\\RNDeviceInfo.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-device-info\\RNDeviceInfo.podspec",
+          "version": "14.1.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-device-info\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-device-info\\android",
           "packageImportPath": "import com.learnium.RNDeviceInfo.RNDeviceInfo;",
           "packageInstance": "new RNDeviceInfo()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-device-info/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-device-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-exception-handler": {
-      "root": "H:\\fiverr\\node_modules\\react-native-exception-handler",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-exception-handler",
       "name": "react-native-exception-handler",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-exception-handler\\ReactNativeExceptionHandler.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-exception-handler\\ReactNativeExceptionHandler.podspec",
+          "version": "2.10.10",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-exception-handler\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-exception-handler\\android",
           "packageImportPath": "import com.masteratul.exceptionhandler.ReactNativeExceptionHandlerPackage;",
           "packageInstance": "new ReactNativeExceptionHandlerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-exception-handler/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-exception-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
-    "react-native-flipper-performance-plugin": {
-      "root": "H:\\fiverr\\node_modules\\react-native-flipper-performance-plugin",
-      "name": "react-native-flipper-performance-plugin",
+    "react-native-fast-image": {
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-fast-image",
+      "name": "react-native-fast-image",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-flipper-performance-plugin\\react-native-flipper-performance-plugin.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-fast-image\\RNFastImage.podspec",
+          "version": "8.6.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-flipper-performance-plugin\\android",
-          "packageImportPath": "import tech.bam.rnperformance.flipper.FlipperPerformancePluginPackage;",
-          "packageInstance": "new FlipperPerformancePluginPackage()",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-fast-image\\android",
+          "packageImportPath": "import com.dylanvann.fastimage.FastImageViewPackage;",
+          "packageInstance": "new FastImageViewPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-flipper-performance-plugin/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-fast-image/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-flipper": {
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-flipper",
+      "name": "react-native-flipper",
+      "platforms": {
+        "ios": {
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-flipper\\react-native-flipper.podspec",
+          "version": "0.273.0",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-flipper\\android",
+          "packageImportPath": "import com.facebook.flipper.reactnative.FlipperPackage;",
+          "packageInstance": "new FlipperPackage()",
+          "buildTypes": [],
+          "componentDescriptors": [],
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-flipper/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-gesture-handler": {
-      "root": "H:\\fiverr\\node_modules\\react-native-gesture-handler",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-gesture-handler",
       "name": "react-native-gesture-handler",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-gesture-handler\\RNGestureHandler.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-gesture-handler\\RNGestureHandler.podspec",
+          "version": "2.28.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-gesture-handler\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-gesture-handler\\android",
           "packageImportPath": "import com.swmansion.gesturehandler.RNGestureHandlerPackage;",
           "packageInstance": "new RNGestureHandlerPackage()",
           "buildTypes": [],
@@ -644,156 +814,197 @@
             "RNGestureHandlerButtonComponentDescriptor",
             "RNGestureHandlerRootViewComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-get-random-values": {
-      "root": "H:\\fiverr\\node_modules\\react-native-get-random-values",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-get-random-values",
       "name": "react-native-get-random-values",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-get-random-values\\react-native-get-random-values.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-get-random-values\\react-native-get-random-values.podspec",
+          "version": "1.11.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-get-random-values\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-get-random-values\\android",
           "packageImportPath": "import org.linusu.RNGetRandomValuesPackage;",
           "packageInstance": "new RNGetRandomValuesPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-get-random-values/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-get-random-values/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-image-picker": {
-      "root": "H:\\fiverr\\node_modules\\react-native-image-picker",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-image-picker",
       "name": "react-native-image-picker",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-image-picker\\react-native-image-picker.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-image-picker\\react-native-image-picker.podspec",
+          "version": "8.2.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-image-picker\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-image-picker\\android",
           "packageImportPath": "import com.imagepicker.ImagePickerPackage;",
           "packageInstance": "new ImagePickerPackage()",
           "buildTypes": [],
           "libraryName": "RNImagePickerSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-keychain": {
-      "root": "H:\\fiverr\\node_modules\\react-native-keychain",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-keychain",
       "name": "react-native-keychain",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-keychain\\RNKeychain.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-keychain\\RNKeychain.podspec",
+          "version": "10.0.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-keychain\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-keychain\\android",
           "packageImportPath": "import com.oblador.keychain.KeychainPackage;",
           "packageInstance": "new KeychainPackage()",
           "buildTypes": [],
+          "libraryName": "RNKeychainSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-keychain/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-keychain/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-linear-gradient": {
-      "root": "H:\\fiverr\\node_modules\\react-native-linear-gradient",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-linear-gradient",
       "name": "react-native-linear-gradient",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-linear-gradient\\BVLinearGradient.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-linear-gradient\\BVLinearGradient.podspec",
+          "version": "2.8.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-linear-gradient\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-linear-gradient\\android",
           "packageImportPath": "import com.BV.LinearGradient.LinearGradientPackage;",
           "packageInstance": "new LinearGradientPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-linear-gradient/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-linear-gradient/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-localize": {
-      "root": "H:\\fiverr\\node_modules\\react-native-localize",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-localize",
       "name": "react-native-localize",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-localize\\RNLocalize.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-localize\\RNLocalize.podspec",
+          "version": "3.5.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-localize\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-localize\\android",
           "packageImportPath": "import com.zoontek.rnlocalize.RNLocalizePackage;",
           "packageInstance": "new RNLocalizePackage()",
           "buildTypes": [],
           "libraryName": "RNLocalizeSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-localize/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-localize/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-network-info": {
-      "root": "H:\\fiverr\\node_modules\\react-native-network-info",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-network-info",
       "name": "react-native-network-info",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-network-info\\react-native-network-info.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-network-info\\react-native-network-info.podspec",
+          "version": "5.2.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-network-info\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-network-info\\android",
           "packageImportPath": "import com.pusherman.networkinfo.RNNetworkInfoPackage;",
           "packageInstance": "new RNNetworkInfoPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-network-info/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-network-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-orientation-locker": {
-      "root": "H:\\fiverr\\node_modules\\react-native-orientation-locker",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-orientation-locker",
       "name": "react-native-orientation-locker",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-orientation-locker\\react-native-orientation-locker.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-orientation-locker\\react-native-orientation-locker.podspec",
+          "version": "1.7.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-orientation-locker\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-orientation-locker\\android",
           "packageImportPath": "import org.wonday.orientation.OrientationPackage;",
           "packageInstance": "new OrientationPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-orientation-locker/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-orientation-locker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-pager-view": {
-      "root": "H:\\fiverr\\node_modules\\react-native-pager-view",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-pager-view",
       "name": "react-native-pager-view",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-pager-view\\react-native-pager-view.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-pager-view\\react-native-pager-view.podspec",
+          "version": "6.9.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-pager-view\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-pager-view\\android",
           "packageImportPath": "import com.reactnativepagerview.PagerViewPackage;",
           "packageInstance": "new PagerViewPackage()",
           "buildTypes": [],
@@ -801,56 +1012,71 @@
           "componentDescriptors": [
             "RNCViewPagerComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-pager-view/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-pager-view/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-permissions": {
-      "root": "H:\\fiverr\\node_modules\\react-native-permissions",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-permissions",
       "name": "react-native-permissions",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-permissions\\RNPermissions.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-permissions\\RNPermissions.podspec",
+          "version": "5.4.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-permissions\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-permissions\\android",
           "packageImportPath": "import com.zoontek.rnpermissions.RNPermissionsPackage;",
           "packageInstance": "new RNPermissionsPackage()",
           "buildTypes": [],
-          "libraryName": "rnpermissions",
+          "libraryName": "RNPermissionsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-reanimated": {
-      "root": "H:\\fiverr\\node_modules\\react-native-reanimated",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-reanimated",
       "name": "react-native-reanimated",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-reanimated\\RNReanimated.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-reanimated\\RNReanimated.podspec",
+          "version": "3.19.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-reanimated\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-reanimated\\android",
           "packageImportPath": "import com.swmansion.reanimated.ReanimatedPackage;",
           "packageInstance": "new ReanimatedPackage()",
           "buildTypes": [],
           "libraryName": "rnreanimated",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-render-html": {
-      "root": "H:\\fiverr\\node_modules\\react-native-render-html",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-render-html",
       "name": "react-native-render-html",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-render-html\\react-native-render-html.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-render-html\\react-native-render-html.podspec",
+          "version": "6.3.4",
           "configurations": [],
           "scriptPhases": []
         },
@@ -858,16 +1084,17 @@
       }
     },
     "react-native-safe-area-context": {
-      "root": "H:\\fiverr\\node_modules\\react-native-safe-area-context",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-safe-area-context\\react-native-safe-area-context.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-safe-area-context\\react-native-safe-area-context.podspec",
+          "version": "5.6.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-safe-area-context\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-safe-area-context\\android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -876,21 +1103,26 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-screens": {
-      "root": "H:\\fiverr\\node_modules\\react-native-screens",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-screens",
       "name": "react-native-screens",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-screens\\RNScreens.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-screens\\RNScreens.podspec",
+          "version": "4.16.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-screens\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-screens\\android",
           "packageImportPath": "import com.swmansion.rnscreens.RNScreensPackage;",
           "packageInstance": "new RNScreensPackage()",
           "buildTypes": [],
@@ -904,38 +1136,50 @@
             "RNSScreenStackComponentDescriptor",
             "RNSSearchBarComponentDescriptor",
             "RNSScreenComponentDescriptor",
-            "RNSModalScreenComponentDescriptor"
+            "RNSScreenFooterComponentDescriptor",
+            "RNSScreenContentWrapperComponentDescriptor",
+            "RNSModalScreenComponentDescriptor",
+            "RNSBottomTabsComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-send-intent": {
-      "root": "H:\\fiverr\\node_modules\\react-native-send-intent",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-send-intent",
       "name": "react-native-send-intent",
       "platforms": {
         "ios": null,
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-send-intent\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-send-intent\\android",
           "packageImportPath": "import com.burnweb.rnsendintent.RNSendIntentPackage;",
           "packageInstance": "new RNSendIntentPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-send-intent/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-send-intent/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-svg": {
-      "root": "H:\\fiverr\\node_modules\\react-native-svg",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-svg",
       "name": "react-native-svg",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-svg\\RNSVG.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-svg\\RNSVG.podspec",
+          "version": "15.13.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-svg\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-svg\\android",
           "packageImportPath": "import com.horcrux.svg.SvgPackage;",
           "packageInstance": "new SvgPackage()",
           "buildTypes": [],
@@ -944,6 +1188,14 @@
             "RNSVGCircleComponentDescriptor",
             "RNSVGClipPathComponentDescriptor",
             "RNSVGDefsComponentDescriptor",
+            "RNSVGFeBlendComponentDescriptor",
+            "RNSVGFeColorMatrixComponentDescriptor",
+            "RNSVGFeCompositeComponentDescriptor",
+            "RNSVGFeFloodComponentDescriptor",
+            "RNSVGFeGaussianBlurComponentDescriptor",
+            "RNSVGFeMergeComponentDescriptor",
+            "RNSVGFeOffsetComponentDescriptor",
+            "RNSVGFilterComponentDescriptor",
             "RNSVGEllipseComponentDescriptor",
             "RNSVGForeignObjectComponentDescriptor",
             "RNSVGGroupComponentDescriptor",
@@ -963,117 +1215,147 @@
             "RNSVGTSpanComponentDescriptor",
             "RNSVGUseComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-udp": {
-      "root": "H:\\fiverr\\node_modules\\react-native-udp",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-udp",
       "name": "react-native-udp",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-udp\\react-native-udp.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-udp\\react-native-udp.podspec",
+          "version": "4.1.7",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-udp\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-udp\\android",
           "packageImportPath": "import com.tradle.react.UdpSocketsModule;",
           "packageInstance": "new UdpSocketsModule()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-udp/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-udp/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-vector-icons": {
-      "root": "H:\\fiverr\\node_modules\\react-native-vector-icons",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-vector-icons",
       "name": "react-native-vector-icons",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-vector-icons\\RNVectorIcons.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-vector-icons\\RNVectorIcons.podspec",
+          "version": "10.3.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-vector-icons\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-vector-icons\\android",
           "packageImportPath": "import com.oblador.vectoricons.VectorIconsPackage;",
           "packageInstance": "new VectorIconsPackage()",
           "buildTypes": [],
           "libraryName": "RNVectorIconsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-video": {
-      "root": "H:\\fiverr\\node_modules\\react-native-video",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-video",
       "name": "react-native-video",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-video\\react-native-video.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-video\\react-native-video.podspec",
+          "version": "6.16.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-video\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-video\\android",
           "packageImportPath": "import com.brentvatne.react.ReactVideoPackage;",
           "packageInstance": "new ReactVideoPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-video/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-video/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
-    "react-native-vision-camera": {
-      "root": "H:\\fiverr\\node_modules\\react-native-vision-camera",
-      "name": "react-native-vision-camera",
+    "react-native-vlc-media-player": {
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-vlc-media-player",
+      "name": "react-native-vlc-media-player",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-vision-camera\\VisionCamera.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-vlc-media-player\\react-native-vlc-media-player.podspec",
+          "version": "1.0.94",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-vision-camera\\android",
-          "packageImportPath": "import com.mrousavy.camera.CameraPackage;",
-          "packageInstance": "new CameraPackage()",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-vlc-media-player\\android",
+          "packageImportPath": "import com.yuanzhou.vlc.ReactVlcPlayerPackage;",
+          "packageInstance": "new ReactVlcPlayerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-vision-camera/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-vlc-media-player/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-webrtc": {
-      "root": "H:\\fiverr\\node_modules\\react-native-webrtc",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-webrtc",
       "name": "react-native-webrtc",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-webrtc\\react-native-webrtc.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-webrtc\\react-native-webrtc.podspec",
+          "version": "124.0.6",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-webrtc\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-webrtc\\android",
           "packageImportPath": "import com.oney.WebRTCModule.WebRTCModulePackage;",
           "packageInstance": "new WebRTCModulePackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-webrtc/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-webrtc/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-webview": {
-      "root": "H:\\fiverr\\node_modules\\react-native-webview",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-webview",
       "name": "react-native-webview",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-webview\\react-native-webview.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-webview\\react-native-webview.podspec",
+          "version": "13.16.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-webview\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-webview\\android",
           "packageImportPath": "import com.reactnativecommunity.webview.RNCWebViewPackage;",
           "packageInstance": "new RNCWebViewPackage()",
           "buildTypes": [],
@@ -1081,46 +1363,150 @@
           "componentDescriptors": [
             "RNCWebViewComponentDescriptor"
           ],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-webview/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-webview/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-wheel-picker-android": {
-      "root": "H:\\fiverr\\node_modules\\react-native-wheel-picker-android",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-wheel-picker-android",
       "name": "react-native-wheel-picker-android",
       "platforms": {
         "ios": null,
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-wheel-picker-android\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-wheel-picker-android\\android",
           "packageImportPath": "import com.wheelpicker.WheelPickerPackage;",
           "packageInstance": "new WheelPickerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-wheel-picker-android/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-wheel-picker-android/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     },
     "react-native-wifi-reborn": {
-      "root": "H:\\fiverr\\node_modules\\react-native-wifi-reborn",
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-wifi-reborn",
       "name": "react-native-wifi-reborn",
       "platforms": {
         "ios": {
-          "podspecPath": "H:\\fiverr\\node_modules\\react-native-wifi-reborn\\RNWifi.podspec",
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-wifi-reborn\\RNWifi.podspec",
+          "version": "4.13.6",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "H:\\fiverr\\node_modules\\react-native-wifi-reborn\\android",
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-wifi-reborn\\android",
           "packageImportPath": "import com.reactlibrary.rnwifi.RNWifiPackage;",
           "packageInstance": "new RNWifiPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "H:/fiverr/node_modules/react-native-wifi-reborn/android/build/generated/source/codegen/jni/CMakeLists.txt"
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-wifi-reborn/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-worklets-core": {
+      "root": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-worklets-core",
+      "name": "react-native-worklets-core",
+      "platforms": {
+        "ios": {
+          "podspecPath": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-worklets-core\\react-native-worklets-core.podspec",
+          "version": "1.6.2",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "H:\\prince-fix\\CalypsHome\\node_modules\\react-native-worklets-core\\android",
+          "packageImportPath": "import com.worklets.WorkletsCorePackage;",
+          "packageInstance": "new WorkletsCorePackage()",
+          "buildTypes": [],
+          "libraryName": "RNWorkletsSpec",
+          "componentDescriptors": [],
+          "cmakeListsPath": "H:/prince-fix/CalypsHome/node_modules/react-native-worklets-core/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
         }
       }
     }
   },
   "commands": [
+    {
+      "name": "generate-bootsplash <logo>",
+      "description": "Generate a launch screen using a logo file path (PNG or SVG)",
+      "options": [
+        {
+          "name": "--project-type <string>",
+          "description": "Project type (\"detect\", \"bare\" or \"expo\")",
+          "default": "detect"
+        },
+        {
+          "name": "--platforms <list>",
+          "description": "Platforms to generate for, separated by a comma",
+          "default": "android,ios,web"
+        },
+        {
+          "name": "--background <string>",
+          "description": "Background color (in hexadecimal format)",
+          "default": "#fff"
+        },
+        {
+          "name": "--logo-width <number>",
+          "description": "Logo width at @1x (in dp - we recommend approximately ~100)",
+          "default": 100
+        },
+        {
+          "name": "--assets-output <string>",
+          "description": "Assets output directory path",
+          "default": "assets/bootsplash"
+        },
+        {
+          "name": "--flavor <string>",
+          "description": "Android flavor build variant (where your resource directory is)",
+          "default": "main"
+        },
+        {
+          "name": "--html <string>",
+          "description": "HTML template file path (your web app entry point)",
+          "default": "public/index.html"
+        },
+        {
+          "name": "--license-key <string>",
+          "description": "License key to enable brand and dark mode assets generation"
+        },
+        {
+          "name": "--brand <string>",
+          "description": "Brand file path (PNG or SVG)"
+        },
+        {
+          "name": "--brand-width <number>",
+          "description": "Brand width at @1x (in dp - we recommend approximately ~80)",
+          "default": 80
+        },
+        {
+          "name": "--dark-background <string>",
+          "description": "[dark mode] Background color (in hexadecimal format)"
+        },
+        {
+          "name": "--dark-logo <string>",
+          "description": "[dark mode] Logo file path (PNG or SVG)"
+        },
+        {
+          "name": "--dark-brand <string>",
+          "description": "[dark mode] Brand file path (PNG or SVG)"
+        }
+      ]
+    },
     {
       "name": "bundle",
       "description": "Build the bundle for the provided JavaScript entry file.",
@@ -1282,7 +1668,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "H:\\fiverr"
+          "default": "H:\\prince-fix\\CalypsHome"
         },
         {
           "name": "--platform <string>",
@@ -1305,7 +1691,7 @@
       "description": "starts iOS device syslog tail",
       "options": [
         {
-          "name": "--interactive",
+          "name": "-i --interactive",
           "description": "Explicitly select simulator to tail logs from. By default it will tail logs from the first booted and available simulator."
         }
       ]
@@ -1316,49 +1702,21 @@
       "examples": [
         {
           "desc": "Run on a different simulator, e.g. iPhone SE (2nd generation)",
-          "cmd": "react-native run-ios --simulator \"iPhone SE (2nd generation)\""
+          "cmd": "npx react-native run-ios --simulator \"iPhone SE (2nd generation)\""
         },
         {
           "desc": "Run on a connected device, e.g. Max's iPhone",
-          "cmd": "react-native run-ios --device \"Max's iPhone\""
+          "cmd": "npx react-native run-ios --device \"Max's iPhone\""
         },
         {
           "desc": "Run on the AppleTV simulator",
-          "cmd": "react-native run-ios --simulator \"Apple TV\"  --scheme \"helloworld-tvOS\""
+          "cmd": "npx react-native run-ios --simulator \"Apple TV\"  --scheme \"helloworld-tvOS\""
         }
       ],
       "options": [
         {
-          "name": "--simulator <string>",
-          "description": "Explicitly set simulator to use. Optionally include iOS version between parenthesis at the end to match an exact version: \"iPhone 6 (10.0)\""
-        },
-        {
-          "name": "--mode <string>",
-          "description": "Explicitly set the scheme configuration to use. This option is case sensitive."
-        },
-        {
-          "name": "--configuration <string>",
-          "description": "[Deprecated] Explicitly set the scheme configuration to use"
-        },
-        {
-          "name": "--scheme <string>",
-          "description": "Explicitly set Xcode scheme to use"
-        },
-        {
-          "name": "--device [string]",
-          "description": "Explicitly set device to use by name.  The value is not required if you have a single device connected."
-        },
-        {
-          "name": "--destination <string>",
-          "description": "Explicitly extend distination e.g. \"arch=x86_64\""
-        },
-        {
-          "name": "--udid <string>",
-          "description": "Explicitly set device to use by udid"
-        },
-        {
-          "name": "--verbose",
-          "description": "Do not use xcbeautify or xcpretty even if installed"
+          "name": "--no-packager",
+          "description": "Do not launch packager while running the app"
         },
         {
           "name": "--port <number>",
@@ -1366,23 +1724,8 @@
         },
         {
           "name": "--terminal <string>",
-          "description": "Launches the Metro Bundler in a new window using the specified terminal path."
-        },
-        {
-          "name": "--xcconfig [string]",
-          "description": "Explicitly set xcconfig to use"
-        },
-        {
-          "name": "--buildFolder <string>",
-          "description": "Location for iOS build artifacts. Corresponds to Xcode's \"-derivedDataPath\"."
-        },
-        {
-          "name": "--extra-params <string>",
-          "description": "Custom params that will be passed to xcodebuild command."
-        },
-        {
-          "name": "--no-packager",
-          "description": "Do not launch packager while building"
+          "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
+          "default": "cmd.exe"
         },
         {
           "name": "--binary-path <string>",
@@ -1393,68 +1736,28 @@
           "description": "List all available iOS devices and simulators and let you choose one to run the app. "
         },
         {
-          "name": "--interactive",
-          "description": "Explicitly select which scheme and configuration to use before running a build and select device to run the application."
-        }
-      ]
-    },
-    {
-      "name": "build-ios",
-      "description": "builds your app on iOS simulator",
-      "examples": [
-        {
-          "desc": "Build the app for the IOS simulator",
-          "cmd": "react-native build-ios"
+          "name": "--udid <string>",
+          "description": "Explicitly set the device to use by UDID"
         },
-        {
-          "desc": "Build the app for all IOS devices",
-          "cmd": "react-native build-ios --mode \"Release\""
-        },
-        {
-          "desc": "Build the app for a specific IOS device",
-          "cmd": "react-native build-ios --simulator \"IPhone 11\""
-        }
-      ],
-      "options": [
         {
           "name": "--simulator <string>",
-          "description": "Explicitly set simulator to use. Optionally include iOS version between parenthesis at the end to match an exact version: \"iPhone 6 (10.0)\""
+          "description": "Explicitly set the simulator to use. Optionally set the iOS version between parentheses at the end to match an exact version: \"iPhone 15 (17.0)\""
         },
         {
           "name": "--mode <string>",
           "description": "Explicitly set the scheme configuration to use. This option is case sensitive."
         },
         {
-          "name": "--configuration <string>",
-          "description": "[Deprecated] Explicitly set the scheme configuration to use"
-        },
-        {
           "name": "--scheme <string>",
           "description": "Explicitly set Xcode scheme to use"
         },
         {
-          "name": "--device [string]",
-          "description": "Explicitly set device to use by name.  The value is not required if you have a single device connected."
-        },
-        {
           "name": "--destination <string>",
-          "description": "Explicitly extend distination e.g. \"arch=x86_64\""
-        },
-        {
-          "name": "--udid <string>",
-          "description": "Explicitly set device to use by udid"
+          "description": "Explicitly extend destination e.g. \"arch=x86_64\""
         },
         {
           "name": "--verbose",
           "description": "Do not use xcbeautify or xcpretty even if installed"
-        },
-        {
-          "name": "--port <number>",
-          "default": 8081
-        },
-        {
-          "name": "--terminal <string>",
-          "description": "Launches the Metro Bundler in a new window using the specified terminal path."
         },
         {
           "name": "--xcconfig [string]",
@@ -1469,8 +1772,84 @@
           "description": "Custom params that will be passed to xcodebuild command."
         },
         {
-          "name": "--interactive",
+          "name": "--target <string>",
+          "description": "Explicitly set Xcode target to use."
+        },
+        {
+          "name": "-i --interactive",
           "description": "Explicitly select which scheme and configuration to use before running a build"
+        },
+        {
+          "name": "--force-pods",
+          "description": "Force CocoaPods installation"
+        },
+        {
+          "name": "--only-pods",
+          "description": "Only install Cocoapods, do not build the app"
+        },
+        {
+          "name": "--device [string]",
+          "description": "Explicitly set the device to use by name or by unique device identifier . If the value is not provided,the app will run on the first available physical device."
+        }
+      ]
+    },
+    {
+      "name": "build-ios",
+      "description": "builds your app for iOS platform",
+      "examples": [
+        {
+          "desc": "Build the app for all iOS devices in Release mode",
+          "cmd": "npx react-native build-ios --mode \"Release\""
+        }
+      ],
+      "options": [
+        {
+          "name": "--mode <string>",
+          "description": "Explicitly set the scheme configuration to use. This option is case sensitive."
+        },
+        {
+          "name": "--scheme <string>",
+          "description": "Explicitly set Xcode scheme to use"
+        },
+        {
+          "name": "--destination <string>",
+          "description": "Explicitly extend destination e.g. \"arch=x86_64\""
+        },
+        {
+          "name": "--verbose",
+          "description": "Do not use xcbeautify or xcpretty even if installed"
+        },
+        {
+          "name": "--xcconfig [string]",
+          "description": "Explicitly set xcconfig to use"
+        },
+        {
+          "name": "--buildFolder <string>",
+          "description": "Location for iOS build artifacts. Corresponds to Xcode's \"-derivedDataPath\"."
+        },
+        {
+          "name": "--extra-params <string>",
+          "description": "Custom params that will be passed to xcodebuild command."
+        },
+        {
+          "name": "--target <string>",
+          "description": "Explicitly set Xcode target to use."
+        },
+        {
+          "name": "-i --interactive",
+          "description": "Explicitly select which scheme and configuration to use before running a build"
+        },
+        {
+          "name": "--force-pods",
+          "description": "Force CocoaPods installation"
+        },
+        {
+          "name": "--only-pods",
+          "description": "Only install Cocoapods, do not build the app"
+        },
+        {
+          "name": "--device [string]",
+          "description": "Explicitly set the device to use by name or by unique device identifier . If the value is not provided,the app will run on the first available physical device."
         }
       ]
     },
@@ -1487,22 +1866,6 @@
           "description": "Specify your app's build variant"
         },
         {
-          "name": "--variant <string>",
-          "description": "Specify your app's build variant. Deprecated! Use 'mode' instead"
-        },
-        {
-          "name": "--no-packager",
-          "description": "Do not launch packager while building"
-        },
-        {
-          "name": "--port <number>",
-          "default": 8081
-        },
-        {
-          "name": "--terminal <string>",
-          "description": "Launches the Metro Bundler in a new window using the specified terminal path."
-        },
-        {
           "name": "--tasks <list>",
           "description": "Run custom Gradle tasks. By default it's \"assembleDebug\". Will override passed mode and variant arguments."
         },
@@ -1516,8 +1879,21 @@
           "description": "Custom params passed to gradle build command"
         },
         {
-          "name": "--interactive",
+          "name": "-i --interactive",
           "description": "Explicitly select build type and flavour to use before running a build"
+        },
+        {
+          "name": "--no-packager",
+          "description": "Do not launch packager while running the app"
+        },
+        {
+          "name": "--port <number>",
+          "default": 8081
+        },
+        {
+          "name": "--terminal <string>",
+          "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
+          "default": "cmd.exe"
         },
         {
           "name": "--appId <string>",
@@ -1531,12 +1907,15 @@
         },
         {
           "name": "--main-activity <string>",
-          "description": "Name of the activity to start",
-          "default": "MainActivity"
+          "description": "Name of the activity to start"
+        },
+        {
+          "name": "--device <string>",
+          "description": "Explicitly set the device to use by name. The value is not required if you have a single device connected."
         },
         {
           "name": "--deviceId <string>",
-          "description": "builds your app and starts it on a specific device/simulator with the given device id (listed by running \"adb devices\" on the command line)."
+          "description": "**DEPRECATED** Builds your app and starts it on a specific device/simulator with the given device id (listed by running \"adb devices\" on the command line)."
         },
         {
           "name": "--list-devices",
@@ -1562,22 +1941,6 @@
           "description": "Specify your app's build variant"
         },
         {
-          "name": "--variant <string>",
-          "description": "Specify your app's build variant. Deprecated! Use 'mode' instead"
-        },
-        {
-          "name": "--no-packager",
-          "description": "Do not launch packager while building"
-        },
-        {
-          "name": "--port <number>",
-          "default": 8081
-        },
-        {
-          "name": "--terminal <string>",
-          "description": "Launches the Metro Bundler in a new window using the specified terminal path."
-        },
-        {
           "name": "--tasks <list>",
           "description": "Run custom Gradle tasks. By default it's \"assembleDebug\". Will override passed mode and variant arguments."
         },
@@ -1591,44 +1954,10 @@
           "description": "Custom params passed to gradle build command"
         },
         {
-          "name": "--interactive",
+          "name": "-i --interactive",
           "description": "Explicitly select build type and flavour to use before running a build"
         }
       ]
-    },
-    {
-      "name": "generate-bootsplash <logoPath>",
-      "description": "Generate a launch screen using an original logo file (PNG or SVG)",
-      "options": [
-        {
-          "name": "--background-color <color>",
-          "description": "color used as launch screen background (in hexadecimal format)",
-          "default": "#fff"
-        },
-        {
-          "name": "--logo-width <width>",
-          "description": "logo width at @1x (in dp - we recommend approximately ~100)",
-          "default": 100
-        },
-        {
-          "name": "--assets-path [path]",
-          "description": "path to your static assets directory (useful to require the logo file in JS)"
-        },
-        {
-          "name": "--flavor <flavor>",
-          "description": "[android only] flavor build variant (outputs in an android resource directory other than \"main\")",
-          "default": "main"
-        },
-        {
-          "name": "--platforms <platforms>",
-          "description": "platforms to generate the splash screen for (android, ios)",
-          "default": "android,ios"
-        }
-      ]
-    },
-    {
-      "name": "setup-ios-permissions",
-      "description": "Update react-native-permissions podspec to link additional permission handlers."
     }
   ],
   "healthChecks": [],
@@ -1636,18 +1965,26 @@
     "ios": {},
     "android": {}
   },
+  "assets": [
+    "./src/assets/fonts/"
+  ],
   "project": {
     "ios": {
-      "sourceDir": "H:\\fiverr\\ios",
+      "sourceDir": "H:\\prince-fix\\CalypsHome\\ios",
       "xcodeProject": {
-        "name": "CalypsHome.xcworkspace",
-        "isWorkspace": true
-      }
+        "name": "CalypsHome.xcodeproj",
+        "path": ".",
+        "isWorkspace": false
+      },
+      "assets": []
     },
     "android": {
-      "sourceDir": "H:\\fiverr\\android",
+      "sourceDir": "H:\\prince-fix\\CalypsHome\\android",
       "appName": "app",
-      "packageName": "com.stellagroup.macalypshome.mobile"
+      "packageName": "com.avidsen.calypshome",
+      "applicationId": "com.avidsen.calypshome",
+      "mainActivity": ".MainActivity",
+      "assets": []
     }
   }
 }

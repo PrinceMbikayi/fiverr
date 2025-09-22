@@ -1,32 +1,26 @@
-import React, {Component} from 'react';
-import {useEffect,useState,useRef} from 'react';
-import {View,Text,Image,BackHandler,AppState, NativeModules, Platform,Dimensions,Alert} from 'react-native';
-import { useSelector } from 'react-redux';
+import { useEffect, useRef, useState } from 'react';
+import { AppState, BackHandler, NativeModules } from 'react-native';
 import styled from 'styled-components/native';
 
+import notifee from '@notifee/react-native';
 import store from '_store';
-import notifee  from '@notifee/react-native';
 
 //import RNExitApp from 'react-native-exit-app';
 //import RNExitApp from 'react-native-exit-app-no-history';
 
 // -----------
-import { useTheme } from '_theming/themeProvider';
-import {startWs} from '_api/Api';
-import {Api} from '_api';
-import {addObjectAction} from '_actions/asyncActions';
-import {  deleteVdpNotification } from '_actions/notificationPush';
+import { addObjectAction } from '_actions/asyncActions';
+import { startWs } from '_api/Api';
 
 //--------------
 
 
+import { getObjectById } from '_helpers/selectors';
 import { ThemeContextProvider } from '_theming/themeProvider';
-import {fullscreen_push_android_started} from '_actions/notificationPush';
-import {getObjectById} from '_helpers/selectors';
 
 
-import {FullscreenNotification as VdpFullScreen} from '_components/objects/doorKeeper/pushNotifications/fullscreenNotification';
-import {FullscreenNotification as QrCodeFullScreen} from '_components/objects/qrBasic/pushNotifications/fullscreenNotification';
+import { FullscreenNotification as VdpFullScreen } from '_components/objects/doorKeeper/pushNotifications/fullscreenNotification';
+import { FullscreenNotification as QrCodeFullScreen } from '_components/objects/qrBasic/pushNotifications/fullscreenNotification';
 
 
 export const FullscreenNotification = () => {
@@ -101,7 +95,7 @@ export const FullscreenNotification = () => {
           return (ret == "")
       }
     const closeFullscreenNotification = () => {
-        AppState.removeEventListener('change', _handleAppStateChange);
+        appStateSubscription.remove();
         backHandlerRef.current.remove();
         //endConversation();
     }
@@ -125,7 +119,7 @@ export const FullscreenNotification = () => {
         console.log("FullScreen Component Did mount !!!")
         const unsubscribe = store.subscribe(onStoreChanged);
         backHandlerRef.current = BackHandler.addEventListener('hardwareBackPress', _handleBackPress);
-        AppState.addEventListener('change', _handleAppStateChange);
+        const appStateSubscription = AppState.addEventListener('change', _handleAppStateChange);
         const checkFullScreen = store.getState().notificationPush?.forFullScreen;
        
        //console.log("AZER",checkFullScreen)
@@ -174,6 +168,8 @@ export const FullscreenNotification = () => {
         return () => {
             //releaseAndClose(); 
             unsubscribe(); 
+            appStateSubscription.remove();
+            backHandlerRef.current?.remove();
             //closeFullscreenNotification();    
             //console.log()
         }

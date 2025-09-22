@@ -1,9 +1,9 @@
-import React, { useContext, useState, useEffect } from 'react';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import React, { useContext, useEffect, useState } from 'react';
 //import { Appearance, AppearanceProvider } from 'react-native-appearance';
-import { Appearance} from 'react-native';
+import { appRefresh } from '_actions/app';
+import { Appearance } from 'react-native';
 import store from '../store';
-import {appRefresh,closeWS} from '_actions/app';
 
 
 import THEMES from '_brand/themes';

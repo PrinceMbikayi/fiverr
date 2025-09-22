@@ -1,27 +1,24 @@
-import * as axios from 'axios';
-import store from '../store';
+import axios from 'axios';
 import { AppConfig } from '../config';
+import store from '../store';
 
-import { USER_LOGGED_IN, USER_LOGGED_OUT, USER_UPDATE, loginError, userSetIsTester, userUpdate } from '../actions/user';
-import { ROOMS_FILL } from '../actions/rooms';
-import { Normalise } from '../helpers/normalise';
 import * as ActionsTypes from '../actions/objectTypes';
+import { ROOMS_FILL } from '../actions/rooms';
+import { USER_LOGGED_IN, USER_LOGGED_OUT, userSetIsTester } from '../actions/user';
+import { Normalise } from '../helpers/normalise';
 
-import { getUserCredentials, setUserCredentials, deleteUserCredentials, getIsTester } from '../services/storage';
 import { getServer, getSessionId, setIsTester as storeIsTester } from '_services/storage';
+import { deleteUserCredentials, getIsTester, getUserCredentials, setUserCredentials } from '../services/storage';
 import { getObjects } from './objects';
-import { Ws } from '../ws';
 
-import * as Durin from './durin';
 import * as Dain from './dain';
+import * as Durin from './durin';
 
-import DeviceInfo from 'react-native-device-info';
-import { initPushNotifications } from '_services/pushNotifications/myPushNotifications';
 import notificationPushManager from '_services/pushNotifications/pushNotificationManager';
 import websocketManager from '_services/webSocketManager';
+import DeviceInfo from 'react-native-device-info';
 
-import { logWithGoogle, signOutGoogle } from './social'
-import { logWithApple } from './social'
+import { logWithApple, logWithGoogle, signOutGoogle } from './social';
 
 const paramsToString = params => Object.entries(params).reduce((acc, [key, value], index, array) => `${acc}${key}=${encodeURIComponent(value)}${index !== (array.length - 1) ? '&' : ''}`, "");
 
@@ -257,7 +254,6 @@ async function checkUserIsGranted(){
   if(credentials.error != undefined) {
     
     return new Promise.reject({errCode:-12,errMessage:credentials.error})
-    return false;
   }
   
   
@@ -392,7 +388,6 @@ async function checkUserIsGranted(){
           }
           console.log("what a mess");
           return {errCode:401}
-          return false;
         }
       }
   }
@@ -843,34 +838,12 @@ async function getNetatmoUrl() {
 
 
 export {
-  checkUserIsGranted,
-  login,
-  logout,
-  register,
-  confirmRegister,
-  socialLogin,
-  recoverPassword,
-  reinitPassword,
-  updatePassword,
-  setPushToken,
-  getRooms,
-  getStaticFile,
-  startWs,
-  closeWs,
-  getNetatmoUrl,
-  updateUserName,
-  updatePasswordProfalux,
-  updateLogin,
-  confirmUpdateLogin,
-  reinitPasswordViaAccount,
-  recoverPasswordViaAccount,
-  recoverCredentials,
-  confirmRecoverCredentials,
-  loginRecoverAccount
-
+    checkUserIsGranted, closeWs, confirmRecoverCredentials, confirmRegister, confirmUpdateLogin, getNetatmoUrl, getRooms,
+    getStaticFile, login, loginRecoverAccount, logout, recoverCredentials, recoverPassword, recoverPasswordViaAccount, register, reinitPassword, reinitPasswordViaAccount, setPushToken, socialLogin, startWs, updateLogin, updatePassword, updatePasswordProfalux, updateUserName
 };
 
-export * from './objects';
-export * from './groups';
-export * from './rooms';
-export * from './gateways';
+    export * from './gateways';
+    export * from './groups';
+    export * from './objects';
+    export * from './rooms';
+

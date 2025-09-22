@@ -1,8 +1,7 @@
+import { userNickname } from '_actions/user';
+import store from '_store';
 import dotProp from 'dot-prop-immutable';
 import * as Durin from './durin';
-import * as axios from 'axios';
-import {userNickname} from '_actions/user';
-import store from '_store';
 
 /*
 export const updatePreference = async (section,name,value) => {

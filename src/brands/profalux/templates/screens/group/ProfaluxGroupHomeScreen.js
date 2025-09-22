@@ -1,18 +1,16 @@
-import React from 'react';
-import { useState, useEffect, useRef } from 'react';
-import { BackHandler } from 'react-native';
-import { useSelector, useDispatch } from "react-redux";
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { BackHandler } from 'react-native';
+import { useDispatch, useSelector } from "react-redux";
 
 import { useNavigation, useRoute } from '@react-navigation/native';
 
-import { useTheme } from '_theming/themeProvider'
-import { GroupListWithShortCard } from './GroupListWithShortCard';
+import { getAllObjects, getObjectsByTypeName, getObjectsVisible } from '_helpers/selectors';
 import { setOrderedList } from '_services/storage';
-import { getAllObjects, getObjectsVisible,getObjectsByTypeName, getObjectsByTypes } from '_helpers/selectors';
+import { useTheme } from '_theming/themeProvider';
+import { GroupListWithShortCard } from './GroupListWithShortCard';
 
 import GroupTemplateScreen from '_brand/templates/components/objects/groupObject/components/GroupTemplateScreen';
-import AsyncStorage from '@react-native-community/async-storage';
 import { alphabeticSort } from '_brand/utils/alphabeticSort';
 
 
@@ -71,9 +69,9 @@ const ProfaluxGroupHomeScreen = (props) => {
 
 
     useEffect(() => {
-        BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+        const backHandlerSubscription = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
         return () => {
-            BackHandler.removeEventListener('hardwareBackPress', handleBackPress);
+            backHandlerSubscription.remove();
             //console.log("je suis retiré")
         };
     }, []);

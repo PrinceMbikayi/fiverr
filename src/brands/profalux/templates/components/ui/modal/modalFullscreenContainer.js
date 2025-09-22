@@ -1,11 +1,10 @@
 
-import React from 'react';
 import { useEffect } from 'react';
-import {View,TouchableHighlight,Pressable,Text,BackHandler} from 'react-native'
-import styled,{ThemeProvider} from 'styled-components/native';
+import { BackHandler, Pressable, TouchableHighlight } from 'react-native';
+import styled from 'styled-components/native';
 
 import CloseCircle from '_brand/images/icons/app/CloseCircle';
-import {useGlobalModal} from '_components/ui/globalModal';
+import { useGlobalModal } from '_components/ui/globalModal';
 import ModalContent from './modalContent';
 
 /**
@@ -41,9 +40,9 @@ const FullScreenModalContainer = (props) => {
 
 
     useEffect(() =>{
-        BackHandler.addEventListener('hardwareBackPress', handleBackPress);
+        const backHandlerSubscription = BackHandler.addEventListener('hardwareBackPress', handleBackPress);
         return () => {
-            BackHandler.removeEventListener('hardwareBackPress', handleBackPress);
+            backHandlerSubscription.remove();
             console.log("je suis retiré")
         };
       }, []);

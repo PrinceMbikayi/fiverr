@@ -1,32 +1,19 @@
-import '_brand/templates/screens/_locales'
-import React from 'react';
-import {useContext,useState,useEffect, useRef} from 'react';
-import {View, StyleSheet, Button, Dimensions, Pressable, Text, TouchableOpacity} from 'react-native';
-import {useSelector,useDispatch} from "react-redux";
+import '_brand/templates/screens/_locales';
+import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import {difference as lodashDifference, pull as lodashPull} from 'lodash';
+import { Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useDispatch } from "react-redux";
 
-import { useNavigation,useRoute } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 
-import { useTheme} from '_theming/themeProvider'
+import { useTheme } from '_theming/themeProvider';
 
-import AsyncStorage from '@react-native-community/async-storage';
-import ScreenContainer from '../components/ScreenContainer'
-import {logout as ApiLogout} from '_api/Api';
-import { SimpleForm } from '../components/SimpleForm';
-import { BoxCodeField } from '../components/BoxCodeField';
-import {getObjects} from '_api/objects'
+import { userUpdateLogin } from '_actions/user';
 import { Api } from '_api';
+import { ConfirmLoginForm } from '_brand/templates/screens/account/components/ConfirmLoginForm';
 import Toast from 'react-native-root-toast';
-import {addObjectAction,refreshObjectAction} from '_actions/asyncActions'
-import * as Durin from '_api/durin';
-import { iconsJs } from '_brand/utils/iconsJs';
-import RightChevron from '_brand/images/icons/app/profaluxIconJs/RightChevron';
-import { MultiPurposeWidgetLine } from '_brand/templates/components/objects/common/MultiPurposeWidgetLine';
-import { DisplayForm } from '../components/DisplayForm';
-import {ConfirmLoginForm} from '_brand/templates/screens/account/components/ConfirmLoginForm'
-import {userUpdateLogin} from '_actions/user';
+import ScreenContainer from '../components/ScreenContainer';
 
 export const ConfirmEditLogin = (props) => {
     

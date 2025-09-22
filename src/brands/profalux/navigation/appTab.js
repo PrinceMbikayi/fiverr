@@ -1,33 +1,21 @@
-import "_navigation/locales"
-import React from "react";
-import { Image, View, Button } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
+import { View } from "react-native";
+import "./locales";
 
+import { GroupNavigationStack } from '_brand/templates/screens/group/navigation/GroupNavigationStack';
 import { ProductStack } from './productStack';
-import { MaisonScreen } from '_brand/templates/screens/maison/MaisonScreen';
-import AboutScreen from '_screens/about';
-import { GroupNavigationStack } from '_brand/templates/screens/group/navigation/GroupNavigationStack'
 //import { RoutinesNavigationStack } from '_brand/templates/screens/routines/navigation/RoutinesNavigationStack'
-import { RoutineHomeStack } from '_brand/templates/screens/routines/navigation/index'
-import { MaisonNavigationStack } from '_brand/templates/screens/maison/navigation/MaisonNavigationStack'
-import ProfaluxGroupHomeScreen from '_brand/templates/screens/group/ProfaluxGroupHomeScreen';
-import { AccountStack } from '../templates/screens/account/navigation';
+import { MaisonNavigationStack } from '_brand/templates/screens/maison/navigation/MaisonNavigationStack';
+import { RoutineHomeStack } from '_brand/templates/screens/routines/navigation/index';
 import { NotificationsScreen } from "_screens/notifications";
 
 import { useTheme } from '_theming/themeProvider';
 
-import ProfileIcon from '_brand/images/icons/app/Profile';
-import ProfileIconBold from '_brand/images/icons/app/ProfileBold';
 
-import HomeIcon from '_brand/images/icons/app/Home';
-import HomeIconBold from '_brand/images/icons/app/HomeBold';
 
-import ProgrammingIcon from '_brand/images/icons/app/ProgrammingArrows';
-import ProgrammingIconBold from '_brand/images/icons/app/ProgrammingArrowsBold';
-import VuesaxBoldRecordCircle from '_brand/images/icons/app/VuesaxBoldRecordCircle';
-import { iconsJs } from '_brand/utils/iconsJs';
 import { MultiPurposeWidgetLine } from "_brand/templates/components/objects/common/MultiPurposeWidgetLine";
+import { iconsJs } from '_brand/utils/iconsJs';
 import { useTranslation } from 'react-i18next'; //
 
 
