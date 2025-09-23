@@ -1,0 +1,4 @@
+NSLocationAlwaysAndWhenInUseUsageDescription = "Bitte gewähren Sie Zugriff auf die Anwendung, um die WiFi-Erkennung zu ermöglichen.";
+NSLocationAlwaysUsageDescription = "Bitte gewähren Sie Zugriff auf die Anwendung, um die WiFi-Erkennung zu ermöglichen.";
+NSLocationWhenInUseUsageDescription = "Bitte gewähren Sie Zugriff auf die Anwendung, um die WiFi-Erkennung zu ermöglichen.";
+NSLocationAlwaysUsageDescription = "Bitte gewähren Sie Zugriff auf die Anwendung, um die WiFi-Erkennung zu ermöglichen.";

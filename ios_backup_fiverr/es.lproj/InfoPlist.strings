@@ -1,0 +1,4 @@
+NSLocationAlwaysAndWhenInUseUsageDescription = "Otorgue acceso a la aplicación para permitir la detección de WiFi.";
+NSLocationAlwaysUsageDescription = "Otorgue acceso a la aplicación para permitir la detección de WiFi.";
+NSLocationWhenInUseUsageDescription = "Otorgue acceso a la aplicación para permitir la detección de WiFi.";
+NSLocationAlwaysUsageDescription = "Otorgue acceso a la aplicación para permitir la detección de WiFi.";
