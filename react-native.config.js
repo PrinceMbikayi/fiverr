@@ -1,7 +1,6 @@
 module.exports = {
   dependencies: {
-    // Flipper configuration for Android
-    ...(process.env.NO_FLIPPER ? { 'react-native-flipper': { platforms: { android: { sourceDir: '../node_modules/react-native-flipper/android/src/main', packageImportPath: 'import io.invertase.flipper.ReactNativeFlipper;' } } } } : {}),
+    // Flipper has been removed for better iOS compatibility
   },
   assets: [
     './src/assets/fonts/',

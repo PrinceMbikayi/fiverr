@@ -35,5 +35,9 @@ allprojects {
         google()
         mavenCentral()
         maven { url 'https://www.jitpack.io' }
+        // Notifee local repository - back to absolute path
+        maven {
+            url "file:/Users/naimurrahaman/Documents/development/fiverr/node_modules/@notifee/react-native/android/libs"
+        }
     }
 }

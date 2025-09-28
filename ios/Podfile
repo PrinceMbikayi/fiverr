@@ -21,7 +21,7 @@ pod 'nanopb', :modular_headers => true
 $RNFirebaseAsStaticFramework = true
 
   # iOS deployment target  
-  ios_deployment_target = '16.0'
+  ios_deployment_target = '15.1'
   
   platform :ios, ios_deployment_target
 install! 'cocoapods', :deterministic_uuids => false

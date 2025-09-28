@@ -29,14 +29,8 @@ const composeEnhancers = composeWithDevTools({
   port: 8081, // the port your remotedev server is running at
 });
 
-//========= FLIPPER REDUX =================
-if (__DEV__) {
-  const createDebugger = require("redux-flipper").default;
-  middlewares.push(createDebugger());
-}
-
-
-
+//========= REDUX DEVTOOLS (Flipper removed) =================
+// Flipper dependencies have been removed for better compatibility
 
 //const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
