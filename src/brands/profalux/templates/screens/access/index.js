@@ -126,12 +126,13 @@ const AccessScreen = (props) => {
         )
     }else{
         content = (
-            <View style={[{flex:1,backgroundColor:bgcolor, paddingVertical:100, alignItems:'center', justifyContent:'center'}]}>
+            <View style={[{flex:1,backgroundColor:'#FFFFFF', paddingVertical:100, alignItems:'center', justifyContent:'center'}]}>
 
                 <Image source={imageSourceAccess} style={{width:DEVICE_WIDTH, height:DEVICE_HEIGHT, zIndex:-2, position:'absolute', top:0}}/>
                 <View>
                     <Image source={require('_brand/images/icons/app/profaluxIconJs/Logo.png')}/>
                 </View>
+                <Text style={{color:'red', fontSize:20, fontWeight:'bold', marginTop:20}}>ACCESS SCREEN LOADED - DEBUG</Text>
             
                 {!isConnected &&
                         <View style={{width:'100%',position:'absolute',alignItems:'center',paddingTop:20}}>

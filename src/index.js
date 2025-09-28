@@ -245,21 +245,8 @@ if (__DEV__) {
         }
       )
       //------- splash screen ---------------  
-      try {
-        console.log("Attempting to hide RNBootSplash...");
-        RNBootSplash.hide({ duration: 250 });
-        console.log("RNBootSplash hidden successfully");
-      } catch (error) {
-        console.log("RNBootSplash error:", error);
-        // Force hide splash screen even if RNBootSplash fails
-        setTimeout(() => {
-          try {
-            RNBootSplash.hide();
-          } catch (e) {
-            console.log("Secondary RNBootSplash hide attempt failed:", e);
-          }
-        }, 100);
-      }
+      // Note: RNBootSplash.hide() moved to NavigationContainer onReady callback
+      // This ensures splash is hidden only after navigation is fully initialized
 
       
       // ------- push notifications ------------
@@ -327,8 +314,7 @@ if (__DEV__) {
 
     ///-----------------------------------------------------------------
 
-//onReady={() => RNBootSplash.hide()}
-   
+    
     
     render() {
       const { t, i18n } = this.props;
@@ -343,7 +329,18 @@ if (__DEV__) {
                                 
                         <MenuProvider> 
                         <SafeAreaProvider>   
-                        <NavigationContainer  ref={navigatorRef => {this.navigatorRef = navigatorRef;NavigationService.setTopLevelNavigator(navigatorRef);}}>
+                        <NavigationContainer  
+                          ref={navigatorRef => {this.navigatorRef = navigatorRef;NavigationService.setTopLevelNavigator(navigatorRef);}}
+                          onReady={() => {
+                            console.log("Navigation ready, hiding boot splash...");
+                            try {
+                              RNBootSplash.hide({ duration: 250 });
+                              console.log("Boot splash hidden successfully");
+                            } catch (error) {
+                              console.log("Boot splash hide error:", error);
+                            }
+                          }}
+                        >
                           <RootStack/>
                         </NavigationContainer>
                         </SafeAreaProvider>
