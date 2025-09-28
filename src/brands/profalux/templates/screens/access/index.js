@@ -1,10 +1,9 @@
-import '_brand/templates/screens/_locales'
+import '_brand/templates/screens/_locales';
 //import '../_locales'
 
-import React from 'react';
-import { useState,useEffect } from 'react';
-import { View,Text,TouchableWithoutFeedback, Image, ImageBackground, Dimensions} from 'react-native';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Dimensions, Image, Text, View } from 'react-native';
 
 //import AccessButton from '_components/forms/accessButton';
 import AccessButton from '_brand/templates/components/forms/accessButton';
@@ -16,23 +15,19 @@ import styled from 'styled-components/native';
 import { useTheme } from '_theming/themeProvider';
 
 //--- illustrations ---
-import Welcome from '_brand/images/illustrations/welcome3';
 
 //--- styled Components
-import {H2,P} from '_brand/templates/styled';
 
 //--- logos ---
-import LogoGoogle from '_brand/images/logos/js/Google';
-import LogoApple from '_brand/images/logos/js/Apple';
-import LogoAmazon from '_brand/images/logos/js/Amazon';
 import MailIcon from '_brand/images/icons/app/Sms';
+import LogoApple from '_brand/images/logos/js/Apple';
+import LogoGoogle from '_brand/images/logos/js/Google';
 
 //---- hooks -----
 import { useUser } from '_hooks/useUserHigher';
 
 //--- Appium -----
-import {buildTestId} from '_helpers/appium';
-import { color } from 'react-native-reanimated';
+import { buildTestId } from '_helpers/appium';
 
 
 const AccessScreen = (props) => {

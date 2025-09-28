@@ -384,7 +384,7 @@ if (__DEV__) {
 function FullScreenComponent(){
   console.log("FullScreenComponent launched ?")
   return (
-    // eslint-disable-next-line react-native/no-inline-styles
+     
     <FullscreenNotification appStore={store} ref={fullscreenRef => {this.fullscreenRef = fullscreenRef;}}/>
   );
 }
