@@ -1,0 +1,16 @@
+- index.android.bundle:974:344 => undefined is not an object (evaluating 'n.errCode')
+
+-  index.android.bundle:1390:4054 : 
+Non-fatal Exception: io.invertase.firebase.crashlytics.JavaScriptError: undefined is not an object   (evaluating 'M[n]')
+  at v (./src/screens/templates/SimpleListWithReorder.js:51:22)
+
+- index.android.bundle:4490:893 :
+at v (./src/screens/templates/SimpleListWithReorder.js:51:22)
+
+- index.android.bundle:968:706
+UnhandledPromiseRejection: undefined is not an object  (evaluating 'x.t2.response.data')
+  at data (./src/api/durin.js:63:38)
+
+  
+
+

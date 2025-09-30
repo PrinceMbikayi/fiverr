@@ -16,14 +16,14 @@ const objectInitialState = {
 export default function notificationPushReducer(state = objectInitialState, action) {
 
   const {payload, type} = action;
-  //console.log("notificationsReducer",action);
+  console.log("notificationsReducer",action);
 
   switch (type) {
 
     case ActionsTypes.NOTIFICATION_PUSH_SET_TOKEN : {
 
         state = dotProp.set(state, "token", payload.token);
-
+        console.log('STATE_AFTER_SET_TOKEN',state);
         return state
     }
     

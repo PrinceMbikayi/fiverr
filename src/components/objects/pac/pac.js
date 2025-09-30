@@ -3,7 +3,8 @@ import {useEffect,useState,useContext} from 'react';
 import { View,Text,TouchableHighlight } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components/native';
-import {SvgCss} from 'react-native-svg'
+//import {SvgCss} from 'react-native-svg'
+import {SvgCss} from 'react-native-svg/css';
 import { useTheme } from '_theming/themeProvider';
 import PureIconRender from '_components/pureIconRender';
 import {domusIcons} from '_assets/icons/domusIcons';

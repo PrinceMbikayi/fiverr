@@ -21,7 +21,7 @@ export function deleteNotificationPush(notificationTimestamp){
 
 
 export function setNotificationPushToken(token){
- 
+    console.log('SET NOTIFICATION TOKEN ACTION :',token);
     return {
       type :  types.NOTIFICATION_PUSH_SET_TOKEN,
       payload:{'token':token}

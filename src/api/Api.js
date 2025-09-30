@@ -49,6 +49,7 @@ const getDeviceInfos = () => {
 
 
 async function login(userId, password, userCode, socialLoginInfos) {
+  console.log('in API.login', userId, password, userCode, socialLoginInfos);
 
   let extraSocial = socialLoginInfos;
 
@@ -88,7 +89,8 @@ async function login(userId, password, userCode, socialLoginInfos) {
     if (extraSocial || userId == 'google' || userId == 'apple') {
       loginInfos = { 'stayConnected': "on", ...extraInfos, ...extraSocial }
     } else {
-      loginInfos = { 'login': userId, 'password': password, 'stayConnected': "on", ...extraInfos }
+      //loginInfos = { 'login': userId, 'password': password, 'stayConnected': "on", ...extraInfos }
+      loginInfos = { 'login': userId, 'password': password, 'stayConnected': "on"}
     }
   } else {
     loginInfos = { 'login': userId, 'userCode': userCode, 'stayConnected': "on" }
@@ -103,9 +105,9 @@ async function login(userId, password, userCode, socialLoginInfos) {
   if (userId == undefined && extraSocial == {}) return Promise.reject({ 'errCode': -2 });
 
   store.dispatch({ type: ActionsTypes.OBJECTS_RELOAD, payload: { 'status': true } });
-
+  console.log('LOGIN_REQUEST', loginInfos);
   const loginProcess = await Dain.post('login', loginInfos);
-  //console.log("loginProcess",loginProcess);  
+  console.log("loginProcess",loginProcess);  
   store.dispatch({ type: ActionsTypes.OBJECTS_RELOAD, payload: { 'status': false } })
 
   if (loginProcess.errCode == 200) {

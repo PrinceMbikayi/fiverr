@@ -1,6 +1,7 @@
 import React, { useEffect,useMemo} from 'react';
 import {StyleSheet, Image} from 'react-native'
-import {SvgCss} from 'react-native-svg';
+//import {SvgCss} from 'react-native-svg';
+import {SvgCss} from 'react-native-svg/css';
 
 import styled from 'styled-components/native';
 import {useIcon,getStatusesIcons} from '_hooks/icon';

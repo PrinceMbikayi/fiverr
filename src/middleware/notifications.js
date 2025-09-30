@@ -3,6 +3,7 @@ import * as types from '_actions/notificationTypes';
 import {getNotifications } from '_api/notifications';
 
 const notificationMiddleware = (store) => (next) => (action) => {
+  console.log('INSIDE_MIDLEWARE_NOTIFICATIONS',action);
   
 
     const {type,payload} = action;

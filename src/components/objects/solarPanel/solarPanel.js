@@ -3,7 +3,8 @@ import {useEffect,useState,useContext} from 'react';
 import { View,Text,TouchableHighlight } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components/native';
-import {SvgCss} from 'react-native-svg';
+//import {SvgCss} from 'react-native-svg';
+import {SvgCss} from 'react-native-svg/css';
 import { useNavigation,useRoute,StackActions } from '@react-navigation/native';
 
 

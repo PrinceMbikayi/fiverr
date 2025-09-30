@@ -77,28 +77,28 @@ const LoginScreen = (props) => {
 
     const submit = async (values) => {
       
-  console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$",values)
+      console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$",values)
 
-        const dcms = await checkMultiServer();
-        console.log('DCMS ::', dcms);
-        try {
-          const login = cleanLogin(values.login);
-          const password = values.password.trim();
-            const loginProcess = await  Api.login(login,password)
-            console.log('RES_LOGIN :', loginProcess);
-            if(loginProcess.errCode == 200) {
-                console.log("USER_DETAILS :", loginProcess)
-                const resUser = await getUserDetails().catch((err)=> console.log(err));
-                const resObject = await  Api.getObjects();
-                const resRooms = await Api.getRooms(); 
-                console.log('RES_USER_OBJECTS:', resObject);
-                move('App')
-            }
-        } catch (error) {
-            console.log("ERROR_AT_THIS_LEVEL",error);
-            alertUser(error.errCode,error.errMsg)
-        }        
-  }
+          const dcms = await checkMultiServer();
+          console.log('DCMS ::', dcms);
+          try {
+            const login = cleanLogin(values.login);
+            const password = values.password.trim();
+              const loginProcess = await  Api.login(login,password)
+              console.log('RES_LOGIN :', loginProcess);
+              if(loginProcess.errCode == 200) {
+                  console.log("USER_DETAILS :", loginProcess)
+                  const resUser = await getUserDetails().catch((err)=> console.log(err));
+                  const resObject = await  Api.getObjects();
+                  const resRooms = await Api.getRooms(); 
+                  console.log('RES_USER_OBJECTS:', resObject);
+                  move('App')
+              }
+          } catch (error) {
+              console.log("ERROR_AT_THIS_LEVEL",error);
+              alertUser(error.errCode,error.errMsg)
+          }       
+    }
 
   const alertUser  = (errCode,errMsg) => {
     const alertTitle = t("LOGIN_ERROR_TITLE").toUpperCase();

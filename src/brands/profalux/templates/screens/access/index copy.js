@@ -43,7 +43,7 @@ const AccessScreen = (props) => {
     const {getCredentials} = uUser
 
     const {move,serverError,isConnected,oAuth,showServerSelectorTap} = props;
-    console.log("ACCESS PROPS :", isConnected)
+    console.log("ACCESS_PROPS :", props)
    
     const logTest = buildTestId("login");
     const signUpTest = buildTestId("signUp");
@@ -81,9 +81,9 @@ const AccessScreen = (props) => {
     const DEVICE_HEIGHT = Dimensions.get('screen').height;        
     const DEVICE_WIDTH = Dimensions.get('window').width;
 
-    const imageSource = require('_brand/images/icons/app/background.png')
-    const imageSource1 = require('_brand/images/icons/app/calypshomesplash.png')
-    //const imageSource = require('_brand/images/icons/app/accessBgImage.png')
+    const background = require('_brand/images/icons/app/background.png')
+    const splashScreen = require('_brand/images/icons/app/calypshomesplash.png')
+    const imageSourceAccess = require('_brand/images/icons/app/accessBgImage.png')
 
 
     const [hasCredentials, setHasCredentials] = useState(false);
@@ -98,15 +98,37 @@ const AccessScreen = (props) => {
     }, []);
   
     useEffect(()=> {
-    
+        console.log("hasCredentials : ", hasCredentials)
     },[hasCredentials]);
 
-    return (
-        <View style={[{flex:1,backgroundColor:bgcolor, paddingVertical:100, alignItems:'center'}]}>
-                <Image source={imageSource} style={{width:DEVICE_WIDTH, height:DEVICE_HEIGHT, zIndex:-2, position:'absolute', top:0}}/>
-                <Image source={imageSource1} style={{flex:1, resizeMode:'contain', justifyContent:'center', alignItems:'center'}}/>
-                {/* <Image source={imageSource1} style={{width:DEVICE_WIDTH, height:DEVICE_HEIGHT, zIndex:-1, position:'absolute', top:0}}/> */}
-                
+    let content;
+
+    if((!isConnected && hasCredentials)){
+        content = (
+            <View style={[{flex:1,backgroundColor:bgcolor, alignItems:'center', justifyContent:'center'}]}>
+                    
+                    <Image source={background} style={{resizeMode:'cover', width:DEVICE_WIDTH, height:DEVICE_HEIGHT, zIndex:-1, position:'absolute', top:0}}/>
+                    <Image source={splashScreen} style={{resizeMode:'contain', width:DEVICE_WIDTH, height:DEVICE_HEIGHT, justifyContent:'center', alignItems:'center'}}/>
+
+                        <View style={{
+                            backgroundColor:'#ff0202',width:'80%',height:"10%",
+                            position:'absolute', top:"45%",
+                            justifyContent:'center', alignItems:'center',
+                            marginHorizontal:10, borderRadius:12,
+                            }} zIndex={133}>
+                          <Text
+                            style={{fontSize:18, fontWeight:"600", color:'white', textAlign:'center'}}
+                            >
+                            {t("NETWORK_IS_DECONNECTED")}
+                          </Text>
+                        </View>
+            </View>
+        )
+    }else{
+        content = (
+            <View style={[{flex:1,backgroundColor:bgcolor, paddingVertical:100, alignItems:'center', justifyContent:'center'}]}>
+
+                <Image source={imageSourceAccess} style={{width:DEVICE_WIDTH, height:DEVICE_HEIGHT, zIndex:-2, position:'absolute', top:0}}/>
                 <View>
                     <Image source={require('_brand/images/icons/app/profaluxIconJs/Logo.png')}/>
                 </View>
@@ -122,11 +144,6 @@ const AccessScreen = (props) => {
                         </View>
                 }   
                         
-                {/* <WelcomeView style={{maxHeight:266}}>
-                    <TouchableWithoutFeedback  onPress={onSelectServerTap}>
-                     <Welcome style={{backgroundColor:'transparent',marginBottom:'-1.2%'}}/> 
-                    </TouchableWithoutFeedback>                            
-                </WelcomeView>  */}
                 <View style={{paddingRight:44,paddingLeft:44,marginTop:32}}>
                     {/* <H2 color={textColor}>{t('account:WELCOME')}</H2> */}
                     <Text  style ={{color:textColor, textAlign:'center'}}>{t('account:DESCRIPTION')}</Text>
@@ -139,20 +156,14 @@ const AccessScreen = (props) => {
                             </View>
                     </View>
                 </View>  
-                {/* {//(!isConnected && hasCredentials) &&
-                        <View style={{
-                            backgroundColor:'#f76464',width:'80%',height:"60%",
-                            position:'absolute', top:"40%",
-                            justifyContent:'center', alignItems:'center',
-                            marginHorizontal:10, borderRadius:12,
-                            }} zIndex={133}>
-                          <Text
-                            style={{fontSize:16, fontWeight:"600", color:'white'}}
-                            >
-                            {t("NETWORK_IS_DECONNECTED")}
-                          </Text>
-                        </View>
-                }     */}
+            </View>
+        )
+    }
+
+
+    return (
+        <View style={{flex:1}}>
+            {content}
         </View>
     );
 }

@@ -472,7 +472,7 @@ export const checkPushNotificationOnStateChange = async() => {
 //-------------------------------------------------------
 
 export const setTokenInStore =(deviceToken) => {
-  console.log("before setTokenInStore !!!")
+  console.log("before setTokenInStore !!! :",deviceToken)
   store.dispatch(setNotificationPushToken(deviceToken));
 }
 

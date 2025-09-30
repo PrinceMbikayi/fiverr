@@ -59,10 +59,10 @@ export const getConfigFromServer = async() => {
   export const appendVersion = (apiName,endpoint) => {
 
 
-    console.log("********************",apiVersions);
+    console.log("API_VERSION_TARGET_1 :",apiVersions);
    
     const versionToAppend = apiVersions[apiName+"_"+endpoint]
     if(!versionToAppend) return "";
-    console.log("********************",versionToAppend);
+    console.log("API_VERSION_TARGET_2",versionToAppend);
     return versionToAppend+"/"
   }

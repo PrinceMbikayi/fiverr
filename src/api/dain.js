@@ -7,8 +7,9 @@ axios.interceptors.request.use(
   (config) => {
     const token = store.getState().user.s2_token;
     //let token;
-    console.log('HAA_ME_TOKEN :', token);
+    console.log('HAA_ME_TOKEN :', token, store.getState());
         // -- add below
+        console.log('CONFIG_AXIOS',config);
         const endEndPoint = config.url.split('/').pop();
         const method = config.method;
      
@@ -65,9 +66,9 @@ const getServerUrl = async () => {
 
 async function post(typePath, userInfos) {
 
-  console.log('DAINPOOOOO');
+  console.log('DAINPOOOOO :', typePath, userInfos);
   const serverUrl = await getServerUrl();
-  console.log('GET_SERVER_URL :', getServerUrl);
+  console.log('GET_SERVER_URL :', serverUrl);
 
   let infos = userInfos
   const url = serverUrl + '/services/dain/'+appendVersion("dain", typePath)+typePath;
@@ -85,19 +86,20 @@ async function post(typePath, userInfos) {
   let errCode = 200;
   let errMsg;
   try {
+    console.log('DAIN_TRY_POST :', url, infos);
     let res = await axios.post(url, infos, { timeout: timeoutDuration });
 
     if (res.status == 200) {
 
       return Promise.resolve({ errCode: res.status, 'res': res });
     } else {
-
+      console.log('DAIN POST else', res)
     }
     return (res.status == 200);
 
   } catch (error) {
 
-    console.log("Error in DAIN", error)
+    console.log("Error in DAIN_POST", error)
 
     let result;
     if (error.response == undefined) {
