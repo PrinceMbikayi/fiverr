@@ -106,7 +106,7 @@
       "platforms": {
         "ios": {
           "podspecPath": "/Users/naimurrahaman/Documents/development/fiverr/node_modules/@react-native-community/datetimepicker/RNDateTimePicker.podspec",
-          "version": "8.4.5",
+          "version": "8.4.4",
           "configurations": [],
           "scriptPhases": []
         },
