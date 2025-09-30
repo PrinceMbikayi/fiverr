@@ -3057,7 +3057,7 @@ PODS:
     - Yoga
   - RNCPushNotificationIOS (1.11.0):
     - React-Core
-  - RNDateTimePicker (8.4.5):
+  - RNDateTimePicker (8.4.4):
     - boost
     - DoubleConversion
     - fast_float
@@ -4117,7 +4117,7 @@ SPEC CHECKSUMS:
   RNCMaskedView: d707a83784c67099b54b37d056ababb2767ce15e
   RNCPicker: c22d7437181cd4a398d227a182d66ea00c1f847d
   RNCPushNotificationIOS: 6c4ca3388c7434e4a662b92e4dfeeee858e6f440
-  RNDateTimePicker: 4417dfde0b39c1ce11439f47472b17aac91f0fde
+  RNDateTimePicker: ca1dc7e24d0b4839877f0ab619e7bca5db715289
   RNDeviceInfo: bcce8752b5043a623fe3c26789679b473f705d3c
   RNFastImage: 462a183c4b0b6b26fdfd639e1ed6ba37536c3b87
   RNFBApp: 22c91c2d4ef60be1de426d3544f68c348e036bb0
