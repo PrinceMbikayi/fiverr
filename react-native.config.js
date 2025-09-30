@@ -4,6 +4,6 @@ module.exports = {
   },
   assets: [
     './src/assets/fonts/',
-    './node_modules/react-native-vector-icons/Fonts/',
+    // Vector icons fonts are auto-linked by react-native-vector-icons package
   ],
 };
