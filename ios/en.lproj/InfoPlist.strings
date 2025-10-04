@@ -1,0 +1,5 @@
+NSLocationAlwaysAndWhenInUseUsageDescription = "Please grant access to the aplication to allow WiFi detection.";
+NSLocationAlwaysUsageDescription = "Please grant access to the aplication to allow WiFi detection.";
+NSLocationWhenInUseUsageDescription = "Please grant access to the aplication to allow WiFi detection.";
+NSLocationAlwaysUsageDescription = "Please grant access to the aplication to allow WiFi detection.";
+ = "Please grant access to the aplication to allow WiFi detection.";

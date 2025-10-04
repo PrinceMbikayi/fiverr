@@ -1,0 +1,4 @@
+NSLocationAlwaysAndWhenInUseUsageDescription = "Veuillez accorder l'accès à l'application pour permettre la détection WiFi.";
+NSLocationAlwaysUsageDescription = "Veuillez accorder l'accès à l'application pour permettre la détection WiFi.";
+NSLocationWhenInUseUsageDescription = "Veuillez accorder l'accès à l'application pour permettre la détection WiFi.";
+NSLocationAlwaysUsageDescription = "Veuillez accorder l'accès à l'application pour permettre la détection WiFi.";
