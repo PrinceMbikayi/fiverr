@@ -1,11 +1,11 @@
 import NetInfo, { useNetInfo } from "@react-native-community/netinfo";
+import { Api } from '_api';
 import '_brand/templates/screens/addObject/locales';
+import { useGlobalModal } from '_components/ui/globalModal';
 import { useCallback, useEffect } from 'react';
 import { Pressable, Text, View } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
-import { useGlobalModal } from '_components/ui/globalModal';
-import { Api } from '_api';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { useDispatch, useSelector } from 'react-redux';
  
  
  
