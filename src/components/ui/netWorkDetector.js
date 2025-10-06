@@ -1,22 +1,11 @@
 import NetInfo, { useNetInfo } from "@react-native-community/netinfo";
 import '_brand/templates/screens/addObject/locales';
-import { useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 import { Pressable, Text, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
- 
- 
-//import AppIcon from '_images/icons/index.js';
-import Icon from 'react-native-vector-icons/Ionicons';
-//import {NETWORK_DETECTOR} from '_brand/config/appIconSharedNames'
-import { Api } from '_api';
- 
-import ModalContainer from '_brand/templates/components/ui/modal/modalContainer';
 import { useGlobalModal } from '_components/ui/globalModal';
-//import {GlobalToast} from '_brand/templates/components/objects/common/GlobalToast'
-import { useTheme } from '_theming/themeProvider';
-import { useTranslation } from 'react-i18next';
-
- 
+import { Api } from '_api';
+import Icon from 'react-native-vector-icons/Ionicons';
  
  
  
@@ -30,16 +19,10 @@ export const NetworkDetector = (props) => {
     const iconSize  = 20;
     const {getNavigation} = props;
     const dispatch = useDispatch();
-    const tryReconnectTime = 10000
  
  
  
-    const { t, i18n } = useTranslation();
-    const tns = "addObject";
-    const { theme } = useTheme();
-    const bgcolor = theme?.prflxbgColor || 'white';
-    const textColor = theme?.prflxTextColor || 'black'
-
+ 
      const globalModal = useGlobalModal();
   
  
@@ -48,17 +31,17 @@ export const NetworkDetector = (props) => {
  
  
  
-  const checkGrantedAndMove = async() => {
+  const checkGrantedAndMove = useCallback(async() => {
     const navigation = getNavigation();
     let isGranted = await Api.checkUserIsGranted();       
       console.log("isGranted XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",isGranted)
  
-    if(isGranted == true && navigation) {
+    if(isGranted && navigation) {
       console.log("alors bouge");
       const response = await Api.getObjects()
       console.log("response_in_checkGrantedAndMove : ",response);
 
-      if(response?.errCode == 200) {
+      if(response?.errCode === 200) {
         console.log('response OK');
         navigation.navigate("App",{screen:"Home"});
       }else{
@@ -67,7 +50,7 @@ export const NetworkDetector = (props) => {
       console.log("bougé normalement")
  
     }
-  }
+  }, [getNavigation]);
  
  
  
@@ -78,7 +61,7 @@ export const NetworkDetector = (props) => {
  
     useEffect(()=> {
  
-      unsubscribeNetInfo = NetInfo.addEventListener(state => {   
+      const unsubscribeNetInfo = NetInfo.addEventListener(state => {   
  
         const  cState = JSON.parse(JSON.stringify(state))
         console.log("[NetworkDetector] NetInfo change",cState,cState.isInternetReachable)
@@ -89,7 +72,7 @@ export const NetworkDetector = (props) => {
           if(navigation) {
            // console.log("navigation => ",navigation.getCurrentRoute())
             const currentRoute = navigation.getCurrentRoute()
-              if(currentRoute?.name == "Access") {
+              if(currentRoute?.name === "Access") {
                 checkGrantedAndMove();
               }
           }
@@ -100,9 +83,22 @@ export const NetworkDetector = (props) => {
         }
       )
  
+      // Fetch initial state to update Redux
+      NetInfo.fetch().then(state => {
+        dispatch({
+          type: 'UPDATE_CONNECTIVITY',
+          payload: { 'isConnected':state.isConnected,
+                    'isInternetReachable':state.isInternetReachable,
+                    'isWifiEnabled':state.isWifiEnabled,
+                    'type':state.type,
+                    'details':state.details
+                  },
+        });
+      });
+ 
       return unsubscribeNetInfo;
  
-    },[]);
+    },[checkGrantedAndMove, dispatch, getNavigation]);
  
  
  
@@ -152,15 +148,15 @@ export const NetworkDetector = (props) => {
                     const label = v?.label;
                     const value = v?.value;
                     return (
-                      <View>
-                        {label == "isConnected" &&
-                          <Text key={i} style={{fontSize:16, fontWeight:"600"}}>{configLabel[label].label} : {` ${value ? configLabel[label].okValue : configLabel[label].nonOkValue}`}</Text>
+                      <View key={i}>
+                        {label === "isConnected" &&
+                          <Text key={label} style={{fontSize:16, fontWeight:"600"}}>{configLabel[label].label} : {` ${value ? configLabel[label].okValue : configLabel[label].nonOkValue}`}</Text>
                         }
-                        {label == "isInternetReachable"&&
-                          <Text key={i} style={{fontSize:16, fontWeight:"600"}}>{configLabel[label].label} : {` ${value ? configLabel[label].okValue : configLabel[label].nonOkValue}`}</Text>
+                        {label === "isInternetReachable"&&
+                          <Text key={label} style={{fontSize:16, fontWeight:"600"}}>{configLabel[label].label} : {` ${value ? configLabel[label].okValue : configLabel[label].nonOkValue}`}</Text>
                         }
-                        {label == "isWifiEnabled"&&
-                          <Text key={i} style={{fontSize:16, fontWeight:"600"}}>{configLabel[label].label} : {` ${value ? configLabel[label].okValue : configLabel[label].nonOkValue}`}</Text>
+                        {label === "isWifiEnabled"&&
+                          <Text key={label} style={{fontSize:16, fontWeight:"600"}}>{configLabel[label].label} : {` ${value ? configLabel[label].okValue : configLabel[label].nonOkValue}`}</Text>
                         }
                       </View>
                     )
@@ -173,55 +169,6 @@ export const NetworkDetector = (props) => {
 
     
 
-        const buttons = [
-          {
-              id:"return",
-              text:"RETURN",
-              //text:`${t(tns + ":" + "RETURN")}`,
-              action:()=>onCancelPressed(),
-              textColor:"#007AFF"
-          },
-      ]
- 
-      const onCancelPressed = () => {
-        console.log('CANCEL_DELETE :');
-        globalModal.close();
-      }
-
-    
-    const checkNetworkManually = () => {
-      onOpenSelect()
-//       console.log("checkNetworkManually !!");
-      
-      NetInfo.fetch().then(state => {
-        console.log("Connection type", state.type);
-        console.log("Is connected?", state.isConnected);
-        console.log(JSON.stringify(state))
-        console.log("globalModal",globalModal)
-        const mapped = []
-        mapped.push({label:"isConnected",value:state.isConnected})
-        mapped.push({label:"isInternetReachable",value:state.isInternetReachable})
-        mapped.push({label:"isWifiEnabled",value:state.isWifiEnabled})
-        if(state.details) {
-          mapped.push({label:"----------",value:"----------"})
-          mapped.push({label:"details",value:JSON.stringify(state.details)})
-        }
-        console.log('mappedMe',mapped);
-      
-        const content = 
-        <ModalContainer>
-        {mapped.map((v,i) => {
-          return (
-            <Text key={i} style={{fontSize:16}}>{v?.label} : {""+v?.value}</Text>
-          )
-        })}
-        </ModalContainer>
-        globalModal.setContent(content,{type:'centered'});    
-        globalModal.show();
-        console.log("normalement")
-      });
-    }
- 
     
  
     return (

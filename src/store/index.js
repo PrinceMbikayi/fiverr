@@ -1,6 +1,5 @@
-import {composeWithDevTools} from '@redux-devtools/extension';
-import {applyMiddleware, createStore} from 'redux';
-import {configureStore, Tuple} from '@reduxjs/toolkit';
+import { composeWithDevTools } from '@redux-devtools/extension';
+import { configureStore } from '@reduxjs/toolkit';
 
 import apiMiddleware from '../middleware/api';
 import notificationsMiddleware from '../middleware/notifications';
@@ -8,7 +7,7 @@ import objectsMiddleware from '../middleware/objects';
 import roomsMiddleware from '../middleware/rooms';
 import rootReducer from '../reducers';
 
-import {persistReducer} from 'redux-persist';
+import { persistReducer } from 'redux-persist';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -31,10 +30,23 @@ const composeEnhancers = composeWithDevTools({
   port: 8081, // the port your remotedev server is running at
 });
 
-//========= FLIPPER REDUX =================
+//========= Development-only logger middleware =================
+// Use redux-logger in development instead of redux-flipper. It's lightweight
+// and works well across environments. If the package isn't installed we skip
+// it rather than causing a bundler error.
 if (__DEV__) {
-  const createDebugger = require('redux-flipper').default;
-  middlewares.push(createDebugger());
+  try {
+    /* eslint-disable-next-line no-eval */
+    const _require = eval("require");
+    const { createLogger } = _require('redux-logger');
+    if (createLogger) {
+      // push a collapsed logger for nicer output
+      middlewares.push(createLogger({ collapsed: true }));
+    }
+  } catch (e) {
+     
+    console.debug && console.debug('redux-logger not available:', e?.message || e);
+  }
 }
 
 const persistConfig = {
