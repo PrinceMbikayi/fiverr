@@ -1,25 +1,25 @@
 {
-  "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial",
-  "reactNativePath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native",
+  "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr",
+  "reactNativePath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native",
   "reactNativeVersion": "0.81",
   "dependencies": {
     "@invertase/react-native-apple-authentication": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@invertase/react-native-apple-authentication",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@invertase/react-native-apple-authentication",
       "name": "@invertase/react-native-apple-authentication",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@invertase/react-native-apple-authentication/RNAppleAuthentication.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@invertase/react-native-apple-authentication/RNAppleAuthentication.podspec",
           "version": "2.4.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@invertase/react-native-apple-authentication/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@invertase/react-native-apple-authentication/android",
           "packageImportPath": "import com.RNAppleAuthentication.AppleAuthenticationAndroidPackage;",
           "packageInstance": "new AppleAuthenticationAndroidPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@invertase/react-native-apple-authentication/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@invertase/react-native-apple-authentication/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -28,22 +28,22 @@
       }
     },
     "@notifee/react-native": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@notifee/react-native",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@notifee/react-native",
       "name": "@notifee/react-native",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@notifee/react-native/RNNotifee.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@notifee/react-native/RNNotifee.podspec",
           "version": "9.1.8",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@notifee/react-native/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@notifee/react-native/android",
           "packageImportPath": "import io.invertase.notifee.NotifeePackage;",
           "packageInstance": "new NotifeePackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@notifee/react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@notifee/react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -52,23 +52,23 @@
       }
     },
     "@react-native-async-storage/async-storage": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-async-storage/async-storage",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-async-storage/async-storage",
       "name": "@react-native-async-storage/async-storage",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-async-storage/async-storage/RNCAsyncStorage.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-async-storage/async-storage/RNCAsyncStorage.podspec",
           "version": "2.2.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-async-storage/async-storage/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-async-storage/async-storage/android",
           "packageImportPath": "import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;",
           "packageInstance": "new AsyncStoragePackage()",
           "buildTypes": [],
           "libraryName": "rnasyncstorage",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -77,22 +77,22 @@
       }
     },
     "@react-native-community/checkbox": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/checkbox",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/checkbox",
       "name": "@react-native-community/checkbox",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/checkbox/RNCCheckbox.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/checkbox/RNCCheckbox.podspec",
           "version": "0.5.20",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/checkbox/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/checkbox/android",
           "packageImportPath": "import com.reactnativecommunity.checkbox.ReactCheckBoxPackage;",
           "packageInstance": "new ReactCheckBoxPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/checkbox/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/checkbox/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -101,23 +101,23 @@
       }
     },
     "@react-native-community/datetimepicker": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/datetimepicker",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/datetimepicker",
       "name": "@react-native-community/datetimepicker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/datetimepicker/RNDateTimePicker.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/datetimepicker/RNDateTimePicker.podspec",
           "version": "8.4.5",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/datetimepicker/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/datetimepicker/android",
           "packageImportPath": "import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;",
           "packageInstance": "new RNDateTimePickerPackage()",
           "buildTypes": [],
           "libraryName": "RNDateTimePickerCGen",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/datetimepicker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/datetimepicker/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -126,23 +126,23 @@
       }
     },
     "@react-native-community/geolocation": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/geolocation",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/geolocation",
       "name": "@react-native-community/geolocation",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/geolocation/react-native-geolocation.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/geolocation/react-native-geolocation.podspec",
           "version": "3.4.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/geolocation/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/geolocation/android",
           "packageImportPath": "import com.reactnativecommunity.geolocation.GeolocationPackage;",
           "packageInstance": "new GeolocationPackage()",
           "buildTypes": [],
           "libraryName": "RNCGeolocationSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/geolocation/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/geolocation/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -151,22 +151,22 @@
       }
     },
     "@react-native-community/netinfo": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/netinfo",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/netinfo",
       "name": "@react-native-community/netinfo",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/netinfo/react-native-netinfo.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/netinfo/react-native-netinfo.podspec",
           "version": "11.4.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/netinfo/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/netinfo/android",
           "packageImportPath": "import com.reactnativecommunity.netinfo.NetInfoPackage;",
           "packageInstance": "new NetInfoPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/netinfo/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/netinfo/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -175,11 +175,11 @@
       }
     },
     "@react-native-community/push-notification-ios": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/push-notification-ios",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/push-notification-ios",
       "name": "@react-native-community/push-notification-ios",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/push-notification-ios/RNCPushNotificationIOS.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/push-notification-ios/RNCPushNotificationIOS.podspec",
           "version": "1.11.0",
           "configurations": [],
           "scriptPhases": []
@@ -188,17 +188,17 @@
       }
     },
     "@react-native-community/slider": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/slider",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/slider",
       "name": "@react-native-community/slider",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/slider/react-native-slider.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/slider/react-native-slider.podspec",
           "version": "5.0.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/slider/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/slider/android",
           "packageImportPath": "import com.reactnativecommunity.slider.ReactSliderPackage;",
           "packageInstance": "new ReactSliderPackage()",
           "buildTypes": [],
@@ -206,7 +206,7 @@
           "componentDescriptors": [
             "RNCSliderComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/slider/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/slider/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -215,22 +215,22 @@
       }
     },
     "@react-native-community/toolbar-android": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/toolbar-android",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/toolbar-android",
       "name": "@react-native-community/toolbar-android",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/toolbar-android/toolbar-android.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/toolbar-android/toolbar-android.podspec",
           "version": "0.2.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/toolbar-android/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/toolbar-android/android",
           "packageImportPath": "import com.reactnativecommunity.toolbarandroid.ReactToolbarPackage;",
           "packageInstance": "new ReactToolbarPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-community/toolbar-android/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-community/toolbar-android/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -239,12 +239,12 @@
       }
     },
     "@react-native-firebase/app": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/app",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/app",
       "name": "@react-native-firebase/app",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/app/RNFBApp.podspec",
-          "version": "23.3.1",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/app/RNFBApp.podspec",
+          "version": "23.4.0",
           "configurations": [],
           "scriptPhases": [
             {
@@ -258,12 +258,12 @@
           ]
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/app/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/app/android",
           "packageImportPath": "import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;",
           "packageInstance": "new ReactNativeFirebaseAppPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/app/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/app/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -272,22 +272,22 @@
       }
     },
     "@react-native-firebase/auth": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/auth",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/auth",
       "name": "@react-native-firebase/auth",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/auth/RNFBAuth.podspec",
-          "version": "23.3.1",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/auth/RNFBAuth.podspec",
+          "version": "23.4.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/auth/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/auth/android",
           "packageImportPath": "import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;",
           "packageInstance": "new ReactNativeFirebaseAuthPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/auth/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/auth/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -296,12 +296,12 @@
       }
     },
     "@react-native-firebase/crashlytics": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/crashlytics",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/crashlytics",
       "name": "@react-native-firebase/crashlytics",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/crashlytics/RNFBCrashlytics.podspec",
-          "version": "23.3.1",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/crashlytics/RNFBCrashlytics.podspec",
+          "version": "23.4.0",
           "configurations": [],
           "scriptPhases": [
             {
@@ -316,12 +316,12 @@
           ]
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/crashlytics/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/crashlytics/android",
           "packageImportPath": "import io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsPackage;",
           "packageInstance": "new ReactNativeFirebaseCrashlyticsPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/crashlytics/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/crashlytics/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -330,22 +330,22 @@
       }
     },
     "@react-native-firebase/messaging": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/messaging",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/messaging",
       "name": "@react-native-firebase/messaging",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/messaging/RNFBMessaging.podspec",
-          "version": "23.3.1",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/messaging/RNFBMessaging.podspec",
+          "version": "23.4.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/messaging/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/messaging/android",
           "packageImportPath": "import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;",
           "packageInstance": "new ReactNativeFirebaseMessagingPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-firebase/messaging/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-firebase/messaging/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -354,17 +354,17 @@
       }
     },
     "@react-native-google-signin/google-signin": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-google-signin/google-signin",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-google-signin/google-signin",
       "name": "@react-native-google-signin/google-signin",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-google-signin/google-signin/RNGoogleSignin.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-google-signin/google-signin/RNGoogleSignin.podspec",
           "version": "16.0.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-google-signin/google-signin/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-google-signin/google-signin/android",
           "packageImportPath": "import com.reactnativegooglesignin.RNGoogleSigninPackage;",
           "packageInstance": "new RNGoogleSigninPackage()",
           "buildTypes": [],
@@ -372,7 +372,7 @@
           "componentDescriptors": [
             "RNGoogleSigninButtonComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-google-signin/google-signin/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-google-signin/google-signin/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -381,22 +381,22 @@
       }
     },
     "@react-native-masked-view/masked-view": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-masked-view/masked-view",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-masked-view/masked-view",
       "name": "@react-native-masked-view/masked-view",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-masked-view/masked-view/RNCMaskedView.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-masked-view/masked-view/RNCMaskedView.podspec",
           "version": "0.3.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-masked-view/masked-view/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-masked-view/masked-view/android",
           "packageImportPath": "import org.reactnative.maskedview.RNCMaskedViewPackage;",
           "packageInstance": "new RNCMaskedViewPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-masked-view/masked-view/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-masked-view/masked-view/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -405,17 +405,17 @@
       }
     },
     "@react-native-picker/picker": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-picker/picker",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-picker/picker",
       "name": "@react-native-picker/picker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-picker/picker/RNCPicker.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-picker/picker/RNCPicker.podspec",
           "version": "2.11.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-picker/picker/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-picker/picker/android",
           "packageImportPath": "import com.reactnativecommunity.picker.RNCPickerPackage;",
           "packageInstance": "new RNCPickerPackage()",
           "buildTypes": [],
@@ -424,7 +424,7 @@
             "RNCAndroidDialogPickerComponentDescriptor",
             "RNCAndroidDropdownPickerComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@react-native-picker/picker/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@react-native-picker/picker/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -433,23 +433,23 @@
       }
     },
     "@sayem314/react-native-keep-awake": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@sayem314/react-native-keep-awake",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@sayem314/react-native-keep-awake",
       "name": "@sayem314/react-native-keep-awake",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@sayem314/react-native-keep-awake/react-native-keep-awake.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@sayem314/react-native-keep-awake/react-native-keep-awake.podspec",
           "version": "1.3.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@sayem314/react-native-keep-awake/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@sayem314/react-native-keep-awake/android",
           "packageImportPath": "import com.sayem.keepawake.KCKeepAwakePackage;",
           "packageInstance": "new KCKeepAwakePackage()",
           "buildTypes": [],
           "libraryName": "ReactNativeKCKeepAwakeSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@sayem314/react-native-keep-awake/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@sayem314/react-native-keep-awake/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -458,17 +458,17 @@
       }
     },
     "@shopify/react-native-skia": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@shopify/react-native-skia",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@shopify/react-native-skia",
       "name": "@shopify/react-native-skia",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@shopify/react-native-skia/react-native-skia.podspec",
-          "version": "2.2.18",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@shopify/react-native-skia/react-native-skia.podspec",
+          "version": "2.3.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@shopify/react-native-skia/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@shopify/react-native-skia/android",
           "packageImportPath": "import com.shopify.reactnative.skia.RNSkiaPackage;",
           "packageInstance": "new RNSkiaPackage()",
           "buildTypes": [],
@@ -476,7 +476,7 @@
           "componentDescriptors": [
             "SkiaPictureViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/@shopify/react-native-skia/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/@shopify/react-native-skia/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -484,31 +484,18 @@
         }
       }
     },
-    "lottie-ios": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/lottie-ios",
-      "name": "lottie-ios",
-      "platforms": {
-        "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/lottie-ios/lottie-ios.podspec",
-          "version": "4.5.1",
-          "configurations": [],
-          "scriptPhases": []
-        },
-        "android": null
-      }
-    },
     "lottie-react-native": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/lottie-react-native",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/lottie-react-native",
       "name": "lottie-react-native",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/lottie-react-native/lottie-react-native.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/lottie-react-native/lottie-react-native.podspec",
           "version": "7.3.4",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/lottie-react-native/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/lottie-react-native/android",
           "packageImportPath": "import com.airbnb.android.react.lottie.LottiePackage;",
           "packageInstance": "new LottiePackage()",
           "buildTypes": [],
@@ -516,7 +503,7 @@
           "componentDescriptors": [
             "LottieAnimationViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/lottie-react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/lottie-react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -525,22 +512,22 @@
       }
     },
     "react-native-ble-manager": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-ble-manager",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-ble-manager",
       "name": "react-native-ble-manager",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-ble-manager/react-native-ble-manager.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-ble-manager/react-native-ble-manager.podspec",
           "version": "11.6.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-ble-manager/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-ble-manager/android",
           "packageImportPath": "import it.innove.BleManagerPackage;",
           "packageInstance": "new BleManagerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-ble-manager/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-ble-manager/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -549,23 +536,23 @@
       }
     },
     "react-native-blob-util": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-blob-util",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-blob-util",
       "name": "react-native-blob-util",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-blob-util/react-native-blob-util.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-blob-util/react-native-blob-util.podspec",
           "version": "0.19.11",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-blob-util/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-blob-util/android",
           "packageImportPath": "import com.ReactNativeBlobUtil.ReactNativeBlobUtilPackage;",
           "packageInstance": "new ReactNativeBlobUtilPackage()",
           "buildTypes": [],
           "libraryName": "ReactNativeBlobUtilSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-blob-util/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-blob-util/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -574,22 +561,22 @@
       }
     },
     "react-native-bluetooth-state-manager": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-bluetooth-state-manager",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-bluetooth-state-manager",
       "name": "react-native-bluetooth-state-manager",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-bluetooth-state-manager/RNBluetoothStateManager.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-bluetooth-state-manager/RNBluetoothStateManager.podspec",
           "version": "1.3.5",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-bluetooth-state-manager/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-bluetooth-state-manager/android",
           "packageImportPath": "import de.patwoz.rn.bluetoothstatemanager.RNBluetoothStateManagerPackage;",
           "packageInstance": "new RNBluetoothStateManagerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-bluetooth-state-manager/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-bluetooth-state-manager/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -598,23 +585,23 @@
       }
     },
     "react-native-bootsplash": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-bootsplash",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-bootsplash",
       "name": "react-native-bootsplash",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-bootsplash/RNBootSplash.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-bootsplash/RNBootSplash.podspec",
           "version": "6.3.11",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-bootsplash/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-bootsplash/android",
           "packageImportPath": "import com.zoontek.rnbootsplash.RNBootSplashPackage;",
           "packageInstance": "new RNBootSplashPackage()",
           "buildTypes": [],
           "libraryName": "RNBootSplashSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-bootsplash/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-bootsplash/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -623,22 +610,22 @@
       }
     },
     "react-native-camera": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-camera",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-camera",
       "name": "react-native-camera",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-camera/react-native-camera.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-camera/react-native-camera.podspec",
           "version": "4.2.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-camera/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-camera/android",
           "packageImportPath": "import org.reactnative.camera.RNCameraPackage;",
           "packageInstance": "new RNCameraPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-camera/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-camera/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -647,23 +634,23 @@
       }
     },
     "react-native-config": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-config",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-config",
       "name": "react-native-config",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-config/react-native-config.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-config/react-native-config.podspec",
           "version": "1.5.9",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-config/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-config/android",
           "packageImportPath": "import com.lugg.RNCConfig.RNCConfigPackage;",
           "packageInstance": "new RNCConfigPackage()",
           "buildTypes": [],
           "libraryName": "RNCConfigModule",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-config/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-config/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -672,17 +659,17 @@
       }
     },
     "react-native-date-picker": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-date-picker",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-date-picker",
       "name": "react-native-date-picker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-date-picker/react-native-date-picker.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-date-picker/react-native-date-picker.podspec",
           "version": "5.0.13",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-date-picker/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-date-picker/android",
           "packageImportPath": "import com.henninghall.date_picker.DatePickerPackage;",
           "packageInstance": "new DatePickerPackage()",
           "buildTypes": [],
@@ -690,7 +677,7 @@
           "componentDescriptors": [
             "RNDatePickerComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-date-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-date-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -699,22 +686,22 @@
       }
     },
     "react-native-device-info": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-device-info",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-device-info",
       "name": "react-native-device-info",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-device-info/RNDeviceInfo.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-device-info/RNDeviceInfo.podspec",
           "version": "14.1.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-device-info/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-device-info/android",
           "packageImportPath": "import com.learnium.RNDeviceInfo.RNDeviceInfo;",
           "packageInstance": "new RNDeviceInfo()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-device-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-device-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -723,22 +710,22 @@
       }
     },
     "react-native-exception-handler": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-exception-handler",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-exception-handler",
       "name": "react-native-exception-handler",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-exception-handler/ReactNativeExceptionHandler.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-exception-handler/ReactNativeExceptionHandler.podspec",
           "version": "2.10.10",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-exception-handler/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-exception-handler/android",
           "packageImportPath": "import com.masteratul.exceptionhandler.ReactNativeExceptionHandlerPackage;",
           "packageInstance": "new ReactNativeExceptionHandlerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-exception-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-exception-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -747,46 +734,22 @@
       }
     },
     "react-native-fast-image": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-fast-image",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-fast-image",
       "name": "react-native-fast-image",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-fast-image/RNFastImage.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-fast-image/RNFastImage.podspec",
           "version": "8.6.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-fast-image/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-fast-image/android",
           "packageImportPath": "import com.dylanvann.fastimage.FastImageViewPackage;",
           "packageInstance": "new FastImageViewPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-fast-image/android/build/generated/source/codegen/jni/CMakeLists.txt",
-          "cxxModuleCMakeListsModuleName": null,
-          "cxxModuleCMakeListsPath": null,
-          "cxxModuleHeaderName": null,
-          "isPureCxxDependency": false
-        }
-      }
-    },
-    "react-native-flipper": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-flipper",
-      "name": "react-native-flipper",
-      "platforms": {
-        "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-flipper/react-native-flipper.podspec",
-          "version": "0.273.0",
-          "configurations": [],
-          "scriptPhases": []
-        },
-        "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-flipper/android",
-          "packageImportPath": "import com.facebook.flipper.reactnative.FlipperPackage;",
-          "packageInstance": "new FlipperPackage()",
-          "buildTypes": [],
-          "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-flipper/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-fast-image/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -795,17 +758,17 @@
       }
     },
     "react-native-gesture-handler": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-gesture-handler",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-gesture-handler",
       "name": "react-native-gesture-handler",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
           "version": "2.28.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-gesture-handler/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-gesture-handler/android",
           "packageImportPath": "import com.swmansion.gesturehandler.RNGestureHandlerPackage;",
           "packageInstance": "new RNGestureHandlerPackage()",
           "buildTypes": [],
@@ -814,7 +777,7 @@
             "RNGestureHandlerButtonComponentDescriptor",
             "RNGestureHandlerRootViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -823,22 +786,22 @@
       }
     },
     "react-native-get-random-values": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-get-random-values",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-get-random-values",
       "name": "react-native-get-random-values",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-get-random-values/react-native-get-random-values.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-get-random-values/react-native-get-random-values.podspec",
           "version": "1.11.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-get-random-values/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-get-random-values/android",
           "packageImportPath": "import org.linusu.RNGetRandomValuesPackage;",
           "packageInstance": "new RNGetRandomValuesPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-get-random-values/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-get-random-values/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -847,23 +810,23 @@
       }
     },
     "react-native-image-picker": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-image-picker",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-image-picker",
       "name": "react-native-image-picker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-image-picker/react-native-image-picker.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-image-picker/react-native-image-picker.podspec",
           "version": "8.2.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-image-picker/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-image-picker/android",
           "packageImportPath": "import com.imagepicker.ImagePickerPackage;",
           "packageInstance": "new ImagePickerPackage()",
           "buildTypes": [],
           "libraryName": "RNImagePickerSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -872,23 +835,23 @@
       }
     },
     "react-native-keychain": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-keychain",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-keychain",
       "name": "react-native-keychain",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-keychain/RNKeychain.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-keychain/RNKeychain.podspec",
           "version": "10.0.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-keychain/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-keychain/android",
           "packageImportPath": "import com.oblador.keychain.KeychainPackage;",
           "packageInstance": "new KeychainPackage()",
           "buildTypes": [],
           "libraryName": "RNKeychainSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-keychain/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-keychain/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -897,22 +860,22 @@
       }
     },
     "react-native-linear-gradient": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-linear-gradient",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-linear-gradient",
       "name": "react-native-linear-gradient",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-linear-gradient/BVLinearGradient.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-linear-gradient/BVLinearGradient.podspec",
           "version": "2.8.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-linear-gradient/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-linear-gradient/android",
           "packageImportPath": "import com.BV.LinearGradient.LinearGradientPackage;",
           "packageInstance": "new LinearGradientPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-linear-gradient/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-linear-gradient/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -921,23 +884,23 @@
       }
     },
     "react-native-localize": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-localize",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-localize",
       "name": "react-native-localize",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-localize/RNLocalize.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-localize/RNLocalize.podspec",
           "version": "3.5.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-localize/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-localize/android",
           "packageImportPath": "import com.zoontek.rnlocalize.RNLocalizePackage;",
           "packageInstance": "new RNLocalizePackage()",
           "buildTypes": [],
           "libraryName": "RNLocalizeSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-localize/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-localize/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -946,22 +909,22 @@
       }
     },
     "react-native-network-info": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-network-info",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-network-info",
       "name": "react-native-network-info",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-network-info/react-native-network-info.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-network-info/react-native-network-info.podspec",
           "version": "5.2.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-network-info/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-network-info/android",
           "packageImportPath": "import com.pusherman.networkinfo.RNNetworkInfoPackage;",
           "packageInstance": "new RNNetworkInfoPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-network-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-network-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -970,22 +933,22 @@
       }
     },
     "react-native-orientation-locker": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-orientation-locker",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-orientation-locker",
       "name": "react-native-orientation-locker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-orientation-locker/react-native-orientation-locker.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-orientation-locker/react-native-orientation-locker.podspec",
           "version": "1.7.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-orientation-locker/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-orientation-locker/android",
           "packageImportPath": "import org.wonday.orientation.OrientationPackage;",
           "packageInstance": "new OrientationPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-orientation-locker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-orientation-locker/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -994,17 +957,17 @@
       }
     },
     "react-native-pager-view": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-pager-view",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-pager-view",
       "name": "react-native-pager-view",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-pager-view/react-native-pager-view.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-pager-view/react-native-pager-view.podspec",
           "version": "6.9.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-pager-view/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-pager-view/android",
           "packageImportPath": "import com.reactnativepagerview.PagerViewPackage;",
           "packageInstance": "new PagerViewPackage()",
           "buildTypes": [],
@@ -1012,7 +975,7 @@
           "componentDescriptors": [
             "RNCViewPagerComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-pager-view/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-pager-view/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1021,23 +984,23 @@
       }
     },
     "react-native-permissions": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-permissions",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-permissions",
       "name": "react-native-permissions",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-permissions/RNPermissions.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-permissions/RNPermissions.podspec",
           "version": "5.4.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-permissions/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-permissions/android",
           "packageImportPath": "import com.zoontek.rnpermissions.RNPermissionsPackage;",
           "packageInstance": "new RNPermissionsPackage()",
           "buildTypes": [],
           "libraryName": "RNPermissionsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1046,23 +1009,23 @@
       }
     },
     "react-native-reanimated": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-reanimated",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-reanimated",
       "name": "react-native-reanimated",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-reanimated/RNReanimated.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-reanimated/RNReanimated.podspec",
           "version": "3.19.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-reanimated/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-reanimated/android",
           "packageImportPath": "import com.swmansion.reanimated.ReanimatedPackage;",
           "packageInstance": "new ReanimatedPackage()",
           "buildTypes": [],
           "libraryName": "rnreanimated",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1071,11 +1034,11 @@
       }
     },
     "react-native-render-html": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-render-html",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-render-html",
       "name": "react-native-render-html",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-render-html/react-native-render-html.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-render-html/react-native-render-html.podspec",
           "version": "6.3.4",
           "configurations": [],
           "scriptPhases": []
@@ -1084,17 +1047,17 @@
       }
     },
     "react-native-safe-area-context": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-safe-area-context",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
           "version": "5.6.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-safe-area-context/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-safe-area-context/android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -1103,7 +1066,7 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1112,17 +1075,17 @@
       }
     },
     "react-native-screens": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-screens",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-screens",
       "name": "react-native-screens",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-screens/RNScreens.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-screens/RNScreens.podspec",
           "version": "4.16.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-screens/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-screens/android",
           "packageImportPath": "import com.swmansion.rnscreens.RNScreensPackage;",
           "packageInstance": "new RNScreensPackage()",
           "buildTypes": [],
@@ -1141,7 +1104,7 @@
             "RNSModalScreenComponentDescriptor",
             "RNSBottomTabsComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1150,17 +1113,17 @@
       }
     },
     "react-native-send-intent": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-send-intent",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-send-intent",
       "name": "react-native-send-intent",
       "platforms": {
         "ios": null,
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-send-intent/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-send-intent/android",
           "packageImportPath": "import com.burnweb.rnsendintent.RNSendIntentPackage;",
           "packageInstance": "new RNSendIntentPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-send-intent/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-send-intent/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1169,17 +1132,17 @@
       }
     },
     "react-native-svg": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-svg",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-svg",
       "name": "react-native-svg",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-svg/RNSVG.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-svg/RNSVG.podspec",
           "version": "15.13.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-svg/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-svg/android",
           "packageImportPath": "import com.horcrux.svg.SvgPackage;",
           "packageInstance": "new SvgPackage()",
           "buildTypes": [],
@@ -1215,7 +1178,7 @@
             "RNSVGTSpanComponentDescriptor",
             "RNSVGUseComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1224,22 +1187,22 @@
       }
     },
     "react-native-udp": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-udp",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-udp",
       "name": "react-native-udp",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-udp/react-native-udp.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-udp/react-native-udp.podspec",
           "version": "4.1.7",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-udp/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-udp/android",
           "packageImportPath": "import com.tradle.react.UdpSocketsModule;",
           "packageInstance": "new UdpSocketsModule()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-udp/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-udp/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1248,23 +1211,23 @@
       }
     },
     "react-native-vector-icons": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-vector-icons",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-vector-icons",
       "name": "react-native-vector-icons",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-vector-icons/RNVectorIcons.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-vector-icons/RNVectorIcons.podspec",
           "version": "10.3.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-vector-icons/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-vector-icons/android",
           "packageImportPath": "import com.oblador.vectoricons.VectorIconsPackage;",
           "packageInstance": "new VectorIconsPackage()",
           "buildTypes": [],
           "libraryName": "RNVectorIconsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1273,22 +1236,22 @@
       }
     },
     "react-native-video": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-video",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-video",
       "name": "react-native-video",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-video/react-native-video.podspec",
-          "version": "6.16.1",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-video/react-native-video.podspec",
+          "version": "6.17.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-video/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-video/android",
           "packageImportPath": "import com.brentvatne.react.ReactVideoPackage;",
           "packageInstance": "new ReactVideoPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-video/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-video/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1297,22 +1260,22 @@
       }
     },
     "react-native-vlc-media-player": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-vlc-media-player",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-vlc-media-player",
       "name": "react-native-vlc-media-player",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-vlc-media-player/react-native-vlc-media-player.podspec",
-          "version": "1.0.94",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-vlc-media-player/react-native-vlc-media-player.podspec",
+          "version": "1.0.96",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-vlc-media-player/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-vlc-media-player/android",
           "packageImportPath": "import com.yuanzhou.vlc.ReactVlcPlayerPackage;",
           "packageInstance": "new ReactVlcPlayerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-vlc-media-player/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-vlc-media-player/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1321,22 +1284,22 @@
       }
     },
     "react-native-webrtc": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-webrtc",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-webrtc",
       "name": "react-native-webrtc",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-webrtc/react-native-webrtc.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-webrtc/react-native-webrtc.podspec",
           "version": "124.0.6",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-webrtc/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-webrtc/android",
           "packageImportPath": "import com.oney.WebRTCModule.WebRTCModulePackage;",
           "packageInstance": "new WebRTCModulePackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-webrtc/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-webrtc/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1345,17 +1308,17 @@
       }
     },
     "react-native-webview": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-webview",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-webview",
       "name": "react-native-webview",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-webview/react-native-webview.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-webview/react-native-webview.podspec",
           "version": "13.16.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-webview/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-webview/android",
           "packageImportPath": "import com.reactnativecommunity.webview.RNCWebViewPackage;",
           "packageInstance": "new RNCWebViewPackage()",
           "buildTypes": [],
@@ -1363,7 +1326,7 @@
           "componentDescriptors": [
             "RNCWebViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-webview/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-webview/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1372,17 +1335,17 @@
       }
     },
     "react-native-wheel-picker-android": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-wheel-picker-android",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-wheel-picker-android",
       "name": "react-native-wheel-picker-android",
       "platforms": {
         "ios": null,
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-wheel-picker-android/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-wheel-picker-android/android",
           "packageImportPath": "import com.wheelpicker.WheelPickerPackage;",
           "packageInstance": "new WheelPickerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-wheel-picker-android/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-wheel-picker-android/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1391,22 +1354,22 @@
       }
     },
     "react-native-wifi-reborn": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-wifi-reborn",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-wifi-reborn",
       "name": "react-native-wifi-reborn",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-wifi-reborn/RNWifi.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-wifi-reborn/RNWifi.podspec",
           "version": "4.13.6",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-wifi-reborn/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-wifi-reborn/android",
           "packageImportPath": "import com.reactlibrary.rnwifi.RNWifiPackage;",
           "packageInstance": "new RNWifiPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-wifi-reborn/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-wifi-reborn/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1415,23 +1378,23 @@
       }
     },
     "react-native-worklets-core": {
-      "root": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-worklets-core",
+      "root": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-worklets-core",
       "name": "react-native-worklets-core",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-worklets-core/react-native-worklets-core.podspec",
+          "podspecPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-worklets-core/react-native-worklets-core.podspec",
           "version": "1.6.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-worklets-core/android",
+          "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-worklets-core/android",
           "packageImportPath": "import com.worklets.WorkletsCorePackage;",
           "packageInstance": "new WorkletsCorePackage()",
           "buildTypes": [],
           "libraryName": "RNWorkletsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/node_modules/react-native-worklets-core/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/node_modules/react-native-worklets-core/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -1668,7 +1631,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial"
+          "default": "/Users/macbookpro/Desktop/IROK/naim2/fiverr"
         },
         {
           "name": "--platform <string>",
@@ -1970,16 +1933,16 @@
   ],
   "project": {
     "ios": {
-      "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/ios",
+      "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/ios",
       "xcodeProject": {
-        "name": "CalypsHome.xcodeproj",
+        "name": "CalypsHome.xcworkspace",
         "path": ".",
-        "isWorkspace": false
+        "isWorkspace": true
       },
       "assets": []
     },
     "android": {
-      "sourceDir": "/Users/macbookpro/Desktop/IROK/app-mobile-react-initial/android",
+      "sourceDir": "/Users/macbookpro/Desktop/IROK/naim2/fiverr/android",
       "appName": "app",
       "packageName": "com.avidsen.calypshome",
       "applicationId": "com.avidsen.calypshome",
